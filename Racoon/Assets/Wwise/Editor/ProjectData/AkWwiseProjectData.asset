@@ -30,8 +30,19 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585898009415655906
+    m_lastTime: -8585897467968377122
     List:
+    - name: Ambiences
+      guid: b64969a97226ab468050abb4169f33cb
+      id: 1017660616
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Ambiences
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Ambiences
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -49,9 +60,43 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585898009415675826
-    List: []
+    m_lastTime: -8585897467968357162
+    List:
+    - name: Main
+      guid: 8437b179d06ba94eb072d3eb9f06dd35
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
   EventWwu:
+  - PhysicalPath: Events\Ambiences.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Ambiences
+      ObjectType: 12
+    ParentPath: Default Work Unit\Ambiences
+    guid: e61fd8c4adc2424bb0cfb4f12b263675
+    GuidInternal: 
+    m_lastTime: -8585897467970730840
+    List:
+    - name: Play_Ambience_Background_Cavern
+      guid: 0c6c836674406043877ca2d146b128cd
+      id: 1970585623
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 12
+      - ElementName: Play_Ambience_Background_Cavern
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Play_Ambience_Background_Cavern
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -59,7 +104,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585898009415745844
+    m_lastTime: -8585897467970730840
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -69,7 +114,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 47d508ddce73114da232f08a6a9ca2ef
     GuidInternal: 
-    m_lastTime: -8585898009416074950
+    m_lastTime: -8585897467970720851
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -89,7 +134,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 474c0ac05d40db4ba1cd5b5ffdb4f08f
     GuidInternal: 
-    m_lastTime: -8585898009415725906
+    m_lastTime: -8585897467968347198
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -101,6 +146,10 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585898009416154371
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Racoon_Wwise
+  - /Racoon_Wwise/Events
+  - /Racoon_Wwise/Events/Default Work Unit
+  - /Racoon_Wwise/Events/Default Work Unit/Ambiences
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

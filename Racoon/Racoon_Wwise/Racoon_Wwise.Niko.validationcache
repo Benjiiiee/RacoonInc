@@ -2,22 +2,23 @@
 <ValidationCache Version="1" SchemaVersion="97">
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Triggers\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Switches\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Switches\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\States\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.wproj" DateLow="1611806250" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.Niko.wsettings" DateLow="1611854098" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.Niko.wsettings" DateLow="1611860088" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Queries\Factory Queries.wwu" DateLow="1600539762" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Queries\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Presets\Factory Spatial Audio.wwu" DateLow="1600539762" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Presets\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Modulators\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Events\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Events\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Events\Ambiences.wwu" DateLow="1611860088" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Effects\Factory Effects.wwu" DateLow="1600539762" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Effects\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
@@ -27,4 +28,5 @@
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Audio Devices\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Attenuations\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611853890" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
 </ValidationCache>
