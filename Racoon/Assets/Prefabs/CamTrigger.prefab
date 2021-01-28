@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 667568065710423628}
-  - component: {fileID: 1142853850607565588}
+  - component: {fileID: 5262974716402744250}
   - component: {fileID: 7658161645120779276}
   - component: {fileID: 7782473250228618571}
   m_Layer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142853850607565588
+--- !u!114 &5262974716402744250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,7 +46,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
-  newCamPosition: {fileID: 0}
+  isRight: 0
+  isLeft: 0
+  isUp: 0
+  isDown: 0
+  isRightLeftTrigger: 0
+  isUpDownTrigger: 0
 --- !u!212 &7658161645120779276
 SpriteRenderer:
   m_ObjectHideFlags: 0

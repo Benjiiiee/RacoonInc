@@ -11,10 +11,17 @@ public class CamMovement : MonoBehaviour
     public bool isDown;
     public bool isRightLeftTrigger;
     public bool isUpDownTrigger;
+    private bool wentRight = false;
+    private bool wentLeft = false;
+    private bool wentUp = false;
+    private bool wentDown = false;
+    private bool inTrigger;
+  
     
     
     void Start()
     {
+        inTrigger = false;
         
     }
 
@@ -25,35 +32,69 @@ public class CamMovement : MonoBehaviour
     }
     void OnTriggerEnter2D()
     {
-        if (isRight == true && isRightLeftTrigger)
+        if (isRight == true)
         {
-            camera.transform.Translate(25.0f, 0f, 0f);
+            inTrigger = true;
+            camera.transform.Translate(24.0f , 0f, 0f);
             isRight = false;
-            isLeft = true;
+            wentRight = true;
            
             
         }
-        if (isLeft == true && isRightLeftTrigger)
+        if (isLeft == true)
         {
-            camera.transform.Translate(-25.0f, 0f, 0f);
+            inTrigger = true;
+            camera.transform.Translate(-24.0f, 0f, 0f);
             isLeft = false;
-            isRight = true;
+            wentLeft = true;
             
         }
-        if (isUp == true && isUpDownTrigger)
+        if (isUp == true)
         {
+            inTrigger = true;
             camera.transform.Translate(0f, 14.0f, 0f);
             isUp = false;
-            isDown = true;
+            wentUp = true;
             
         }
-        if (isDown == true && isUpDownTrigger)
+        if (isDown == true)
         {
+            inTrigger = true;
             camera.transform.Translate(0f, -14.0f, 0f);
             isDown = false;
-            isUp = true;
+            wentDown = false;
             
         }
     }
-    
+    void OnTriggerExit2D()
+    {
+        if (isRight == false && isRightLeftTrigger == true && wentRight == true && inTrigger == true)
+        {
+            inTrigger = false;
+            isLeft = true;
+            wentRight = false;
+        }
+        if (isLeft == false && isRightLeftTrigger == true && wentLeft == true && inTrigger == true)
+        {
+            inTrigger = false;
+            isRight = true;
+            wentLeft = false;
+        }
+        if (isUp == false && isUpDownTrigger == true && wentUp == true && inTrigger == true)
+        {
+            inTrigger = false;
+            isDown = true;
+            wentUp = false;
+        }
+        if (isDown == false && isUpDownTrigger == true && wentDown == true && inTrigger == true)
+        {
+            inTrigger = false;
+            isUp = true;
+            wentDown = false;
+        }
+    }
+    void OnTriggerStay2D()
+    {
+        inTrigger = true;
+    }
 }
