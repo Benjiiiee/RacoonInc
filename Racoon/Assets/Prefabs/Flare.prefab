@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86822cbfc4c978b40a3116018827baa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  character: {fileID: 4792972394050339238, guid: 7c54679c07ba63d45a5f1417dc1835df,
+    type: 3}
 --- !u!212 &8350322030364809035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -116,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &2714427514692723011
 PolygonCollider2D:
   m_ObjectHideFlags: 0

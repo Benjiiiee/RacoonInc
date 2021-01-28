@@ -46,6 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flare: {fileID: 268253847834479128, guid: 9cf489343214d2e4cb135d393dfc9930, type: 3}
+  character: {fileID: 4792972394050339238, guid: 7c54679c07ba63d45a5f1417dc1835df,
+    type: 3}
   launchForce: 10
   shotPoint: {fileID: 8751158954763303543}
   point: {fileID: 2209758178134386610, guid: 3d7ea6cc02290784c8c571b1fcc8960c, type: 3}

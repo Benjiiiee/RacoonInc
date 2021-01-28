@@ -6,6 +6,7 @@ public class Shoot : MonoBehaviour
 {
 
     public GameObject flare;
+    public GameObject character;
     public float launchForce;
     public Transform shotPoint;
 
@@ -53,6 +54,7 @@ public class Shoot : MonoBehaviour
     {
         GameObject newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation);
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
+        Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
     }
 
     Vector2 Pointposition(float t)
