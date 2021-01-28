@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" SchemaVersion="97" RootDocumentID="{754439F7-B605-4314-9861-5F1AB939A45C}">
+	<Events>
+		<WorkUnit Name="Ambiences" ID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" OwnerID="{754439F7-B605-4314-9861-5F1AB939A45C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Ambience_Background_Cavern" ID="{66836C0C-4074-4360-877C-A2D146B128CD}">
+					<ChildrenList>
+						<Action Name="" ID="{2E56FF36-D95D-4B0D-AFB3-F9EFA728EB16}" ShortID="709791048">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

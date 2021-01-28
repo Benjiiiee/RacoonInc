@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1970585623	Play_Ambience_Background_Cavern			\Default Work Unit\Ambiences\Play_Ambience_Background_Cavern	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	645432562	Ambience_Background_Cavern_LP	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Ambient_Background_Cavern_LP_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambiences\Ambience_Background_Cavern\Ambience_Background_Cavern_LP		22605240
+
