@@ -14,7 +14,13 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_AMBIENCE_BACKGROUND_CAVERN = 1970585623U;
+        static const AkUniqueID PLAY_AMBIENCE_WATER_WATERFALL = 2972937805U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID DISTANCE_TO_PLAYER = 3917897988U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -25,7 +31,9 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID AMBIENCES = 1017660616U;
+        static const AkUniqueID AUX = 983310469U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585897467968377122
+    m_lastTime: -8585897428104988477
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -40,9 +40,24 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Master Audio Bus
         ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
       - ElementName: Ambiences
         ObjectType: 2
-      Path: Default Work Unit\Master Audio Bus\Ambiences
+      Path: Default Work Unit\Master Audio Bus\World\Ambiences
+    - name: AUX
+      guid: c44730729e37e04ca34505fc25f0d9d5
+      id: 983310469
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: AUX
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\AUX
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -52,6 +67,17 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: World
+      guid: bb6fed9d10a5f644aa12ea8912a64967
+      id: 2609808943
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -60,7 +86,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585897467968357162
+    m_lastTime: -8585897428104898418
     List:
     - name: Main
       guid: 8437b179d06ba94eb072d3eb9f06dd35
@@ -81,7 +107,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Ambiences
     guid: e61fd8c4adc2424bb0cfb4f12b263675
     GuidInternal: 
-    m_lastTime: -8585897467970730840
+    m_lastTime: -8585897428105018396
     List:
     - name: Play_Ambience_Background_Cavern
       guid: 0c6c836674406043877ca2d146b128cd
@@ -97,6 +123,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Ambience_Water_Waterfall
+      guid: f0f51e5c387d1a4bbe8dd60383ffe1c1
+      id: 2972937805
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 12
+      - ElementName: Play_Ambience_Water_Waterfall
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Play_Ambience_Water_Waterfall
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -104,7 +144,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585897467970730840
+    m_lastTime: -8585897428104958559
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -116,6 +156,24 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585897467970720851
     List: []
+  - PhysicalPath: Game Parameters\Generic.wwu
+    PathAndIcons:
+    - ElementName: Generic
+      ObjectType: 12
+    ParentPath: Generic
+    guid: 5b09217888894b4c8d3cbf0df4dfd088
+    GuidInternal: 
+    m_lastTime: -8585897417187741380
+    List:
+    - name: Distance_to_Player
+      guid: 0d235f3ab7ca6e488974f5e868af19cb
+      id: 3917897988
+      PathAndIcons:
+      - ElementName: Generic
+        ObjectType: 12
+      - ElementName: Distance_to_Player
+        ObjectType: 13
+      Path: Generic\Distance_to_Player
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:

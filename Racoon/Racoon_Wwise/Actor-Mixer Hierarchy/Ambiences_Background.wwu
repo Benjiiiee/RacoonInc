@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{86857F70-B38C-428E-8A06-AD6C2765BEDE}" SchemaVersion="97" RootDocumentID="{1B7AE200-E287-4069-8F55-0FB733CD866F}">
+	<AudioObjects>
+		<WorkUnit Name="Ambiences_Background" ID="{86857F70-B38C-428E-8A06-AD6C2765BEDE}" OwnerID="{CC5E990A-D94A-4B70-BEBE-6C53F58E69AE}" PersistMode="Nested">
+			<ChildrenList>
+				<BlendContainer Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" ShortID="866960995">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Ambience_Background_Cavern_LP" ID="{667A5D3D-08E3-40B3-9265-F0EB70AB4B5C}" ShortID="1039921254">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambient_Background_Cavern_LP" ID="{4D891194-8DCD-4B44-B550-7A7A6D6C35CA}">
+									<Language>SFX</Language>
+									<AudioFile>Ambient_Background_Cavern_LP.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="645432562"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambient_Background_Cavern_LP" ID="{4D891194-8DCD-4B44-B550-7A7A6D6C35CA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Weird_Far_Animals" ID="{231ECEA9-C3FC-4608-977D-1912EF51EB50}" ShortID="56026577">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>1.5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5A4A72B2-926C-40B7-B7DC-1D87355988D9}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="1"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>990</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E2F66376-0A90-4DD0-AC9B-6D35EF1E8141}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Weird_Far_Animals_01" ID="{519101E2-8346-4C64-8BF8-D569E3926D94}" ShortID="1006494255">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_01" ID="{4126C423-157F-4790-B566-716FB82E93C1}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="786591058"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_01" ID="{4126C423-157F-4790-B566-716FB82E93C1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_02" ID="{FA0D96D1-FDBD-4382-B285-CCC5D1FD33D9}" ShortID="264668949">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_02" ID="{DB019977-A980-48D2-9D20-ABC9116ACE11}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="740608524"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_02" ID="{DB019977-A980-48D2-9D20-ABC9116ACE11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_03" ID="{1FCC27EE-F0E2-4DFE-B533-DA5A3621A935}" ShortID="69101721">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_03" ID="{D81F0967-B246-4EEE-80B9-1A36ACC4B063}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="279705558"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_03" ID="{D81F0967-B246-4EEE-80B9-1A36ACC4B063}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_04" ID="{C69B1806-656E-4B75-8907-C4B60989301A}" ShortID="133147304">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_04" ID="{EF1B2BF1-D5DA-4BAA-8546-F1FFFDC17FC5}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="864559532"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_04" ID="{EF1B2BF1-D5DA-4BAA-8546-F1FFFDC17FC5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_05" ID="{8D3A6F54-8F84-4B31-BFA5-7611F09C1EEE}" ShortID="233063673">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_05" ID="{2E52138E-C504-4FDA-950E-49B0F57C8FC9}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328523564"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_05" ID="{2E52138E-C504-4FDA-950E-49B0F57C8FC9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_06" ID="{4B64652A-3B49-47C8-BA6B-B2165A515764}" ShortID="277911782">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_06" ID="{5B3B35BA-37EE-45D4-A13A-AD8CFC3B2B71}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586563564"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_06" ID="{5B3B35BA-37EE-45D4-A13A-AD8CFC3B2B71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_07" ID="{A944DC2B-52E7-4739-A38D-1B02204DA604}" ShortID="852830966">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_07" ID="{FBD9374A-B17F-4E52-BFA3-02F83B1444A3}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="266174985"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_07" ID="{FBD9374A-B17F-4E52-BFA3-02F83B1444A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_08" ID="{5804AE5E-D346-4885-811B-A58693C92602}" ShortID="405894471">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_08" ID="{DEA1A1EF-12FD-4E6F-BCF4-8FF24BF9818F}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="354318572"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_08" ID="{DEA1A1EF-12FD-4E6F-BCF4-8FF24BF9818F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_09" ID="{26E9942C-61D1-4AE6-8ADC-B3EEBF1CCE29}" ShortID="449539884">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_09" ID="{181A8839-A6E0-4F3E-B3A2-9BD7426ACCF1}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="877091953"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_09" ID="{181A8839-A6E0-4F3E-B3A2-9BD7426ACCF1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_10" ID="{849F9E68-7141-4CB2-9A8C-563E5EA03815}" ShortID="407212385">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_10" ID="{E391F164-E13B-4174-B0C0-9BFB603F2DAF}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_10.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="481310778"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_10" ID="{E391F164-E13B-4174-B0C0-9BFB603F2DAF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_11" ID="{9365DAAA-A3C1-4DE5-8D2E-ACAC539D6C48}" ShortID="1062913779">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_11" ID="{6F1DFE90-631D-4D0F-A56D-90A7154EFD0F}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_11.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="823615469"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_11" ID="{6F1DFE90-631D-4D0F-A56D-90A7154EFD0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_12" ID="{DEEF0690-CA7B-420D-8240-35CF31D8254B}" ShortID="516998474">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_12" ID="{B59A42AF-24B5-4732-B195-8161C3468A22}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_12.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="929705918"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_12" ID="{B59A42AF-24B5-4732-B195-8161C3468A22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_13" ID="{F8D989EE-7C0E-4543-AD69-DA860D3340FC}" ShortID="865688584">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_13" ID="{2A66532C-9B6E-497A-9B56-401E1FD90B09}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_13.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="856478526"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_13" ID="{2A66532C-9B6E-497A-9B56-401E1FD90B09}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_14" ID="{504CE3F1-43A4-437F-BAA8-F4FC619318D6}" ShortID="1071306933">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_14" ID="{10FFC0D3-6A48-4616-9BF2-4024D5641D71}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_14.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="954794834"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_14" ID="{10FFC0D3-6A48-4616-9BF2-4024D5641D71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Weird_Far_Animals_15" ID="{A10F05D4-B208-43A9-9210-B1720AC839A3}" ShortID="1046908664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Weird_Far_Animals_15" ID="{FBB4A7DB-A97B-4BA9-8B0B-11347D03C4AD}">
+											<Language>SFX</Language>
+											<AudioFile>Weird_Far_Animals_15.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="61427136"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Weird_Far_Animals_15" ID="{FBB4A7DB-A97B-4BA9-8B0B-11347D03C4AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{6A52B5A2-BEDF-4CDA-9DC2-A63DCA1C50D9}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Weird_Far_Animals_Path" ID="{A03EAEB7-6AB0-4E40-923B-4F50579F4E1B}">
+											<PointList>
+												<Point>
+													<XPos>87.42268</XPos>
+													<YPos>60.70664</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Weird_Far_Animals_Path_01" ID="{846E638E-1152-4C42-9892-C9E2168AAD40}">
+											<PointList>
+												<Point>
+													<XPos>-65.97938</XPos>
+													<YPos>55.13919</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Weird_Far_Animals_Path_02" ID="{7E303097-E8D0-442B-B7FB-091BE17CC434}">
+											<PointList>
+												<Point>
+													<XPos>-49.07217</XPos>
+													<YPos>100</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Weird_Far_Animals_Path_03" ID="{BB81D0DC-E647-4272-8AD9-A5B08743AC60}">
+											<PointList>
+												<Point>
+													<XPos>66.80412</XPos>
+													<YPos>82.01285</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Weird_Far_Animals_Path_04" ID="{3D7540E5-DF4B-4E47-8397-61EB128C97DF}">
+											<PointList>
+												<Point>
+													<XPos>-1.64949</XPos>
+													<YPos>60.59957</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{C15A3E8A-0A7C-4CE1-8632-19849533540C}">
+							<PropertyList>
+								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Ambience_Background_Cavern_Path" ID="{6C197460-30A7-4BA9-83BE-EFC72F3A8E2A}">
+									<PointList>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>82.11991</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambience_Background_Cavern_Path_01" ID="{530B2C78-FE44-4543-BBF5-5DFEAAE6D95F}">
+									<PointList>
+										<Point>
+											<XPos>-82.8866</XPos>
+											<YPos>54.28265</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambience_Background_Cavern_Path_02" ID="{AAD6C7C2-7BD5-4525-A397-F146279D5273}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="2000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0.82474</XPos>
+											<YPos>98.394</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambience_Background_Cavern_Path_03" ID="{44B91BB8-C6CE-44F8-8F7B-1A418A6036B6}">
+									<PointList>
+										<Point>
+											<XPos>-100</XPos>
+											<YPos>37.15203</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Ambience_Background_Cavern_Path_04" ID="{D4E84092-70A8-46AD-A011-C8D51CAC1D21}">
+									<PointList>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>40.14989</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

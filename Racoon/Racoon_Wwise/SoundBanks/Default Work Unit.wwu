@@ -6,6 +6,7 @@
 				<SoundBank Name="Main" ID="{79B13784-6BD0-4EA9-B072-D3EB9F06DD35}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Ambience_Background_Cavern" ID="{66836C0C-4074-4360-877C-A2D146B128CD}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

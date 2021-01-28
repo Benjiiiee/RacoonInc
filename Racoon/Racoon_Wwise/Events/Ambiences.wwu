@@ -12,7 +12,18 @@
 						<Action Name="" ID="{2E56FF36-D95D-4B0D-AFB3-F9EFA728EB16}" ShortID="709791048">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+									<ObjectRef Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" WorkUnitID="{86857F70-B38C-428E-8A06-AD6C2765BEDE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}">
+					<ChildrenList>
+						<Action Name="" ID="{47D641DA-E403-43EA-A513-0A33F4BC2D13}" ShortID="379275339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Water_Waterfall" ID="{2833FAD2-202E-4529-9231-F5D2ABA361F5}" WorkUnitID="{32EBF652-CE39-48CD-8410-2D0DC010DD12}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
