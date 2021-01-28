@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Flare : MonoBehaviour
 {
-
+    public GameObject character;
     Rigidbody2D rb;
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+
     }
 
     
