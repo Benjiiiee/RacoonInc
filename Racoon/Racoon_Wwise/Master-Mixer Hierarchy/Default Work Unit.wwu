@@ -10,11 +10,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="8"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
+						<Bus Name="World" ID="{9DED6FBB-A510-44F6-AA12-EA8912A64967}">
+							<ChildrenList>
+								<Bus Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="8"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+								<Bus Name="AUX" ID="{723047C4-379E-4CE0-A345-05FC25F0D9D5}"/>
+							</ChildrenList>
 						</Bus>
 					</ChildrenList>
 				</Bus>
