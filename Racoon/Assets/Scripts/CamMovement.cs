@@ -5,6 +5,7 @@ using UnityEngine;
 public class CamMovement : MonoBehaviour
 {
     public GameObject camera;
+    public GameObject character;
     public bool isRight;
     public bool isLeft;
     public bool isUp;
@@ -30,71 +31,80 @@ public class CamMovement : MonoBehaviour
     {
         
     }
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D character)
     {
-        if (isRight == true)
+        if (character.gameObject.CompareTag("Player"))
         {
-            inTrigger = true;
-            camera.transform.Translate(24.0f , 0f, 0f);
-            isRight = false;
-            wentRight = true;
-           
-            
-        }
-        if (isLeft == true)
-        {
-            inTrigger = true;
-            camera.transform.Translate(-24.0f, 0f, 0f);
-            isLeft = false;
-            wentLeft = true;
-            
-        }
-        if (isUp == true)
-        {
-            inTrigger = true;
-            camera.transform.Translate(0f, 14.0f, 0f);
-            isUp = false;
-            wentUp = true;
-            
-        }
-        if (isDown == true)
-        {
-            inTrigger = true;
-            camera.transform.Translate(0f, -14.0f, 0f);
-            isDown = false;
-            wentDown = false;
-            
+            if (isRight == true)
+            {
+                inTrigger = true;
+                camera.transform.Translate(24.0f, 0f, 0f);
+                isRight = false;
+                wentRight = true;
+
+
+            }
+            if (isLeft == true)
+            {
+                inTrigger = true;
+                camera.transform.Translate(-24.0f, 0f, 0f);
+                isLeft = false;
+                wentLeft = true;
+
+            }
+            if (isUp == true)
+            {
+                inTrigger = true;
+                camera.transform.Translate(0f, 14.0f, 0f);
+                isUp = false;
+                wentUp = true;
+
+            }
+            if (isDown == true)
+            {
+                inTrigger = true;
+                camera.transform.Translate(0f, -14.0f, 0f);
+                isDown = false;
+                wentDown = false;
+
+            }
         }
     }
-    void OnTriggerExit2D()
+    void OnTriggerExit2D(Collider2D character)
     {
-        if (isRight == false && isRightLeftTrigger == true && wentRight == true && inTrigger == true)
+        if (character.gameObject.CompareTag("Player"))
         {
-            inTrigger = false;
-            isLeft = true;
-            wentRight = false;
-        }
-        if (isLeft == false && isRightLeftTrigger == true && wentLeft == true && inTrigger == true)
-        {
-            inTrigger = false;
-            isRight = true;
-            wentLeft = false;
-        }
-        if (isUp == false && isUpDownTrigger == true && wentUp == true && inTrigger == true)
-        {
-            inTrigger = false;
-            isDown = true;
-            wentUp = false;
-        }
-        if (isDown == false && isUpDownTrigger == true && wentDown == true && inTrigger == true)
-        {
-            inTrigger = false;
-            isUp = true;
-            wentDown = false;
+            if (isRight == false && isRightLeftTrigger == true && wentRight == true && inTrigger == true)
+            {
+                inTrigger = false;
+                isLeft = true;
+                wentRight = false;
+            }
+            if (isLeft == false && isRightLeftTrigger == true && wentLeft == true && inTrigger == true)
+            {
+                inTrigger = false;
+                isRight = true;
+                wentLeft = false;
+            }
+            if (isUp == false && isUpDownTrigger == true && wentUp == true && inTrigger == true)
+            {
+                inTrigger = false;
+                isDown = true;
+                wentUp = false;
+            }
+            if (isDown == false && isUpDownTrigger == true && wentDown == true && inTrigger == true)
+            {
+                inTrigger = false;
+                isUp = true;
+                wentDown = false;
+            }
         }
     }
-    void OnTriggerStay2D()
+    void OnTriggerStay2D(Collider2D character)
     {
-        inTrigger = true;
+        if (character.gameObject.CompareTag("Player"))
+        {
+            inTrigger = true;
+        }
     }
 }
