@@ -15,18 +15,14 @@ public class Shoot : MonoBehaviour
     public int numberOfPoints;
     public float spaceBetweenPoints;
     Vector2 direction;
-    
+
     void Start()
     {
-        points = new GameObject[numberOfPoints];
-        for (int i = 0; i < numberOfPoints; i++)
-        {
-            points[i] = Instantiate(point, shotPoint.position, Quaternion.identity);
-        }
-        
+        SpawnPoints();
+
     }
 
-    
+
     void Update()
     {
         if (Input.GetMouseButton(0))
@@ -36,18 +32,19 @@ public class Shoot : MonoBehaviour
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = mousePosition - handPosition;
             transform.right = direction;
-              for (int i = 0; i < numberOfPoints; i++)
-        {
-            points[i].transform.position = Pointposition(i * spaceBetweenPoints);
-        }
+            for (int i = 0; i < numberOfPoints; i++)
+            {
+                points[i].transform.position = Pointposition(i * spaceBetweenPoints);
+            }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             Shootit();
-          
+            ResetPoints();
+
         }
-        
+
     }
 
     void Shootit()
@@ -61,5 +58,23 @@ public class Shoot : MonoBehaviour
     {
         Vector2 position = (Vector2)shotPoint.position + (direction.normalized * launchForce * t) + 0.5f * Physics2D.gravity * (t * t);
         return position;
+    }
+
+    void SpawnPoints()
+    {
+        points = new GameObject[numberOfPoints];
+        for (int i = 0; i < numberOfPoints; i++)
+        {
+            points[i] = Instantiate(point, new Vector2(-1000f, -1000f), Quaternion.identity);
+        }
+    }
+
+    void ResetPoints()
+    {
+        for (int i = 0; i < numberOfPoints; i++)
+        {
+            points[i].transform.position = new Vector2(-1000f, -1000f);
+
+        }
     }
 }
