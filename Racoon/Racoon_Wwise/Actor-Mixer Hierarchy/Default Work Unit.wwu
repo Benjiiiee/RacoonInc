@@ -76,9 +76,10 @@
 											<ChildrenList>
 												<SwitchContainer Name="Foley" ID="{FD1E0921-485C-4D9D-AA1A-21ABBDB86EC4}" ShortID="776803445">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-19</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -90,7 +91,7 @@
 															<ObjectRef Name="Run" ID="{6E266B90-6257-4191-AE32-D792656570D0}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+															<ObjectRef Name="Foley" ID="{EB18D721-9822-4A8A-89FF-F20CB572B503}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="Movement_Type" ID="{F4D37C22-1F64-46F8-8CAB-422EFD6D44BB}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
@@ -1139,6 +1140,9 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
 																	<ModifierList>
 																		<ModifierInfo>
 																			<Modifier Name="" ID="{E332C5C5-3EDE-4834-8BA2-51BF340BDC65}">
@@ -1699,6 +1703,7 @@
 												</SwitchContainer>
 												<SwitchContainer Name="Footsteps_Surface" ID="{E61794AC-14B5-4195-9BEF-FEA02CE96A7A}" ShortID="597511892">
 													<PropertyList>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
 																<Value>-18</Value>
@@ -1713,7 +1718,7 @@
 															<ObjectRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+															<ObjectRef Name="Footsteps" ID="{B14D8592-46E2-43CC-8F4F-E9CE036FC431}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
 															<ObjectRef Name="Material_Type" ID="{88C99A5A-5F74-4D93-B676-25620F3724F3}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
