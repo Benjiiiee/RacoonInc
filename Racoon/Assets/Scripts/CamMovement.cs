@@ -6,16 +6,12 @@ public class CamMovement : MonoBehaviour
 {
     public GameObject camera;
     public GameObject character;
-    public bool isRight;
-    public bool isLeft;
-    public bool isUp;
-    public bool isDown;
-    public bool isRightLeftTrigger;
-    public bool isUpDownTrigger;
-    private bool wentRight = false;
-    private bool wentLeft = false;
-    private bool wentUp = false;
-    private bool wentDown = false;
+    public GameObject firstCamPositionTemplate;
+    public GameObject nextCamPositionTemplate;
+    private bool isFirst = true;
+    private bool isSecond = false;
+    private bool wentFirst = false;
+    private bool wentSecond = false;
     private bool inTrigger;
   
     
@@ -35,38 +31,19 @@ public class CamMovement : MonoBehaviour
     {
         if (character.gameObject.CompareTag("Player"))
         {
-            if (isRight == true)
+            if (isFirst == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(30.0f, 0f, 0f);
-                isRight = false;
-                wentRight = true;
-
-
+                camera.transform.position = new Vector3(nextCamPositionTemplate.transform.position.x, nextCamPositionTemplate.transform.position.y, camera.transform.position.z);
+                isFirst = false;
+                wentFirst = true;
             }
-            if (isLeft == true)
+            if (isSecond == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(-30.0f, 0f, 0f);
-                isLeft = false;
-                wentLeft = true;
-
-            }
-            if (isUp == true)
-            {
-                inTrigger = true;
-                camera.transform.Translate(0f, 17.0f, 0f);
-                isUp = false;
-                wentUp = true;
-
-            }
-            if (isDown == true)
-            {
-                inTrigger = true;
-                camera.transform.Translate(0f, -17.0f, 0f);
-                isDown = false;
-                wentDown = false;
-
+                camera.transform.position = new Vector3(firstCamPositionTemplate.transform.position.x, firstCamPositionTemplate.transform.position.y, camera.transform.position.z);
+                isSecond = false;
+                wentSecond = true;
             }
         }
     }
@@ -74,29 +51,17 @@ public class CamMovement : MonoBehaviour
     {
         if (character.gameObject.CompareTag("Player"))
         {
-            if (isRight == false && isRightLeftTrigger == true && wentRight == true && inTrigger == true)
+            if (isFirst == false && wentFirst == true && inTrigger == true)
             {
                 inTrigger = false;
-                isLeft = true;
-                wentRight = false;
+                isSecond = true;
+                wentFirst = false;
             }
-            if (isLeft == false && isRightLeftTrigger == true && wentLeft == true && inTrigger == true)
+            if (isSecond == false && wentSecond == true && inTrigger == true)
             {
                 inTrigger = false;
-                isRight = true;
-                wentLeft = false;
-            }
-            if (isUp == false && isUpDownTrigger == true && wentUp == true && inTrigger == true)
-            {
-                inTrigger = false;
-                isDown = true;
-                wentUp = false;
-            }
-            if (isDown == false && isUpDownTrigger == true && wentDown == true && inTrigger == true)
-            {
-                inTrigger = false;
-                isUp = true;
-                wentDown = false;
+                isFirst = true;
+                wentSecond = false;
             }
         }
     }
