@@ -6,7 +6,6 @@ public class Shoot : MonoBehaviour
 {
 
     public GameObject flare;
-    //public GameObject character;
     public float launchForce, launchMin = 0f, launchMax = 15f;
     public Transform shotPoint;
 
@@ -16,6 +15,7 @@ public class Shoot : MonoBehaviour
     public float spaceBetweenPoints;
     public Vector2 firstPoint, secondPoint, direction;
     private CharacterController character;
+    private bool isThrowing = false;
 
     void Start()
     {
@@ -26,13 +26,14 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded)
         {
+            isThrowing = true;
             character.controlEnabled = false;
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && isThrowing)
         {
             secondPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             direction = -(secondPoint - firstPoint);
@@ -41,30 +42,23 @@ public class Shoot : MonoBehaviour
             
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && isThrowing)
         {
             Shootit();
             ResetPoints();
             character.controlEnabled = true;
+            isThrowing = false;
         }
 
     }
 
     void Aim()
     {
-        //Vector2 handPosition = transform.position;
-        //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        //direction = mousePosition - handPosition;
         transform.right = direction;
         for (int i = 0; i < numberOfPoints; i++)
         {
             points[i].transform.position = Pointposition(i * spaceBetweenPoints);
         }
-    }
-
-    void GetDirectionAndForce()
-    {
-        
     }
 
     void Shootit()
