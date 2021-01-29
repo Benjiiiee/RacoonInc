@@ -17,7 +17,7 @@ public class CharacterController : KinematicObject
 
     bool jump;
     Vector2 move;
-    SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     public float jumpModifier = 1.5f;
     public float jumpDeceleration = 0.5f;
     //RaycastHit2D[] results;

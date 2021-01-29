@@ -58,6 +58,17 @@ public class Shoot : MonoBehaviour
         for (int i = 0; i < numberOfPoints; i++)
         {
             points[i].transform.position = Pointposition(i * spaceBetweenPoints);
+            if(i == numberOfPoints - 1)
+            {
+                if(points[i].transform.position.x < character.transform.position.x)
+                {
+                    character.spriteRenderer.flipX = true;
+                }
+                else
+                {
+                    character.spriteRenderer.flipX = false;
+                }
+            }
         }
     }
 
