@@ -38,7 +38,7 @@ public class CamMovement : MonoBehaviour
             if (isRight == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(24.0f, 0f, 0f);
+                camera.transform.Translate(30.0f, 0f, 0f);
                 isRight = false;
                 wentRight = true;
 
@@ -47,7 +47,7 @@ public class CamMovement : MonoBehaviour
             if (isLeft == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(-24.0f, 0f, 0f);
+                camera.transform.Translate(-30.0f, 0f, 0f);
                 isLeft = false;
                 wentLeft = true;
 
@@ -55,7 +55,7 @@ public class CamMovement : MonoBehaviour
             if (isUp == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(0f, 14.0f, 0f);
+                camera.transform.Translate(0f, 17.0f, 0f);
                 isUp = false;
                 wentUp = true;
 
@@ -63,7 +63,7 @@ public class CamMovement : MonoBehaviour
             if (isDown == true)
             {
                 inTrigger = true;
-                camera.transform.Translate(0f, -14.0f, 0f);
+                camera.transform.Translate(0f, -17.0f, 0f);
                 isDown = false;
                 wentDown = false;
 
