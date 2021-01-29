@@ -15,6 +15,9 @@
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="3161908922" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
@@ -26,6 +29,10 @@
 						<File Id="61427136" Language="SFX">
 							<ShortName>Weird_Far_Animals_15.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_15_10C4C929.wem</Path>
+						</File>
+						<File Id="152775626" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-009.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-009_914AF4AC.wem</Path>
 						</File>
 						<File Id="266174985" Language="SFX">
 							<ShortName>Weird_Far_Animals_07.wav</ShortName>
@@ -39,6 +46,10 @@
 							<ShortName>Weird_Far_Animals_05.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_05_10C4C929.wem</Path>
 						</File>
+						<File Id="330016733" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-007.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-007_A56F572B.wem</Path>
+						</File>
 						<File Id="354318572" Language="SFX">
 							<ShortName>Weird_Far_Animals_08.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_08_10C4C929.wem</Path>
@@ -47,17 +58,37 @@
 							<ShortName>Weird_Far_Animals_10.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_10_10C4C929.wem</Path>
 						</File>
+						<File Id="491287135" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-003.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-003_33155ED3.wem</Path>
+						</File>
+						<File Id="554963423" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-005.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-005_EFC73054.wem</Path>
+						</File>
 						<File Id="586563564" Language="SFX">
 							<ShortName>Weird_Far_Animals_06.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_06_10C4C929.wem</Path>
 						</File>
-						<File Id="645432562" Language="SFX">
-							<ShortName>Ambient_Background_Cavern_LP.wav</ShortName>
-							<Path>SFX\Ambient_Background_Cavern_LP_D79FB2B7.wem</Path>
+						<File Id="690917473" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-006.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-006_84294AF8.wem</Path>
+						</File>
+						<File Id="706053266" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-008.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-008_B1ECC6B8.wem</Path>
+						</File>
+						<File Id="733736522" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-013.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-013_C267A033.wem</Path>
 						</File>
 						<File Id="740608524" Language="SFX">
 							<ShortName>Weird_Far_Animals_02.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_02_10C4C929.wem</Path>
+						</File>
+						<File Id="748443780" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-002.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-002_E1F0312E.wem</Path>
 						</File>
 						<File Id="786591058" Language="SFX">
 							<ShortName>Weird_Far_Animals_01.wav</ShortName>
@@ -75,6 +106,10 @@
 							<ShortName>Weird_Far_Animals_04.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_04_10C4C929.wem</Path>
 						</File>
+						<File Id="871063865" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-004.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-004_BBB516DD.wem</Path>
+						</File>
 						<File Id="877091953" Language="SFX">
 							<ShortName>Weird_Far_Animals_09.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_09_10C4C929.wem</Path>
@@ -86,6 +121,22 @@
 						<File Id="954794834" Language="SFX">
 							<ShortName>Weird_Far_Animals_14.wav</ShortName>
 							<Path>SFX\Weird_Far_Animals_14_10C4C929.wem</Path>
+						</File>
+						<File Id="964635825" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-010.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-010_10C4C929.wem</Path>
+						</File>
+						<File Id="968857673" Language="SFX">
+							<ShortName>Ambience_Background_Wind_V2.wav</ShortName>
+							<Path>SFX\Ambience_Background_Wind_V2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1029458031" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-011.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-011_43D8E68B.wem</Path>
+						</File>
+						<File Id="1066475621" Language="SFX">
+							<ShortName>Ambience_Weird_Voices-012.wav</ShortName>
+							<Path>SFX\Ambience_Weird_Voices-012_B99FA760.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585897428104988477
+    m_lastTime: -8585897346944081817
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -58,6 +58,21 @@ MonoBehaviour:
       - ElementName: AUX
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus\World\AUX
+    - name: Aux_RVB_Cavern
+      guid: 91e7e8dd6332f54687eae50a66970701
+      id: 3352913298
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: AUX
+        ObjectType: 2
+      - ElementName: Aux_RVB_Cavern
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087

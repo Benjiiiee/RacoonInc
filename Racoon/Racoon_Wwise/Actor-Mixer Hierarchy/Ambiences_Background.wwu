@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>6</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -22,6 +22,11 @@
 					<ChildrenList>
 						<Sound Name="Ambience_Background_Cavern_LP" ID="{667A5D3D-08E3-40B3-9265-F0EB70AB4B5C}" ShortID="1039921254">
 							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -70,6 +75,7 @@
 									</ModifierList>
 								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
@@ -92,9 +98,10 @@
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-26</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -491,6 +498,497 @@
 												<Point>
 													<XPos>-1.64949</XPos>
 													<YPos>60.59957</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<Sound Name="Ambience_Background_Wind_V2" ID="{E7A9238F-19BE-427E-9D09-E9CA34D5AF6C}" ShortID="951559252">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_Background_Wind_V2" ID="{5B05C634-0083-46B1-B671-1D61CBE48EF0}">
+									<Language>SFX</Language>
+									<AudioFile>Ambience_Background_Wind_V2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="968857673"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_Background_Wind_V2" ID="{5B05C634-0083-46B1-B671-1D61CBE48EF0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Ambience_Weird_Voices" ID="{202010BB-63C6-4AE6-BF21-16604E6B9B13}" ShortID="277733755">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{9E0BA06B-1912-4B81-AB63-7A870F80A1C0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-430</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7DE2292C-205C-4786-AA8F-B5F8CAE60EFC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-500"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{47CF6059-D236-4A68-936F-77B7A58E0645}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="5"/>
+													<Property Name="Min" Type="Real64" Value="-5"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ambience_Weird_Voices-002" ID="{2305D644-DA16-46E1-B630-44F80F2FB7D0}" ShortID="295503862">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-002" ID="{4630CAA5-EE68-41A1-A59C-937915EC93C2}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.634466990106545"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="748443780"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-002" ID="{4630CAA5-EE68-41A1-A59C-937915EC93C2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-003" ID="{1B000C5D-9C4C-4FCD-BCB3-1B58AAEF3802}" ShortID="52259145">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-003" ID="{334B3A3A-0EC8-48BF-98D5-D25D4D57F21E}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.93025183124049"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.32396782248859"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="491287135"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-003" ID="{334B3A3A-0EC8-48BF-98D5-D25D4D57F21E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-004" ID="{6490BDBC-B8E8-41B6-B7F6-5454FDB3E618}" ShortID="853209657">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-004" ID="{14120197-26F3-4A61-8B68-6D03553C69DF}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.78759774543379"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.96917380136986"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="871063865"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-004" ID="{14120197-26F3-4A61-8B68-6D03553C69DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-005" ID="{C50D1D24-DBD5-482E-94D2-C748FDCA8389}" ShortID="556526114">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-005" ID="{2CF7E30E-6A3A-4616-A941-D31E3DBA96B3}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.971545376712329"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.97580750570776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="554963423"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-005" ID="{2CF7E30E-6A3A-4616-A941-D31E3DBA96B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-006" ID="{6AA61969-C5A9-4B1F-8C7C-F95A8EE8C7AB}" ShortID="821810376">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-006" ID="{7A841721-B784-4F6E-A20A-BE18644667EA}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.21501441210046"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.51926717085236"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="690917473"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-006" ID="{7A841721-B784-4F6E-A20A-BE18644667EA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-007" ID="{096CE941-9253-48FC-8E59-33BD25B5713E}" ShortID="848241048">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-007" ID="{859FCCEE-91C6-4EE2-9276-E12AFA283E2A}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.79428881278539"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="330016733"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-007" ID="{859FCCEE-91C6-4EE2-9276-E12AFA283E2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-008" ID="{8CADF475-07A3-48F6-9AFF-C0525C01C663}" ShortID="57402065">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-008" ID="{279A4FAA-0C30-48E8-8761-4F74BACC7A37}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.87484096746575"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-008.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="706053266"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-008" ID="{279A4FAA-0C30-48E8-8761-4F74BACC7A37}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-009" ID="{7DA8ED29-8E9A-49AB-9001-D2636F33EF12}" ShortID="488945289">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-009" ID="{2A68901D-9A54-4C7B-B278-07EFA8F7C3C4}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.16474200913242"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-009.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="152775626"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-009" ID="{2A68901D-9A54-4C7B-B278-07EFA8F7C3C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-010" ID="{87A08610-5098-4CE8-9BC0-4CC08C784220}" ShortID="1030673938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-010" ID="{0DC6FDE6-2B65-462C-9BC3-6154EDB94E98}">
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="964635825"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-010" ID="{0DC6FDE6-2B65-462C-9BC3-6154EDB94E98}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-011" ID="{52FBBC4F-8961-4149-A6FB-3A09F2B5A5A9}" ShortID="690838581">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-011" ID="{47B418CE-B700-4BDD-8C80-C5D50A663CE8}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.95831854071537"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-011.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1029458031"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-011" ID="{47B418CE-B700-4BDD-8C80-C5D50A663CE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-012" ID="{1105A477-6BEC-42BF-B6C6-A4159BAA8919}" ShortID="315267874">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-012" ID="{F44BCCFB-EEE2-48AD-93CB-EFB9D912895C}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.29794551464992"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-012.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1066475621"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-012" ID="{F44BCCFB-EEE2-48AD-93CB-EFB9D912895C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience_Weird_Voices-013" ID="{BEC6B664-60BC-48E4-8BA9-6BDF5BD8CD99}" ShortID="727354804">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience_Weird_Voices-013" ID="{E9F01DD8-4DEB-4779-B226-244AA0CA7012}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="3.44575221175799"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.63640786719939"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience_Weird_Voices-013.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="733736522"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience_Weird_Voices-013" ID="{E9F01DD8-4DEB-4779-B226-244AA0CA7012}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{3A96C7B4-B45A-4062-BD61-22AD9CDFFB47}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Ambience_Weird_Voices_Path" ID="{446920EC-CBFE-4E01-A754-00F8AF7C5500}">
+											<PointList>
+												<Point>
+													<XPos>-93.60825</XPos>
+													<YPos>82.11991</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Ambience_Weird_Voices_Path_01" ID="{91B332AC-0E4A-4971-BD13-382FFBC2047C}">
+											<PointList>
+												<Point>
+													<XPos>100</XPos>
+													<YPos>74.41113</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Ambience_Weird_Voices_Path_02" ID="{8CA5ECC8-C087-48C9-BBC3-1B6E27696EBB}">
+											<PointList>
+												<Point>
+													<XPos>-86.80412</XPos>
+													<YPos>-63.49037</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Ambience_Weird_Voices_Path_03" ID="{A5328E23-9EA5-41A9-9906-8419E270B3EC}">
+											<PointList>
+												<Point>
+													<XPos>85.15464</XPos>
+													<YPos>-68.62956</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Ambience_Weird_Voices_Path_04" ID="{3B7D5128-B09E-46FE-B2B0-C3F275D05530}">
+											<PointList>
+												<Point>
+													<XPos>78.14433</XPos>
+													<YPos>35.43896</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Ambience_Weird_Voices_Path_05" ID="{3242E228-BBEE-4264-AEC3-BBA39FC325AC}">
+											<PointList>
+												<Point>
+													<XPos>-1.4433</XPos>
+													<YPos>90.68521</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
 												</Point>

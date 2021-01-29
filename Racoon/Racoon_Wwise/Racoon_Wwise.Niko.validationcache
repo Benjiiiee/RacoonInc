@@ -7,14 +7,14 @@
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1611868356" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\SoundBanks\Default Work Unit.wwu" DateLow="1611864074" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.wproj" DateLow="1611806250" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.Niko.wsettings" DateLow="1611860088" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Racoon_Wwise.Niko.wsettings" DateLow="1611872193" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Queries\Factory Queries.wwu" DateLow="1600539762" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Queries\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Presets\Factory Spatial Audio.wwu" DateLow="1600539762" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Presets\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Modulators\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611864074" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611872191" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Game Parameters\Generic.wwu" DateLow="1611865166" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Game Parameters\Default Work Unit.wwu" DateLow="1611860088" DateHigh="0"/>
@@ -28,7 +28,7 @@
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Audio Devices\Default Work Unit.wwu" DateLow="1611805943" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Attenuations\Default Work Unit.wwu" DateLow="1611865638" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611864074" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Ambiences_Emitters.wwu" DateLow="1611865638" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Ambiences_Background.wwu" DateLow="1611868436" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1611872191" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Ambiences_Emitters.wwu" DateLow="1611872191" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\Actor-Mixer Hierarchy\Ambiences_Background.wwu" DateLow="1611890479" DateHigh="0"/>
 </ValidationCache>

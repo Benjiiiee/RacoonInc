@@ -4,6 +4,13 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3352913298	Aux_RVB_Cavern			\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern	
+
+Effect plug-ins	ID	Name	Type				Notes
+	259871918	Echoes_Linear (Custom)	Wwise Delay			
+	375632289	Hall_Medium_Dark (Custom)	Wwise RoomVerb			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			
