@@ -17,6 +17,32 @@ namespace AK
         static const AkUniqueID PLAY_AMBIENCE_WATER_WATERFALL = 2972937805U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace MATERIAL_TYPE
+        {
+            static const AkUniqueID GROUP = 1097155889U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace MATERIAL_TYPE
+
+        namespace MOVEMENT_TYPE
+        {
+            static const AkUniqueID GROUP = 1088160865U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID JUMP = 3833651337U;
+                static const AkUniqueID LAND = 674522502U;
+                static const AkUniqueID RUN = 712161704U;
+            } // namespace SWITCH
+        } // namespace MOVEMENT_TYPE
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID DISTANCE_TO_PLAYER = 3917897988U;
@@ -32,7 +58,9 @@ namespace AK
     {
         static const AkUniqueID AMBIENCES = 1017660616U;
         static const AkUniqueID AUX = 983310469U;
+        static const AkUniqueID CHARACTERS = 1557941045U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
 

@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Movement_Type" ID="{F4D37C22-1F64-46F8-8CAB-422EFD6D44BB}">
+					<ChildrenList>
+						<Switch Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
+						<Switch Name="Land" ID="{201098D6-22A9-4773-8CFB-A7CA47909E07}"/>
+						<Switch Name="Run" ID="{6E266B90-6257-4191-AE32-D792656570D0}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Material_Type" ID="{88C99A5A-5F74-4D93-B676-25620F3724F3}">
+					<ChildrenList>
+						<Switch Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

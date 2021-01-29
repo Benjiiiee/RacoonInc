@@ -10,8 +10,16 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Foley" ID="{0D8E5537-0AC2-4590-8787-87C12218B95D}" WorkUnitID="{8F16817C-14D5-4008-A829-CEAA329F59B8}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Footsteps" ID="{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}" WorkUnitID="{8F16817C-14D5-4008-A829-CEAA329F59B8}"/>
+							<Position X="1" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -21,7 +29,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
+						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

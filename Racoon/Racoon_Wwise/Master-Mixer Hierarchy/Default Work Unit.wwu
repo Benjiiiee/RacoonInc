@@ -19,7 +19,6 @@
 									</PropertyList>
 								</Bus>
 								<Bus Name="AUX" ID="{723047C4-379E-4CE0-A345-05FC25F0D9D5}">
-									<ReferenceList/>
 									<ChildrenList>
 										<AuxBus Name="Aux_RVB_Cavern" ID="{DDE8E791-3263-46F5-87EA-E50A66970701}">
 											<ReferenceList>
@@ -55,6 +54,15 @@
 												</Reference>
 											</ReferenceList>
 										</AuxBus>
+									</ChildrenList>
+								</Bus>
+								<Bus Name="Characters" ID="{BE464DBB-BC44-4A00-B856-DEDFDB1B188B}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="2"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Player" ID="{194625BD-8413-4FE5-B0A2-16E25C6512C7}"/>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>

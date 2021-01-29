@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585897346944081817
+    m_lastTime: -8585897094799258582
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -73,6 +73,19 @@ MonoBehaviour:
       - ElementName: Aux_RVB_Cavern
         ObjectType: 1
       Path: Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern
+    - name: Characters
+      guid: bb4d46be44bc004ab856dedfdb1b188b
+      id: 1557941045
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -82,6 +95,21 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: Player
+      guid: bd2546191384e54fb0a216e25c6512c7
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player
     - name: World
       guid: bb6fed9d10a5f644aa12ea8912a64967
       id: 2609808943
@@ -152,6 +180,45 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Characters.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Characters
+      ObjectType: 12
+    ParentPath: Default Work Unit\Characters
+    guid: 7c81168fd5140840a829ceaa329f59b8
+    GuidInternal: 
+    m_lastTime: -8585897094798999267
+    List:
+    - name: Play_Foley
+      guid: 37558e0dc20a9045878787c12218b95d
+      id: 3113720603
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Play_Foley
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Play_Foley
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Footsteps
+      guid: a7af376135a1e248a67dae7936f7d7cf
+      id: 3854155799
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Play_Footsteps
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Play_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -159,8 +226,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585897428104958559
-    List: []
+    m_lastTime: -8585897094799138894
+    List:
+    - name: Play_Footsteps_Surface
+      guid: 3004b20f95720042a41e876631a04608
+      id: 2872098335
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Footsteps_Surface
+        ObjectType: 3
+      Path: Default Work Unit\Play_Footsteps_Surface
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -207,8 +286,58 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 474c0ac05d40db4ba1cd5b5ffdb4f08f
     GuidInternal: 
-    m_lastTime: -8585897467968347198
-    List: []
+    m_lastTime: -8585897094799108696
+    List:
+    - name: Material_Type
+      guid: 5a9ac988745f934db67625620f3724f3
+      id: 1097155889
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Material_Type
+        ObjectType: 11
+      Path: Default Work Unit\Material_Type
+      values:
+      - name: Stone
+        guid: 5c3fd829bf2ed5488fcd8cbcb48e2205
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Stone
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Movement_Type
+      guid: 227cd3f4641ff8468cab422efd6d44bb
+      id: 1088160865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Movement_Type
+        ObjectType: 11
+      Path: Default Work Unit\Movement_Type
+      values:
+      - name: Jump
+        guid: 9c09a6ff35f4c446bf5b637234df2ad6
+        id: 3833651337
+        PathAndIcons:
+        - ElementName: Jump
+          ObjectType: 10
+      - name: Land
+        guid: d6981020a92273478cfba7ca47909e07
+        id: 674522502
+        PathAndIcons:
+        - ElementName: Land
+          ObjectType: 10
+      - name: Run
+        guid: 906b266e57629141ae32d792656570d0
+        id: 712161704
+        PathAndIcons:
+        - ElementName: Run
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

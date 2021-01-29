@@ -4,6 +4,18 @@
 		<WorkUnit Name="Default Work Unit" ID="{754439F7-B605-4314-9861-5F1AB939A45C}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Ambiences" ID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" PersistMode="Reference"/>
+				<WorkUnit Name="Characters" ID="{8F16817C-14D5-4008-A829-CEAA329F59B8}" PersistMode="Reference"/>
+				<Event Name="Play_Footsteps_Surface" ID="{0FB20430-7295-4200-A41E-876631A04608}">
+					<ChildrenList>
+						<Action Name="" ID="{08F9C77E-583A-4C7B-9F07-8EEC9B1A7C9C}" ShortID="779889479">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Surface" ID="{E61794AC-14B5-4195-9BEF-FEA02CE96A7A}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
