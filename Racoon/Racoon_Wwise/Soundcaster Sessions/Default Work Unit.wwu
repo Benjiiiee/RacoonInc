@@ -22,6 +22,10 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Pickup_Item" ID="{DDCEFD36-E667-464C-85CD-3E17D07B7B9C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -37,6 +41,10 @@
 							<ObjectRef Name="Play_Impact_Flare" ID="{7FDFB297-2133-4C1A-94EB-0689F639A11C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
 							<Position X="1" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Interact" ID="{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="1" Y="4"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -47,7 +55,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Land" ID="{201098D6-22A9-4773-8CFB-A7CA47909E07}"/>
-						<CurrentSwitchRef Name="Water" ID="{CFD30A4D-6E66-4282-9D69-E3C0EF60CF9C}"/>
+						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

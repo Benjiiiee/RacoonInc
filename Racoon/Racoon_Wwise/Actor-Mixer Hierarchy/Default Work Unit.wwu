@@ -21,6 +21,13 @@
 								<Property Name="Color" Type="int16" Value="9"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{835511CA-98F8-4DA1-98D7-92DA86E2E76A}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4033,6 +4040,15 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Actions" ID="{5B46E9EA-9F49-4910-A7F7-E8B0E9ACAB74}" ShortID="579394432">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CD54BA7C-7727-4416-A8AE-14B020407985}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -5049,6 +5065,11 @@
 																<Sound Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" ShortID="330469531">
 																	<PropertyList>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-130</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
@@ -5565,6 +5586,100 @@
 																</RandomSequenceContainer>
 															</ChildrenList>
 														</BlendContainer>
+													</ChildrenList>
+												</ActorMixer>
+												<ActorMixer Name="Items" ID="{C32E338B-0987-45EF-BBE5-6102FD567A56}" ShortID="55756577">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="11"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{DF172130-A7AF-4D8C-99F6-E677EEA5CF5B}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Items" ID="{709C7037-847D-4622-9258-19BB7CFED738}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Pickup_Item" ID="{4FC48BD1-211F-4D38-B466-0BE99BED6BDE}" ShortID="312296599">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{297C779C-80DF-49F6-AB59-C60247E8FFCB}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Pickup_Item_01" ID="{67EAF4D2-948E-45B4-AE97-9CA7BC6A9895}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.116976598173516"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Pickup_Item_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="537572273"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Pickup_Item_01" ID="{67EAF4D2-948E-45B4-AE97-9CA7BC6A9895}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Interact" ID="{F89C0227-4A24-4DBF-A5E0-A701139A0012}" ShortID="794315456">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Interact" ID="{4EA8F574-DDF8-40E8-AB96-7D10C69CE3D5}">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Interact.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="981763340"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Interact" ID="{4EA8F574-DDF8-40E8-AB96-7D10C69CE3D5}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
 												</ActorMixer>
 											</ChildrenList>
