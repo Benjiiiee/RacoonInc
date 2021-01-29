@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class CharacterController : KinematicObject
@@ -19,6 +20,11 @@ public class CharacterController : KinematicObject
     SpriteRenderer spriteRenderer;
     public float jumpModifier = 1.5f;
     public float jumpDeceleration = 0.5f;
+    //RaycastHit2D[] results;
+    public RaycastHit2D hit;
+
+    public ColliderCheck colliderRight;
+    public ColliderCheck colliderLeft;
 
     public Bounds Bounds => collider2d.bounds;
 
@@ -26,6 +32,8 @@ public class CharacterController : KinematicObject
     {
         collider2d = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        colliderRight = colliderRight.GetComponent<ColliderCheck>();
+        colliderLeft = colliderLeft.GetComponent<ColliderCheck>();
     }
 
     protected override void Update()
@@ -83,6 +91,23 @@ public class CharacterController : KinematicObject
 
     protected override void ComputeVelocity()
     {
+        if (move.x > 0.01f)
+            spriteRenderer.flipX = false;
+        else if (move.x < -0.01f)
+            spriteRenderer.flipX = true;
+
+        if (spriteRenderer.flipX)
+        {
+            if (colliderLeft.colliding)
+            {
+                move.x = 0f;
+            }
+        }
+        else if (colliderRight.colliding)
+        {
+            move.x = 0f;
+        }
+
         if (jump && IsGrounded)
         {
             velocity.y = jumpTakeOffSpeed * jumpModifier;
@@ -97,10 +122,19 @@ public class CharacterController : KinematicObject
             }
         }
 
-        if (move.x > 0.01f)
-            spriteRenderer.flipX = false;
-        else if (move.x < -0.01f)
-            spriteRenderer.flipX = true;
+        //hit = Physics2D.Raycast(transform.position, transform.right, maxSpeed, 9);
+        //if (hit)
+        //{
+        //    //if (!hit.collider.isTrigger)
+        //    //{
+        //    //    move.x = 0f;
+
+        //    //}
+        //    if(!hit.collider.isTrigger)
+        //     move.x = 0f;
+        //}
+
+
 
         if (IsGrounded)
         {
