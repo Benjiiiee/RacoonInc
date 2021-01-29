@@ -90,7 +90,21 @@ public class CharacterController : KinematicObject
     }
 
     protected override void ComputeVelocity()
-    {
+    { 
+        if (jump && IsGrounded)
+        {
+            velocity.y = jumpTakeOffSpeed * jumpModifier;
+            jump = false;
+        }
+        else if (stopJump)
+        {
+            stopJump = false;
+            if (velocity.y > 0)
+            {
+                velocity.y = velocity.y * jumpDeceleration;
+            }
+        }
+
         if (move.x > 0.01f)
             spriteRenderer.flipX = false;
         else if (move.x < -0.01f)
@@ -107,34 +121,6 @@ public class CharacterController : KinematicObject
         {
             move.x = 0f;
         }
-
-        if (jump && IsGrounded)
-        {
-            velocity.y = jumpTakeOffSpeed * jumpModifier;
-            jump = false;
-        }
-        else if (stopJump)
-        {
-            stopJump = false;
-            if (velocity.y > 0)
-            {
-                velocity.y = velocity.y * jumpDeceleration;
-            }
-        }
-
-        //hit = Physics2D.Raycast(transform.position, transform.right, maxSpeed, 9);
-        //if (hit)
-        //{
-        //    //if (!hit.collider.isTrigger)
-        //    //{
-        //    //    move.x = 0f;
-
-        //    //}
-        //    if(!hit.collider.isTrigger)
-        //     move.x = 0f;
-        //}
-
-
 
         if (IsGrounded)
         {
