@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{1B7AE200-E287-4069-8F55-0FB733CD866F}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="World" ID="{C551D083-A811-4673-9083-A2DDB7B54825}" ShortID="544848452">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -76,6 +79,8 @@
 											<ChildrenList>
 												<SwitchContainer Name="Foley" ID="{FD1E0921-485C-4D9D-AA1A-21ABBDB86EC4}" ShortID="776803445">
 													<PropertyList>
+														<Property Name="Color" Type="int16" Value="10"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -1703,6 +1708,8 @@
 												</SwitchContainer>
 												<SwitchContainer Name="Footsteps_Surface" ID="{E61794AC-14B5-4195-9BEF-FEA02CE96A7A}" ShortID="597511892">
 													<PropertyList>
+														<Property Name="Color" Type="int16" Value="4"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
@@ -4023,6 +4030,632 @@
 														</GroupingList>
 													</GroupingInfo>
 												</SwitchContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Actions" ID="{5B46E9EA-9F49-4910-A7F7-E8B0E9ACAB74}" ShortID="579394432">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<ActorMixer Name="Flare" ID="{A3C3610A-4677-4589-ADBB-C0FFDD765564}" ShortID="470419156">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Throw_Flare" ID="{DBCBEBED-7767-4511-BC9A-1669A7C04C7A}" ShortID="851910558">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+														</RandomSequenceContainer>
+														<SwitchContainer Name="Impact_Flare" ID="{E8F613B3-FEEB-48DB-A015-50D6C3B2A5DE}" ShortID="1040209673">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="Material_Type" ID="{88C99A5A-5F74-4D93-B676-25620F3724F3}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Stone" ID="{6D6AD16D-B4BE-4462-A2E5-C0745C02D99D}" ShortID="539382669">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Water" ID="{33352516-E546-46C8-9420-81364C9CB926}" ShortID="414692879">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="Water" ID="{33352516-E546-46C8-9420-81364C9CB926}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Stone" ID="{6D6AD16D-B4BE-4462-A2E5-C0745C02D99D}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="Water" ID="{CFD30A4D-6E66-4282-9D69-E3C0EF60CF9C}"/>
+																		<ItemList>
+																			<ItemRef Name="Water" ID="{33352516-E546-46C8-9420-81364C9CB926}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
+																		<ItemList>
+																			<ItemRef Name="Stone" ID="{6D6AD16D-B4BE-4462-A2E5-C0745C02D99D}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+														<RandomSequenceContainer Name="Turn_On_Burn_Flare" ID="{2AE7A77D-B0A0-4A48-BEF0-9A1C0AE89697}" ShortID="475640045">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<BlendContainer Name="Turn_On_Flare" ID="{AC8B99F4-7C4E-490E-981E-4E222087D1A4}" ShortID="70921120">
+																	<PropertyList>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{C9E4E0CB-8880-4C28-8A44-F3DB9C50D729}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<RandomSequenceContainer Name="Turn_On_Flare_Scratch" ID="{3A73CA32-789F-4FB1-8EE5-06BF29983BC1}" ShortID="1053710092">
+																			<PropertyList>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{949CECCE-8C4A-4213-9D36-EE251D3FB3F8}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="150"/>
+																									<Property Name="Min" Type="Real64" Value="-150"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{1657A7E4-3FA8-4A96-BB44-979B5139C993}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_01" ID="{1FE40CD8-9922-44AA-8807-163AAED36CA3}" ShortID="128911298">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_01" ID="{339ABDE3-EBD8-4939-A12D-43E413E44B71}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="288594343"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_01" ID="{339ABDE3-EBD8-4939-A12D-43E413E44B71}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_02" ID="{FD7C8690-7B66-4F52-B815-2D7DE9E07534}" ShortID="674829610">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_02" ID="{706F9394-2217-4FB9-BEB2-78BD1DC90F2B}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="14017771"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_02" ID="{706F9394-2217-4FB9-BEB2-78BD1DC90F2B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_03" ID="{77B6AAA7-BFC2-46AB-BD76-9DD699BF45FB}" ShortID="957657726">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_03" ID="{7B1DF0DE-6AFA-4C3D-B3A3-E35ACF83308B}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="676711385"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_03" ID="{7B1DF0DE-6AFA-4C3D-B3A3-E35ACF83308B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_04" ID="{BE2DC88B-E140-4AE1-9972-724F028BE7C7}" ShortID="525323867">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_04" ID="{054F47CA-25EE-44D2-A2B3-5D0D0877A316}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="827411416"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_04" ID="{054F47CA-25EE-44D2-A2B3-5D0D0877A316}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_05" ID="{39371BC1-ACD5-4A73-8D13-F931BC8CC2AD}" ShortID="420662943">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_05" ID="{070B47F4-073C-4908-8C8D-7A2056FDD578}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_05.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="563138402"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_05" ID="{070B47F4-073C-4908-8C8D-7A2056FDD578}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_06" ID="{8EF4CD6E-A8B3-48DE-9E1B-9D0E0AAE51BE}" ShortID="464570899">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_06" ID="{C0CD6BA3-7DAD-4565-ABFC-2D5163BD32DC}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_06.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="179045809"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_06" ID="{C0CD6BA3-7DAD-4565-ABFC-2D5163BD32DC}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_07" ID="{7EA73D62-533C-4B2A-A7B3-0B3584872ECE}" ShortID="204368606">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_07" ID="{183ADE63-A776-4BD3-8FE1-9522B2D35915}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_07.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="98305374"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_07" ID="{183ADE63-A776-4BD3-8FE1-9522B2D35915}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Scratch_08" ID="{49AB3E9D-E90E-4809-B288-0CB09D9709D2}" ShortID="145252123">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Scratch_08" ID="{D06B8F12-7A2B-430C-88F5-B8AA44B02573}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Scratch_08.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="910009931"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Scratch_08" ID="{D06B8F12-7A2B-430C-88F5-B8AA44B02573}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																		<RandomSequenceContainer Name="Turn_On_Flare_Ignition" ID="{7AE48604-F71C-492E-AA08-D0F50CBE5DBF}" ShortID="563859127">
+																			<PropertyList>
+																				<Property Name="InitialDelay" Type="Real64">
+																					<ValueList>
+																						<Value>0.05</Value>
+																					</ValueList>
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{8F2B221D-D207-4BF9-9173-44ECCA1DA62E}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="0.05"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																				<Property Name="Pitch" Type="int32">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{DAD10AE2-65B2-449E-826B-7FD9CDF9C1EA}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Max" Type="Real64" Value="150"/>
+																									<Property Name="Min" Type="Real64" Value="-150"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{AE9D16BE-2130-4E72-BC1F-AFC6898F78AC}">
+																								<PropertyList>
+																									<Property Name="Enabled" Type="bool" Value="True"/>
+																									<Property Name="Min" Type="Real64" Value="-2"/>
+																								</PropertyList>
+																							</Modifier>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_01" ID="{1EDE52DE-123F-4109-B491-10C5ED6B1959}" ShortID="870009703">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_01" ID="{33DB6C4F-0AF3-4211-B69E-CA65248FD16D}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_01.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="550181428"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_01" ID="{33DB6C4F-0AF3-4211-B69E-CA65248FD16D}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_02" ID="{3468EB83-E245-4B58-9C32-96D7173DBCEE}" ShortID="494742070">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_02" ID="{180CF23C-9EDF-43F3-8381-CFFC9DEEC726}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_02.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="927405510"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_02" ID="{180CF23C-9EDF-43F3-8381-CFFC9DEEC726}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_03" ID="{C8A6C419-A272-4E8D-BAD4-B43116CDB7B5}" ShortID="821402671">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_03" ID="{66246FC3-4951-4910-AAB1-BAC0010E3060}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_03.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="978942152"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_03" ID="{66246FC3-4951-4910-AAB1-BAC0010E3060}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_04" ID="{74A96A70-CA19-49D3-A930-14CB11383FEF}" ShortID="21757208">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_04" ID="{D0BD504F-D4D1-4BF3-9670-31714F21C4B6}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_04.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="539650048"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_04" ID="{D0BD504F-D4D1-4BF3-9670-31714F21C4B6}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_05" ID="{7A2368E0-A3DA-4AB5-BF28-80E063132791}" ShortID="986309845">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_05" ID="{E46E1EFF-254C-46FB-8B2A-08C40BCE13B4}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_05.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="413060821"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_05" ID="{E46E1EFF-254C-46FB-8B2A-08C40BCE13B4}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_06" ID="{A1E613CA-20D7-46F8-9CEA-73463876B14C}" ShortID="152025863">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_06" ID="{218A15C4-2CF3-4884-AEA6-1BCBF7C23380}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_06.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="141378389"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_06" ID="{218A15C4-2CF3-4884-AEA6-1BCBF7C23380}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_07" ID="{5F893791-4155-4782-9F49-422CC2EE1394}" ShortID="6577949">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_07" ID="{E834E15A-2756-4594-BE53-26465DC14C98}">
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_07.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="730123396"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_07" ID="{E834E15A-2756-4594-BE53-26465DC14C98}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																				<Sound Name="SFX_TurnOn_Flare_Ignition_08" ID="{A77436C8-847A-4AB6-91D8-39FCA0FF5AB7}" ShortID="256956391">
+																					<ReferenceList>
+																						<Reference Name="Conversion">
+																							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																						</Reference>
+																						<Reference Name="OutputBus">
+																							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<ChildrenList>
+																						<AudioFileSource Name="SFX_TurnOn_Flare_Ignition_08" ID="{6DA39EF8-E447-4502-83AA-0B32171A2D5B}">
+																							<PropertyList>
+																								<Property Name="FadeInDuration" Type="Real64" Value="0.156221318493151"/>
+																								<Property Name="FadeOutDuration" Type="Real64" Value="0.0502466229071538"/>
+																								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																								<Property Name="TrimEnd" Type="Real64" Value="0.483281154870624"/>
+																							</PropertyList>
+																							<Language>SFX</Language>
+																							<AudioFile>SFX_TurnOn_Flare_Ignition_08.wav</AudioFile>
+																							<MediaIDList>
+																								<MediaID ID="868991751"/>
+																							</MediaIDList>
+																						</AudioFileSource>
+																					</ChildrenList>
+																					<ActiveSourceList>
+																						<ActiveSource Name="SFX_TurnOn_Flare_Ignition_08" ID="{6DA39EF8-E447-4502-83AA-0B32171A2D5B}" Platform="Linked"/>
+																					</ActiveSourceList>
+																				</Sound>
+																			</ChildrenList>
+																		</RandomSequenceContainer>
+																	</ChildrenList>
+																</BlendContainer>
+																<Sound Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" ShortID="330469531">
+																	<PropertyList>
+																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="SFX_Burning_Flare_LP" ID="{F563A4B3-896A-40AF-AAD3-A6DEE2AAD181}">
+																			<Language>SFX</Language>
+																			<AudioFile>SFX_Burning_Flare_LP.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="726851252"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="SFX_Burning_Flare_LP" ID="{F563A4B3-896A-40AF-AAD3-A6DEE2AAD181}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+															<Playlist>
+																<ItemRef Name="Turn_On_Flare" ID="{AC8B99F4-7C4E-490E-981E-4E222087D1A4}"/>
+																<ItemRef Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}"/>
+															</Playlist>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</ActorMixer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

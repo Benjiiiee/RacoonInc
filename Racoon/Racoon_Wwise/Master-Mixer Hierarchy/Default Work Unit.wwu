@@ -64,8 +64,24 @@
 									<ChildrenList>
 										<Bus Name="Player" ID="{194625BD-8413-4FE5-B0A2-16E25C6512C7}">
 											<ChildrenList>
-												<Bus Name="Foley" ID="{EB18D721-9822-4A8A-89FF-F20CB572B503}"/>
-												<Bus Name="Footsteps" ID="{B14D8592-46E2-43CC-8F4F-E9CE036FC431}"/>
+												<Bus Name="Foley" ID="{EB18D721-9822-4A8A-89FF-F20CB572B503}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="10"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="Footsteps" ID="{B14D8592-46E2-43CC-8F4F-E9CE036FC431}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="4"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
+												<Bus Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="19"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
 											</ChildrenList>
 										</Bus>
 									</ChildrenList>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" SchemaVersion="97" RootDocumentID="{754439F7-B605-4314-9861-5F1AB939A45C}">
+	<Events>
+		<WorkUnit Name="Actions" ID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" OwnerID="{8F16817C-14D5-4008-A829-CEAA329F59B8}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Turn_On_Burn_Flare" ID="{CE8B707A-3BFB-4478-9D8B-49A24FA71BC3}">
+					<ChildrenList>
+						<Action Name="" ID="{3689F428-281D-4563-AB32-B5C42992F54D}" ShortID="281322199">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Turn_On_Burn_Flare" ID="{2AE7A77D-B0A0-4A48-BEF0-9A1C0AE89697}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}">
+					<ChildrenList>
+						<Action Name="" ID="{C984F073-845F-445F-95FF-ACD9C5E083BC}" ShortID="759892742">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

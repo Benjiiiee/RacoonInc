@@ -10,16 +10,24 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Foley" ID="{0D8E5537-0AC2-4590-8787-87C12218B95D}" WorkUnitID="{8F16817C-14D5-4008-A829-CEAA329F59B8}"/>
+							<ObjectRef Name="Play_Foley" ID="{0D8E5537-0AC2-4590-8787-87C12218B95D}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}"/>
 							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Turn_On_Burn_Flare" ID="{CE8B707A-3BFB-4478-9D8B-49A24FA71BC3}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Footsteps" ID="{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}" WorkUnitID="{8F16817C-14D5-4008-A829-CEAA329F59B8}"/>
+							<ObjectRef Name="Play_Footsteps" ID="{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
