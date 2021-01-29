@@ -48,14 +48,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
-  gravityModifier: 1
+  gravityModifier: 3
   velocity: {x: 0, y: 0}
-  maxSpeed: 7
+  maxSpeed: 5
   jumpTakeOffSpeed: 7
   jumpState: 0
   collider2d: {fileID: 0}
   controlEnabled: 1
-  jumpModifier: 1.5
+  jumpModifier: 0.8
   jumpDeceleration: 0.5
 --- !u!212 &4792972394050339236
 SpriteRenderer:
