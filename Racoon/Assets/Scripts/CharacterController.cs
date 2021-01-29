@@ -48,9 +48,7 @@ public class CharacterController : KinematicObject
         base.Update();
     }
 
-
-
-        void UpdateJumpState()
+    void UpdateJumpState()
     {
         jump = false;
         switch (jumpState)
