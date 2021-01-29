@@ -124,9 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character: {fileID: 4792972394050339238, guid: 7c54679c07ba63d45a5f1417dc1835df,
     type: 3}
-  light1: {fileID: 0}
-  light2: {fileID: 0}
-  light3: {fileID: 0}
+  light1: {fileID: 8031531498409241506}
+  light2: {fileID: 5110398987375429172}
+  light3: {fileID: 7808254314763522216}
 --- !u!212 &8350322030364809035
 SpriteRenderer:
   m_ObjectHideFlags: 0
