@@ -14,6 +14,7 @@ public class Flare : MonoBehaviour
     public Light2D light3;
     private bool switchingOff = false;
     float timeLeft = 5.0f;
+    float timeLeft2 = 6.0f;
 
     void Start()
     {
@@ -36,14 +37,13 @@ public class Flare : MonoBehaviour
             timeLeft -= Time.deltaTime;
             if (timeLeft < 0)
             {
-                light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.001f;
-                light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.001f;
-                light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.001f;
-
-                light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.001f;
-                light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.001f;
-                light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.001f;
-            }
+                eteint();
+                timeLeft2 -= Time.deltaTime;
+                if (timeLeft2 < 0)
+                {
+                    Destroy(this.gameObject);
+                }
+                }
         }
     }
 
@@ -51,5 +51,16 @@ public class Flare : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         switchingOff = true;
+    }
+
+    private void eteint() 
+    {
+        light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.001f;
+        light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.001f;
+        light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.001f;
+
+        light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.001f;
+        light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.001f;
+        light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.001f;
     }
 }
