@@ -510,6 +510,7 @@
 						<Sound Name="Ambience_Background_Wind_V2" ID="{E7A9238F-19BE-427E-9D09-E9CA34D5AF6C}" ShortID="951559252">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -590,7 +591,6 @@
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>

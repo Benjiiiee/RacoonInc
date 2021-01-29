@@ -13,6 +13,7 @@
 				<SwitchGroup Name="Material_Type" ID="{88C99A5A-5F74-4D93-B676-25620F3724F3}">
 					<ChildrenList>
 						<Switch Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
+						<Switch Name="Water" ID="{CFD30A4D-6E66-4282-9D69-E3C0EF60CF9C}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
