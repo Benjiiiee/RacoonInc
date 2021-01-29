@@ -7,6 +7,7 @@ public class CharacterController : KinematicObject
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
+    public float maxJumpSpeed = 7;
 
     public JumpState jumpState = JumpState.Grounded;
     private bool stopJump;
@@ -101,7 +102,15 @@ public class CharacterController : KinematicObject
         else if (move.x < -0.01f)
             spriteRenderer.flipX = true;
 
-        targetVelocity = move * maxSpeed;
+        if (IsGrounded)
+        {
+            targetVelocity = move * maxSpeed;
+        }
+        else
+        {
+            targetVelocity = move * maxJumpSpeed;
+        }
+        
     }
 
     public enum JumpState
