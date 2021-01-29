@@ -5,9 +5,16 @@
 			<ChildrenList>
 				<BlendContainer Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" ShortID="866960995">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6FDBE27B-947F-4C00-8C52-C95D5B715993}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

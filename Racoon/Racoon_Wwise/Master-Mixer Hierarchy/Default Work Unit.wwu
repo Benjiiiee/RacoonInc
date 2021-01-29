@@ -82,6 +82,12 @@
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 													</PropertyList>
 												</Bus>
+												<Bus Name="Items" ID="{709C7037-847D-4622-9258-19BB7CFED738}">
+													<PropertyList>
+														<Property Name="Color" Type="int16" Value="12"/>
+														<Property Name="OverrideColor" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
 											</ChildrenList>
 										</Bus>
 									</ChildrenList>
