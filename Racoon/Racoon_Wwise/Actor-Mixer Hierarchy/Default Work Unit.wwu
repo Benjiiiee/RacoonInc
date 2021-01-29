@@ -5065,6 +5065,11 @@
 																<Sound Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" ShortID="330469531">
 																	<PropertyList>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ValueList>
+																				<Value>-130</Value>
+																			</ValueList>
+																		</Property>
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>

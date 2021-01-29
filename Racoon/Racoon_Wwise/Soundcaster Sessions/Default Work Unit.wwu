@@ -41,6 +41,10 @@
 							<ObjectRef Name="Play_Impact_Flare" ID="{7FDFB297-2133-4C1A-94EB-0689F639A11C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
 							<Position X="1" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_Interact" ID="{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="1" Y="4"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
