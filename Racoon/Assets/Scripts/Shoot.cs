@@ -6,45 +6,65 @@ public class Shoot : MonoBehaviour
 {
 
     public GameObject flare;
-    public GameObject character;
-    public float launchForce;
+    //public GameObject character;
+    public float launchForce, launchMin = 0f, launchMax = 15f;
     public Transform shotPoint;
 
     public GameObject point;
     GameObject[] points;
     public int numberOfPoints;
     public float spaceBetweenPoints;
-    Vector2 direction;
+    public Vector2 firstPoint, secondPoint, direction;
+    private CharacterController character;
 
     void Start()
     {
+        character = GetComponentInParent<CharacterController>();
         SpawnPoints();
-
     }
 
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            character.controlEnabled = false;
+            firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
         if (Input.GetMouseButton(0))
         {
-
-            Vector2 handPosition = transform.position;
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            direction = mousePosition - handPosition;
-            transform.right = direction;
-            for (int i = 0; i < numberOfPoints; i++)
-            {
-                points[i].transform.position = Pointposition(i * spaceBetweenPoints);
-            }
+            secondPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            direction = -(secondPoint - firstPoint);
+            launchForce = Mathf.Clamp(Vector2.Distance(firstPoint, secondPoint), launchMin, launchMax);
+            Aim();
+            
         }
 
         if (Input.GetMouseButtonUp(0))
         {
             Shootit();
             ResetPoints();
-
+            character.controlEnabled = true;
         }
 
+    }
+
+    void Aim()
+    {
+        //Vector2 handPosition = transform.position;
+        //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //direction = mousePosition - handPosition;
+        transform.right = direction;
+        for (int i = 0; i < numberOfPoints; i++)
+        {
+            points[i].transform.position = Pointposition(i * spaceBetweenPoints);
+        }
+    }
+
+    void GetDirectionAndForce()
+    {
+        
     }
 
     void Shootit()
