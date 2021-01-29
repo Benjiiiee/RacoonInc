@@ -18,7 +18,7 @@ public class Flare : MonoBehaviour
 
     void Start()
     {
-
+		//test
     }
 
     private void Awake()
