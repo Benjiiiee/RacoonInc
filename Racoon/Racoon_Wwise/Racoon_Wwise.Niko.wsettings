@@ -5,12 +5,9 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\nicol\Desktop\Racoon\assets\"/>
 				<Property Name="Event Action List\{0C7AC49E-8AA6-41C9-82F2-4AEE4329D4BD}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{0D8E5537-0AC2-4590-8787-87C12218B95D}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{0FB20430-7295-4200-A41E-876631A04608}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51302DB1-6C86-4A64-8F75-1BF002E6B327}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{536870A7-E39C-4A45-B2ED-9DFC8361D407}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}\x64_Expand States" Type="string" Value=""/>
-				<Property Name="Event Action List\{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{66836C0C-4074-4360-877C-A2D146B128CD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{73642AF3-86DA-4F13-B10D-30D99DD7CBE3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7CB99A6B-C3DB-4D33-B824-DB9E155098CF}\x64_Expand States" Type="string" Value=""/>
