@@ -34,6 +34,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Throw_Flare" ID="{FF5F6702-2C7A-4601-AEA4-21A97FBB011B}">
+					<ChildrenList>
+						<Action Name="" ID="{C3DD527F-7D30-4B8E-BD27-1C0FCD7A4D8A}" ShortID="1058572929">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Throw_Flare" ID="{EA571C8D-92F7-46F1-BD52-8BED4A4DABD6}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Impact_Flare" ID="{7FDFB297-2133-4C1A-94EB-0689F639A11C}">
+					<ChildrenList>
+						<Action Name="" ID="{9EADB7B4-2356-4F58-BBD7-56EB19988729}" ShortID="19435746">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact_Flare" ID="{E8F613B3-FEEB-48DB-A015-50D6C3B2A5DE}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

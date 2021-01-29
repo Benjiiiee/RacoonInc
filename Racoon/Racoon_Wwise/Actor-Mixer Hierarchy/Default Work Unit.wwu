@@ -4057,17 +4057,23 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<RandomSequenceContainer Name="Throw_Flare" ID="{DBCBEBED-7767-4511-BC9A-1669A7C04C7A}" ShortID="851910558">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
-																</Reference>
-															</ReferenceList>
-														</RandomSequenceContainer>
 														<SwitchContainer Name="Impact_Flare" ID="{E8F613B3-FEEB-48DB-A015-50D6C3B2A5DE}" ShortID="1040209673">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{657D73CA-B5AA-42CA-993F-9126A2289D61}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{A1D89BF1-8DAE-463A-8B4E-E9DB396B5F26}"/>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -4081,6 +4087,32 @@
 															</ReferenceList>
 															<ChildrenList>
 																<RandomSequenceContainer Name="Stone" ID="{6D6AD16D-B4BE-4462-A2E5-C0745C02D99D}" ShortID="539382669">
+																	<PropertyList>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{66FFDD2B-9CAF-4ED9-A015-69FD1EE98FB6}"/>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{8A7831AF-ED49-40E4-BDC4-BF8CF3ABB8DA}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-2"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -4089,8 +4121,239 @@
 																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 																		</Reference>
 																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_Impact_Stone_Flare_01" ID="{B5FB0516-1D7C-48B4-8B08-EDC03F339A61}" ShortID="1024047505">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_01" ID="{1093889A-C34E-4CAE-9778-61BF3CCDE06C}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0841541095890411"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0841541095890411"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="92130021"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_01" ID="{1093889A-C34E-4CAE-9778-61BF3CCDE06C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_02" ID="{04058AA1-B1EF-44B6-93EB-CA8D596C166F}" ShortID="692772297">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_02" ID="{6B0F748E-562B-4A24-8BF3-8F22843C682F}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.110718226788432"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.110718226788432"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="8579233"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_02" ID="{6B0F748E-562B-4A24-8BF3-8F22843C682F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_03" ID="{89FD4F54-BCAA-41BC-BE0A-990C53CA1C71}" ShortID="876448484">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_03" ID="{348F0F6D-0366-472D-B252-C4E2725A6923}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0162947108066971"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0162947108066971"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="395765705"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_03" ID="{348F0F6D-0366-472D-B252-C4E2725A6923}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_04" ID="{A17A16AB-68BB-4B0F-864C-625115E2BBF7}" ShortID="624275316">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_04" ID="{719F317B-70F4-4E1C-A646-D73BDA404F57}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0422815829528158"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0422815829528158"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="86276617"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_04" ID="{719F317B-70F4-4E1C-A646-D73BDA404F57}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_05" ID="{50BCAD3E-DE22-400F-B49E-E030AB04AF56}" ShortID="143870127">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_05" ID="{FA74C06B-8B9C-4E6B-825E-51B383BE6F22}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0266378900304414"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0266378900304414"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="199156256"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_05" ID="{FA74C06B-8B9C-4E6B-825E-51B383BE6F22}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_06" ID="{F6EAAF34-AA83-4433-A7E1-6CB96620B8CD}" ShortID="220443877">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_06" ID="{F1B518D2-8D4B-458F-AD82-48245F7815B0}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0607489060121766"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0607489060121766"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="721911965"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_06" ID="{F1B518D2-8D4B-458F-AD82-48245F7815B0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Stone_Flare_07" ID="{F3072250-E278-4E8C-B987-27F40C347334}" ShortID="727556089">
+																			<PropertyList>
+																				<Property Name="Volume" Type="Real64">
+																					<ModifierList>
+																						<ModifierInfo>
+																							<Modifier Name="" ID="{8FFAA129-FEB3-44F1-ADEE-859E608AF6C8}"/>
+																						</ModifierInfo>
+																					</ModifierList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Stone_Flare_07" ID="{81298A30-370C-4E96-9F27-1771BD3CABE9}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.0540250665905632"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.0540250665905632"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Stone_Flare_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="501864485"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Stone_Flare_07" ID="{81298A30-370C-4E96-9F27-1771BD3CABE9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
 																</RandomSequenceContainer>
 																<RandomSequenceContainer Name="Water" ID="{33352516-E546-46C8-9420-81364C9CB926}" ShortID="414692879">
+																	<PropertyList>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{FDC3357B-3D61-4946-863E-284D32548D89}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-150"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>7</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{DEE0BD94-12A4-456B-956B-378F2A59B313}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-2"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -4099,6 +4362,167 @@
 																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 																		</Reference>
 																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_Impact_Water_Flare_01" ID="{2654A8C5-EBDC-4DC7-AE45-8216B2CE99A4}" ShortID="657189338">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_01" ID="{1FD5C23C-7896-40A4-B295-63C8DFDEA8EE}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="319140082"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_01" ID="{1FD5C23C-7896-40A4-B295-63C8DFDEA8EE}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_02" ID="{E4875D18-726F-482A-B8EC-9272A39D7186}" ShortID="1066744723">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_02" ID="{994264C5-F62D-4ECC-BCA1-9F11D44E50A8}">
+																					<PropertyList>
+																						<Property Name="LoopBegin" Type="Real64" Value="0.017517646499239"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.017517646499239"/>
+																					</PropertyList>
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="757914140"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_02" ID="{994264C5-F62D-4ECC-BCA1-9F11D44E50A8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_03" ID="{F964FEE0-5EC9-4874-AC86-3837A0E330AD}" ShortID="548645153">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_03" ID="{72A97E88-147C-4EA5-8842-0AF45AA8DA49}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1046880395"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_03" ID="{72A97E88-147C-4EA5-8842-0AF45AA8DA49}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_04" ID="{24650490-CE93-4227-BD0D-F7C4EF65C0B7}" ShortID="466192666">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_04" ID="{223E7AEB-4E70-4607-9683-6128A8D154B3}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="551111740"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_04" ID="{223E7AEB-4E70-4607-9683-6128A8D154B3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_05" ID="{32F35AD1-CD20-4688-A521-CEBD332C9106}" ShortID="258318665">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_05" ID="{A13E40AC-436F-4E9B-B338-D71BAB2367DD}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1032695841"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_05" ID="{A13E40AC-436F-4E9B-B338-D71BAB2367DD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_06" ID="{41E9E1A4-F48A-444D-82A2-5AAC2AA9F03F}" ShortID="342782082">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_06" ID="{F04470BF-8BC6-45DF-8DEA-394E848B0D7D}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="884732122"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_06" ID="{F04470BF-8BC6-45DF-8DEA-394E848B0D7D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Impact_Water_Flare_07" ID="{DEBC85F0-2F96-423E-8B0D-039903A3C14A}" ShortID="73364829">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Impact_Water_Flare_07" ID="{7325A09D-DC8C-4900-AA61-C6692869AA35}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Impact_Water_Flare_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="444425588"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Impact_Water_Flare_07" ID="{7325A09D-DC8C-4900-AA61-C6692869AA35}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
 																</RandomSequenceContainer>
 															</ChildrenList>
 															<GroupingInfo>
@@ -4626,6 +5050,11 @@
 																	<PropertyList>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-4</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -4654,6 +5083,488 @@
 																<ItemRef Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}"/>
 															</Playlist>
 														</RandomSequenceContainer>
+														<BlendContainer Name="Throw_Flare" ID="{EA571C8D-92F7-46F1-BD52-8BED4A4DABD6}" ShortID="937762580">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Throw_Whoosh_Flare" ID="{2F091E13-A4DB-40B6-B6E9-BD8DC58FD362}" ShortID="523933172">
+																	<PropertyList>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{1D67C27F-1EBF-4968-A582-83F24DF5994A}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-150"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{F4019D77-1E70-4CEA-9DC4-A65A7A512336}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-2"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Throw_Whoosh_Flare_01" ID="{30C1270A-8C52-439A-9DFA-DB614AD63325}" ShortID="645226962">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_01" ID="{81946B83-5A47-4273-A1A3-0E991932547D}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="24992120"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_01" ID="{81946B83-5A47-4273-A1A3-0E991932547D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_02" ID="{0E64FCDA-444C-4003-9A8D-9BE4E714A4B0}" ShortID="90562769">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_02" ID="{B7B035B4-9BA8-4E7F-A155-ED7786364CAA}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="645169709"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_02" ID="{B7B035B4-9BA8-4E7F-A155-ED7786364CAA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_03" ID="{12C304EC-451E-46EF-B35C-232B24A8F342}" ShortID="728741314">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_03" ID="{2CC6FD17-9203-4142-A7E7-DC0FA2071773}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="290250755"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_03" ID="{2CC6FD17-9203-4142-A7E7-DC0FA2071773}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_04" ID="{10F24363-9F54-481C-9E9A-D465327DD075}" ShortID="252278227">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_04" ID="{11E0D10C-BE04-4B9A-8F6F-D9B2AA714276}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="783665527"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_04" ID="{11E0D10C-BE04-4B9A-8F6F-D9B2AA714276}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_05" ID="{7D34F249-A2AF-4522-A01B-122B16F6A92B}" ShortID="158576521">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_05" ID="{FACB51F8-4D44-49CB-A4ED-4112BC200BED}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="799311388"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_05" ID="{FACB51F8-4D44-49CB-A4ED-4112BC200BED}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_06" ID="{601D1008-DC61-452D-888C-2FEC8667D7D2}" ShortID="670529822">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_06" ID="{A90BD42F-0EC3-436C-A1AB-862B9273D34C}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="433856650"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_06" ID="{A90BD42F-0EC3-436C-A1AB-862B9273D34C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Whoosh_Flare_07" ID="{EE31D8D8-73A9-46C9-9316-4E676A2C7740}" ShortID="548344675">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Whoosh_Flare_07" ID="{0FCE8DC1-C374-4BEE-AC05-4AD58304239E}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Whoosh_Flare_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="299482787"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Whoosh_Flare_07" ID="{0FCE8DC1-C374-4BEE-AC05-4AD58304239E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Throw_Foley_Flare" ID="{3A69958A-F4A7-4B9C-BFDA-33174B2F2F8A}" ShortID="669058814">
+																	<PropertyList>
+																		<Property Name="InitialDelay" Type="Real64">
+																			<ValueList>
+																				<Value>0.02</Value>
+																			</ValueList>
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{D78769F4-2FAD-4EBA-9796-3EB942491388}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-0.02"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{2D2EBD7F-56D3-431F-8C5E-82EF4CEA9E52}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="150"/>
+																							<Property Name="Min" Type="Real64" Value="-150"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{43F9B560-4C5F-4ABF-BCE4-65B1348A27AA}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Min" Type="Real64" Value="-3"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="Throw_Foley_Flare_01" ID="{810D8E50-8338-47D4-87DB-71481923FB0C}" ShortID="173694621">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_01" ID="{D95E8956-9EA7-4D48-86D8-1AF17C1CA014}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="190461341"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_01" ID="{D95E8956-9EA7-4D48-86D8-1AF17C1CA014}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_02" ID="{B4F3EDCD-5911-438E-837C-33E4E9D4890B}" ShortID="882666273">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_02" ID="{215610E2-1244-41F1-8FF6-8BF1183039DC}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="743101336"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_02" ID="{215610E2-1244-41F1-8FF6-8BF1183039DC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_03" ID="{E9DB0B79-1859-49F4-BF33-AC24323AA1E0}" ShortID="465759493">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_03" ID="{498E70C1-E8E2-4266-93FC-41F2A9D7F845}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="785498491"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_03" ID="{498E70C1-E8E2-4266-93FC-41F2A9D7F845}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_04" ID="{5E7F33D7-281C-47C4-BC45-120D684CA791}" ShortID="676436555">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_04" ID="{DF7429E0-5F93-42C8-BABA-641DEA7D57D9}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1007307299"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_04" ID="{DF7429E0-5F93-42C8-BABA-641DEA7D57D9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_05" ID="{7C8BA3EE-92DD-4180-B573-2349D1FFBA15}" ShortID="747314562">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_05" ID="{8C6837EE-0999-4535-A32D-C50C57ACB16B}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="976228408"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_05" ID="{8C6837EE-0999-4535-A32D-C50C57ACB16B}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_06" ID="{98CA97BD-189E-4330-A9B4-AFCEFEDBF919}" ShortID="647146511">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_06" ID="{32EFB56F-95F3-4141-AC10-17B503A48D07}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="298553697"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_06" ID="{32EFB56F-95F3-4141-AC10-17B503A48D07}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_07" ID="{D292BC03-D42D-43D4-A828-64366D1BAE27}" ShortID="83407478">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_07" ID="{504EE00E-072F-46C2-A646-06A222183ECC}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="750498551"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_07" ID="{504EE00E-072F-46C2-A646-06A222183ECC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_08" ID="{A15CB452-34E8-42ED-A685-57E601465D17}" ShortID="216102875">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_08" ID="{27D1AA40-878A-43B6-BD62-0D22B76DF6BA}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_08.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="989123537"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_08" ID="{27D1AA40-878A-43B6-BD62-0D22B76DF6BA}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_09" ID="{F8C2D054-A2CE-4142-A222-DF8EBA733BF6}" ShortID="550749705">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_09" ID="{777955DC-39FA-45E0-A08B-FEBCD6EAA031}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_09.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1035129270"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_09" ID="{777955DC-39FA-45E0-A08B-FEBCD6EAA031}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="Throw_Foley_Flare_10" ID="{046CA907-2648-4623-971E-0806EF14D808}" ShortID="266087714">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Throw_Foley_Flare_10" ID="{B08A7D59-C29F-4A0E-8AC2-146ED1CC8E5A}">
+																					<Language>SFX</Language>
+																					<AudioFile>Throw_Foley_Flare_10.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="402932462"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Throw_Foley_Flare_10" ID="{B08A7D59-C29F-4A0E-8AC2-146ED1CC8E5A}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+														</BlendContainer>
 													</ChildrenList>
 												</ActorMixer>
 											</ChildrenList>
