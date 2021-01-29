@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2343352999443400846}
   - component: {fileID: 1588754898609394445}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Red Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,9 +85,9 @@ GameObject:
   - component: {fileID: 8350322030364809035}
   - component: {fileID: 6072920242600977523}
   - component: {fileID: 2714427514692723011}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Flare
-  m_TagString: Untagged
+  m_TagString: Flare
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -233,7 +233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6596041285663203262}
   - component: {fileID: 8907599844675413776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3319179576631519433}
   - component: {fileID: 1344134099478380760}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Purple Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
