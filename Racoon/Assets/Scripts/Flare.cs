@@ -67,12 +67,12 @@ public class Flare : MonoBehaviour
 
     private void eteint() 
     {
-        light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.001f;
-        light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.001f;
-        light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.001f;
+        light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.002f;
+        light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.002f;
+        light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.002f;
 
-        light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.001f;
-        light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.001f;
-        light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.001f;
+        light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.002f;
+        light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.002f;
+        light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.002f;
     }
 }

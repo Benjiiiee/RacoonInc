@@ -10,7 +10,6 @@ public class LightUpIngredient : MonoBehaviour
     public Light2D light2;
     public Light2D light3;
     private bool isOn = false;
-    float timeToLight = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +33,8 @@ public class LightUpIngredient : MonoBehaviour
     void TurnOn()
     {
         light1.GetComponent<Light2D>().enabled = true;
+        light2.GetComponent<Light2D>().enabled = true;
+        light3.GetComponent<Light2D>().enabled = true;
     }
 
 }

@@ -30,6 +30,9 @@ public class CharacterController : KinematicObject
 
     public Bounds Bounds => collider2d.bounds;
 
+    public float turboJumpModifier;
+    private bool hasTurboJumped = false;
+
     void Awake()
     {
         collider2d = GetComponent<Collider2D>();
@@ -152,6 +155,22 @@ public class CharacterController : KinematicObject
     public void Respawn()
     {
         transform.position = lastCheckpoint;
+    }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Trampoline") && hasTurboJumped == false)
+        {
+            jumpModifier = jumpModifier + turboJumpModifier;
+            hasTurboJumped = true;
+        }
+    }
+    void OnTriggerExit2D (Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Trampoline") && hasTurboJumped == true)
+        {
+            jumpModifier = jumpModifier - turboJumpModifier;
+            hasTurboJumped = false;
+        }
     }
 
     public enum JumpState
