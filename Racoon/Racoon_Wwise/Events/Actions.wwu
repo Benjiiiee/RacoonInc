@@ -134,6 +134,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_End_Level_Door" ID="{C4CF5F17-18D2-4B6D-AE96-84758C8E98CE}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{0BEC204D-CFC8-4D07-B64F-1ABC8D9DE935}" ShortID="801460227">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="End_Level_Door" ID="{7DA53F62-474A-41B0-B15E-4FD329FD3827}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

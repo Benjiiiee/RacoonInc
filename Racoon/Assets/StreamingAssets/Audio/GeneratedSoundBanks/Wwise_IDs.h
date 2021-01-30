@@ -25,6 +25,9 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_RESPAWN = 4238880044U;
         static const AkUniqueID PLAY_THROW_FLARE = 838326419U;
         static const AkUniqueID PLAY_TURN_ON_BURN_FLARE = 3232459058U;
+        static const AkUniqueID PLAY_UI_BACK = 1386224142U;
+        static const AkUniqueID PLAY_UI_OVER = 3300168493U;
+        static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
         static const AkUniqueID STOP_BURNING_FLARE_FADEOUT = 3353542511U;
         static const AkUniqueID STOP_BURNING_FLARE_IMMEDIATE = 917084758U;
     } // namespace EVENTS
@@ -72,6 +75,7 @@ namespace AK
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID ITEMS = 2151963051U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID NON_WORLD = 3869140995U;
         static const AkUniqueID PLAYER = 1069431850U;
         static const AkUniqueID WORLD = 2609808943U;
     } // namespace BUSSES
