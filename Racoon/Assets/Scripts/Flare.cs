@@ -15,7 +15,7 @@ public class Flare : MonoBehaviour
     private bool switchingOff = false;
     float timeLeft = 5.0f;
     float timeLeft2 = 6.0f;
-    private bool isYeeted = false;
+    public bool isYeeted = false;
 
     //Sound
 

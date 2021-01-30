@@ -76,6 +76,11 @@ public class CharacterController : KinematicObject
         {
             JumpingAnimations();
         }
+        else
+        {
+            animator.SetBool("isjumping", false);
+            animator.SetBool("isfalling", false);
+        }
         
     }
 
@@ -96,21 +101,21 @@ public class CharacterController : KinematicObject
                 {
                     //  Schedule<PlayerJumped>().player = this;
                     jumpState = JumpState.InFlight;
-                    animator.SetBool("isfalling", false);
-                    animator.SetBool("isjumping", false);
                 }
                 break;
             case JumpState.InFlight:
                 if (IsGrounded)
                 {
                     // Schedule<PlayerLanded>().player = this;
-                    animator.SetBool("isfalling", false);
-                    animator.SetBool("isjumping", false);
+                    //animator.SetBool("isfalling", false);
+                    //animator.SetBool("isjumping", false);
                     jumpState = JumpState.Landed;
                 }
                 break;
             case JumpState.Landed:
                 jumpState = JumpState.Grounded;
+                //animator.SetBool("isfalling", false);
+                //animator.SetBool("isjumping", false);
                 break;
         }
     }
