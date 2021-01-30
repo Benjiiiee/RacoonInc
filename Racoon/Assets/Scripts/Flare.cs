@@ -18,6 +18,8 @@ public class Flare : MonoBehaviour
 
     //Sound
 
+    bool stopSound = false;
+    public AK.Wwise.Event startFlareSound;
     public AK.Wwise.Event stopFlareSound;
 
     private void Awake()
@@ -26,6 +28,12 @@ public class Flare : MonoBehaviour
 
 
     }
+
+    private void Start()
+    {
+        startFlareSound.Post(gameObject);
+    }
+
     void Update()
     {
         float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
@@ -37,9 +45,12 @@ public class Flare : MonoBehaviour
             if (timeLeft < 0)
             {
                 eteint();
-                stopFlareSound.Post(gameObject);
-                Debug.Log("Stop flare sound");
                 timeLeft2 -= Time.deltaTime;
+                if(timeLeft2 < 2.5f && !stopSound)
+                {
+                    stopSound = true;
+                    stopFlareSound.Post(gameObject);
+                }
                 if (timeLeft2 < 0)
                 {
                     Destroy(this.gameObject);
@@ -56,12 +67,12 @@ public class Flare : MonoBehaviour
 
     private void eteint() 
     {
-        light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.001f;
-        light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.001f;
-        light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.001f;
+        light1.pointLightInnerRadius -= light1.pointLightInnerRadius * 0.002f;
+        light2.pointLightInnerRadius -= light2.pointLightInnerRadius * 0.002f;
+        light3.pointLightInnerRadius -= light3.pointLightInnerRadius * 0.002f;
 
-        light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.001f;
-        light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.001f;
-        light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.001f;
+        light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.002f;
+        light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.002f;
+        light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.002f;
     }
 }

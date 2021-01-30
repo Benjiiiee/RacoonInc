@@ -23,7 +23,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="8"/>
@@ -94,12 +94,22 @@
 												</Bus>
 												<Bus Name="Flare" ID="{9B8EACC5-0AE5-44C7-A99C-DBDA30C9F3A8}">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Color" Type="int16" Value="19"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 													</PropertyList>
 												</Bus>
 												<Bus Name="Items" ID="{709C7037-847D-4622-9258-19BB7CFED738}">
 													<PropertyList>
+														<Property Name="BusVolume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Color" Type="int16" Value="12"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 													</PropertyList>

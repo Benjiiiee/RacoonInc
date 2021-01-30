@@ -96,7 +96,7 @@
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-10</Value>
+																<Value>-16</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1766,7 +1766,7 @@
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>3</Value>
+																				<Value>-10</Value>
 																			</ValueList>
 																		</Property>
 																	</PropertyList>
@@ -4065,11 +4065,16 @@
 											<ChildrenList>
 												<ActorMixer Name="Flare" ID="{A3C3610A-4677-4589-ADBB-C0FFDD765564}" ShortID="470419156">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="Color" Type="int16" Value="19"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Distance_To_Player" ID="{B39E0702-E7F7-4139-A175-553CF1DCED4A}" WorkUnitID="{80396565-BFB9-46F5-86C0-1AA0B7E74167}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
 														</Reference>
@@ -5103,9 +5108,8 @@
 																	<ChildrenList>
 																		<AudioFileSource Name="SFX_Burning_Flare_LP" ID="{F563A4B3-896A-40AF-AAD3-A6DEE2AAD181}">
 																			<PropertyList>
-																				<Property Name="FadeOutDuration" Type="Real64" Value="1.61471477834855"/>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.21927442446728"/>
 																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																				<Property Name="TrimEnd" Type="Real64" Value="13.1483917665525"/>
 																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>SFX_Burning_Flare_LP.wav</AudioFile>
@@ -5610,9 +5614,11 @@
 												</ActorMixer>
 												<ActorMixer Name="Items" ID="{C32E338B-0987-45EF-BBE5-6102FD567A56}" ShortID="55756577">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="Color" Type="int16" Value="11"/>
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -5622,6 +5628,9 @@
 														</Property>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Distance_To_Player" ID="{B39E0702-E7F7-4139-A175-553CF1DCED4A}" WorkUnitID="{80396565-BFB9-46F5-86C0-1AA0B7E74167}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
 														</Reference>

@@ -20,7 +20,6 @@ public class Shoot : MonoBehaviour
 
     //Sound
 
-    public AK.Wwise.Event turnOnFlare;
     public AK.Wwise.Event throwFlareEvent;
 
     void Start()
@@ -37,7 +36,6 @@ public class Shoot : MonoBehaviour
             isThrowing = true;
             character.controlEnabled = false;
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            turnOnFlare.Post(gameObject);
         }
 
         if (Input.GetMouseButton(0) && isThrowing)
