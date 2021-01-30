@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585897094799258582
+    m_lastTime: -8585896227216424184
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -58,6 +58,23 @@ MonoBehaviour:
       - ElementName: AUX
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus\World\AUX
+    - name: AUX_Death
+      guid: 17205ee2d7346b4da5a22788a9c44856
+      id: 1236188118
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: AUX_Death
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death
     - name: Aux_RVB_Cavern
       guid: 91e7e8dd6332f54687eae50a66970701
       id: 3352913298
@@ -86,6 +103,74 @@ MonoBehaviour:
       - ElementName: Characters
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus\World\Characters
+    - name: Flare
+      guid: c5ac8e9be50ac744a99cdbda30c9f3a8
+      id: 1540219311
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Flare
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player\Flare
+    - name: Foley
+      guid: 21d718eb22988a4a89fff20cb572b503
+      id: 247557814
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Foley
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player\Foley
+    - name: Footsteps
+      guid: 92854db1e246cc438f4fe9ce036fc431
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Footsteps
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player\Footsteps
+    - name: Items
+      guid: 37709c707d842246925819bb7cfed738
+      id: 2151963051
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: World
+        ObjectType: 2
+      - ElementName: Characters
+        ObjectType: 2
+      - ElementName: Player
+        ObjectType: 2
+      - ElementName: Items
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\World\Characters\Player\Items
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -141,6 +226,115 @@ MonoBehaviour:
         ObjectType: 7
       Path: Default Work Unit\Main
   EventWwu:
+  - PhysicalPath: Events\Actions.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Characters
+      ObjectType: 12
+    - ElementName: Actions
+      ObjectType: 12
+    ParentPath: Default Work Unit\Characters\Actions
+    guid: 15e5f9b75a72cc438144f6bd1ab036a2
+    GuidInternal: 
+    m_lastTime: -8585896537112685009
+    List:
+    - name: Play_Impact_Flare
+      guid: 97b2df7f33211a4c94eb0689f639a11c
+      id: 2389238889
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Impact_Flare
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Impact_Flare
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Interact
+      guid: 6d0f2303eb7552469dbae81eddf7d26b
+      id: 3621663528
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Interact
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Interact
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Pickup_Item
+      guid: 36fdcedd67e64c4685cd3e17d07b7b9c
+      id: 3128913152
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Pickup_Item
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Pickup_Item
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Throw_Flare
+      guid: 02675fff7a2c0146aea421a97fbb011b
+      id: 838326419
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Throw_Flare
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Throw_Flare
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Turn_On_Burn_Flare
+      guid: 7a708bcefb3b78449d8b49a24fa71bc3
+      id: 3232459058
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Turn_On_Burn_Flare
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Burning_Flare
+      guid: d834ea5a86c4b5419e715f04971255b2
+      id: 2763336528
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Stop_Burning_Flare
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Ambiences.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -150,7 +344,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Ambiences
     guid: e61fd8c4adc2424bb0cfb4f12b263675
     GuidInternal: 
-    m_lastTime: -8585897428105018396
+    m_lastTime: -8585896709216193236
     List:
     - name: Play_Ambience_Background_Cavern
       guid: 0c6c836674406043877ca2d146b128cd
@@ -189,7 +383,53 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters
     guid: 7c81168fd5140840a829ceaa329f59b8
     GuidInternal: 
-    m_lastTime: -8585897094798999267
+    m_lastTime: -8585896657664814970
+    List: []
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: f739447505b6144398615f1ab939a45c
+    GuidInternal: 
+    m_lastTime: -8585896227216164852
+    List:
+    - name: Play_Player_Death
+      guid: eecc483dd261104ba11b0ae9f5e2a8e8
+      id: 1835085974
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Player_Death
+        ObjectType: 3
+      Path: Default Work Unit\Play_Player_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Player_Respawn
+      guid: 92b089cf9a777e488a42a7f803e8d01e
+      id: 4238880044
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Player_Respawn
+        ObjectType: 3
+      Path: Default Work Unit\Play_Player_Respawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  - PhysicalPath: Events\Movements.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: Characters
+      ObjectType: 12
+    - ElementName: Movements
+      ObjectType: 12
+    ParentPath: Default Work Unit\Characters\Movements
+    guid: 68fc415e2502fe4b9e23935542803514
+    GuidInternal: 
+    m_lastTime: -8585896657664755128
     List:
     - name: Play_Foley
       guid: 37558e0dc20a9045878787c12218b95d
@@ -199,9 +439,11 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Characters
         ObjectType: 12
+      - ElementName: Movements
+        ObjectType: 12
       - ElementName: Play_Foley
         ObjectType: 3
-      Path: Default Work Unit\Characters\Play_Foley
+      Path: Default Work Unit\Characters\Movements\Play_Foley
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -213,30 +455,11 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Characters
         ObjectType: 12
+      - ElementName: Movements
+        ObjectType: 12
       - ElementName: Play_Footsteps
         ObjectType: 3
-      Path: Default Work Unit\Characters\Play_Footsteps
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-  - PhysicalPath: Events\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
-    guid: f739447505b6144398615f1ab939a45c
-    GuidInternal: 
-    m_lastTime: -8585897094799138894
-    List:
-    - name: Play_Footsteps_Surface
-      guid: 3004b20f95720042a41e876631a04608
-      id: 2872098335
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Footsteps_Surface
-        ObjectType: 3
-      Path: Default Work Unit\Play_Footsteps_Surface
+      Path: Default Work Unit\Characters\Movements\Play_Footsteps
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -286,7 +509,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 474c0ac05d40db4ba1cd5b5ffdb4f08f
     GuidInternal: 
-    m_lastTime: -8585897094799108696
+    m_lastTime: -8585896709216352814
     List:
     - name: Material_Type
       guid: 5a9ac988745f934db67625620f3724f3
@@ -303,6 +526,12 @@ MonoBehaviour:
         id: 1216965916
         PathAndIcons:
         - ElementName: Stone
+          ObjectType: 10
+      - name: Water
+        guid: 4d0ad3cf666e82429d69e3c0ef60cf9c
+        id: 2654748154
+        PathAndIcons:
+        - ElementName: Water
           ObjectType: 10
       ValueGuids: []
       ValueIcons: []
@@ -353,5 +582,7 @@ MonoBehaviour:
   - /Racoon_Wwise/Events
   - /Racoon_Wwise/Events/Default Work Unit
   - /Racoon_Wwise/Events/Default Work Unit/Ambiences
+  - /Racoon_Wwise/Events/Default Work Unit/Characters
+  - /Racoon_Wwise/Events/Default Work Unit/Characters/Actions
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
