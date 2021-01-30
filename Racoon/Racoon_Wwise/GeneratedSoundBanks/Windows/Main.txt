@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	838326419	Play_Throw_Flare			\Default Work Unit\Characters\Actions\Play_Throw_Flare	
 	917084758	Stop_Burning_Flare_Immediate			\Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate	
 	1152301005	Play_End_Level_Door			\Default Work Unit\Characters\Actions\Play_End_Level_Door	
+	1386224142	Play_UI_Back			\Default Work Unit\Play_UI_Back	
 	1835085974	Play_Player_Death			\Default Work Unit\Play_Player_Death	
 	1970585623	Play_Ambience_Background_Cavern			\Default Work Unit\Ambiences\Play_Ambience_Background_Cavern	
 	2389238889	Play_Impact_Flare			\Default Work Unit\Characters\Actions\Play_Impact_Flare	
@@ -9,6 +10,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3113720603	Play_Foley			\Default Work Unit\Characters\Movements\Play_Foley	
 	3128913152	Play_Pickup_Item			\Default Work Unit\Characters\Actions\Play_Pickup_Item	
 	3232459058	Play_Turn_On_Burn_Flare			\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare	
+	3300168493	Play_UI_Over			\Default Work Unit\Play_UI_Over	
+	3308548503	Play_UI_Select			\Default Work Unit\Play_UI_Select	
 	3353542511	Stop_Burning_Flare_FadeOut			\Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut	
 	3621663528	Play_Interact			\Default Work Unit\Characters\Actions\Play_Interact	
 	3854155799	Play_Footsteps			\Default Work Unit\Characters\Movements\Play_Footsteps	
@@ -40,6 +43,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	98305374	SFX_TurnOn_Flare_Scratch_07	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_TurnOn_Flare_Scratch_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Turn_On_Flare\Turn_On_Flare_Scratch\SFX_TurnOn_Flare_Scratch_07		23658
 	108241486	Player_Respawn	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Player_Respawn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Player_Respawn		172206
 	112815242	SFX_Foley_Cloth_06	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Foley_Cloth_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Foley\Run\SFX_Foley_Cloth_06		36134
+	118202403	UI_Back	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\UI_Back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI_Back		121096
 	119456674	Sweeteners_Stone-005	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Sweeteners_Stone-005_CE2A96BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Sweeteners_Stone\Sweeteners_Stone-005		63544
 	138562534	SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-010	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-010_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Stone\Jump\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-010		41868
 	141378389	SFX_TurnOn_Flare_Ignition_06	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_TurnOn_Flare_Ignition_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Turn_On_Flare\Turn_On_Flare_Ignition\SFX_TurnOn_Flare_Ignition_06		76876
@@ -149,6 +153,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	726851252	Burning_Flare	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Burning_Flare_LP_2DB8D762.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Burning_Flare		2771310
 	730123396	SFX_TurnOn_Flare_Ignition_07	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_TurnOn_Flare_Ignition_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Turn_On_Flare\Turn_On_Flare_Ignition\SFX_TurnOn_Flare_Ignition_07		87364
 	733736522	Ambience_Weird_Voices-013	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Ambience_Weird_Voices-013_C267A033.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Ambience_Weird_Voices\Ambience_Weird_Voices-013		698256
+	733908782	UI_Over	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\UI_Over_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI_Over		148484
 	740608524	Weird_Far_Animals_02	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Weird_Far_Animals_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Weird_Far_Animals\Weird_Far_Animals_02		194504
 	743101336	Throw_Foley_Flare_02	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Throw_Foley_Flare_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Throw_Flare\Throw_Foley_Flare\Throw_Foley_Flare_02		30394
 	748443780	Ambience_Weird_Voices-002	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Ambience_Weird_Voices-002_E1F0312E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Ambience_Weird_Voices\Ambience_Weird_Voices-002		679760
@@ -181,6 +186,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	877577799	Waterfall_High	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Waterfall_High_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Emitters\Ambience_Water_Waterfall\Waterfall_Close\Waterfall_High		9860316
 	882260242	SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-004	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Stone\Jump\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-004		41400
 	884732122	SFX_Impact_Water_Flare_06	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Impact_Water_Flare_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Impact_Flare\Water\SFX_Impact_Water_Flare_06		129630
+	901379734	UI_Select	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\UI_Select_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Non_World\UI\UI_Select		218892
 	903338321	SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-019	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-019_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Stone\Run\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-019		43930
 	904798448	SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-015	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-015_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Stone\Land\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-015		44264
 	907570883	SFX_Foley_Cloth_04	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Foley_Cloth_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Foley\Run\SFX_Foley_Cloth_04		39044

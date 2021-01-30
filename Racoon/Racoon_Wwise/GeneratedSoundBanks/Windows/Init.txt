@@ -9,6 +9,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\World\Characters\Player\Footsteps	
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1236188118	AUX_Death			\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death	

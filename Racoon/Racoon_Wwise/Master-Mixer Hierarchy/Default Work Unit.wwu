@@ -155,6 +155,7 @@
 								</Bus>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Non_World" ID="{E39A2D05-A201-4F3D-A2E1-44250CFFACC5}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
