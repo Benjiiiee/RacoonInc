@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8373cdf00d70d9749a7e6372046f860c, type: 3}
   m_Name: 5AEA34D8-C486-41B5-9E71-5F04971255B2
   m_EditorClassIdentifier: 
-  objectName: Stop_Burning_Flare
-  id: 2763336528
+  objectName: Stop_Burning_Flare_FadeOut
+  id: 3353542511
   guid: 5AEA34D8-C486-41B5-9E71-5F04971255B2

@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585896227216424184
+    m_lastTime: -8585895642380666757
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -214,7 +214,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585897428104898418
+    m_lastTime: -8585895642380297738
     List:
     - name: Main
       guid: 8437b179d06ba94eb072d3eb9f06dd35
@@ -237,8 +237,24 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters\Actions
     guid: 15e5f9b75a72cc438144f6bd1ab036a2
     GuidInternal: 
-    m_lastTime: -8585896537112685009
+    m_lastTime: -8585895642380387510
     List:
+    - name: Play_Brasero
+      guid: dd5a280ec59b284b98d7b7d44337f905
+      id: 3518263358
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Brasero
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Brasero
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Impact_Flare
       guid: 97b2df7f33211a4c94eb0689f639a11c
       id: 2389238889
@@ -303,6 +319,22 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Trampoline
+      guid: 47104bfbbdd6cc4ea42398eae2a25e5c
+      id: 3799408143
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_Trampoline
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_Trampoline
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Turn_On_Burn_Flare
       guid: 7a708bcefb3b78449d8b49a24fa71bc3
       id: 3232459058
@@ -319,9 +351,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Stop_Burning_Flare
+    - name: Stop_Burning_Flare_FadeOut
       guid: d834ea5a86c4b5419e715f04971255b2
-      id: 2763336528
+      id: 3353542511
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -329,9 +361,25 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: Actions
         ObjectType: 12
-      - ElementName: Stop_Burning_Flare
+      - ElementName: Stop_Burning_Flare_FadeOut
         ObjectType: 3
-      Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare
+      Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Burning_Flare_Immediate
+      guid: 0b81eb2d72d61f4ab038b7b5183f7c2d
+      id: 917084758
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Stop_Burning_Flare_Immediate
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -392,7 +440,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585896227216164852
+    m_lastTime: -8585895642380357362
     List:
     - name: Play_Player_Death
       guid: eecc483dd261104ba11b0ae9f5e2a8e8
@@ -473,24 +521,6 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585897467970720851
     List: []
-  - PhysicalPath: Game Parameters\Generic.wwu
-    PathAndIcons:
-    - ElementName: Generic
-      ObjectType: 12
-    ParentPath: Generic
-    guid: 5b09217888894b4c8d3cbf0df4dfd088
-    GuidInternal: 
-    m_lastTime: -8585897417187741380
-    List:
-    - name: Distance_to_Player
-      guid: 0d235f3ab7ca6e488974f5e868af19cb
-      id: 3917897988
-      PathAndIcons:
-      - ElementName: Generic
-        ObjectType: 12
-      - ElementName: Distance_to_Player
-        ObjectType: 13
-      Path: Generic\Distance_to_Player
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -581,7 +611,6 @@ MonoBehaviour:
   - /Racoon_Wwise
   - /Racoon_Wwise/Events
   - /Racoon_Wwise/Events/Default Work Unit
-  - /Racoon_Wwise/Events/Default Work Unit/Ambiences
   - /Racoon_Wwise/Events/Default Work Unit/Characters
   - /Racoon_Wwise/Events/Default Work Unit/Characters/Actions
   autoPopulateEnabled: 1
