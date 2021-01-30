@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 4792972394050339236}
   - component: {fileID: 4792972394050339237}
   - component: {fileID: 4792972394050339225}
+  - component: {fileID: 7422164395393129853}
   m_Layer: 9
   m_Name: Character
   m_TagString: Player
@@ -203,6 +204,7 @@ MonoBehaviour:
   jumpState: 0
   collider2d: {fileID: 0}
   controlEnabled: 1
+  spriteRenderer: {fileID: 0}
   jumpModifier: 0.8
   jumpDeceleration: 0.5
   colliderRight: {fileID: 4945801060628958555}
@@ -304,6 +306,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &7422164395393129853
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4792972394050339238}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f017ff9530e8b8e429b8566d27d30d86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6172068136008030174
 GameObject:
   m_ObjectHideFlags: 0
