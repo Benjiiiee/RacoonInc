@@ -137,12 +137,12 @@
 																		<Property Name="FilterFrequency" Type="Real32" Value="261"/>
 																		<Property Name="FilterGain" Type="Real32" Value="10.5"/>
 																		<Property Name="LeftCrossfeed" Type="Real32" Value="-11.8"/>
-																		<Property Name="LeftDelayTime" Type="Real32" Value="0.52"/>
-																		<Property Name="LeftFeedback" Type="Real32" Value="-16"/>
+																		<Property Name="LeftDelayTime" Type="Real32" Value="0.3"/>
+																		<Property Name="LeftFeedback" Type="Real32" Value="-8.6"/>
 																		<Property Name="RightCrossfeed" Type="Real32" Value="-6"/>
 																		<Property Name="RightDelayTime" Type="Real32" Value="0.03"/>
-																		<Property Name="RightFeedback" Type="Real32" Value="-16.9"/>
-																		<Property Name="WetLevel" Type="Real32" Value="-3"/>
+																		<Property Name="RightFeedback" Type="Real32" Value="-10.2"/>
+																		<Property Name="WetLevel" Type="Real32" Value="5"/>
 																	</PropertyList>
 																</Effect>
 															</Custom>

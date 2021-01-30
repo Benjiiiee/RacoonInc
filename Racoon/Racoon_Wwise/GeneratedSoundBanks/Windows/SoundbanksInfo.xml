@@ -906,13 +906,13 @@
 				</Event>
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death" DurationType="OneShot" DurationMin="2.081208" DurationMax="3.679805">
 					<IncludedMemoryFiles>
-						<File Id="227320358" Language="SFX">
-							<ShortName>Player_Death_Scream_01.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_01_5AEECFA0.wem</Path>
+						<File Id="36692190" Language="SFX">
+							<ShortName>Player_Death_Scream_V2_04.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_V2_04_10C4C929.wem</Path>
 						</File>
-						<File Id="233820794" Language="SFX">
-							<ShortName>Player_Death_Scream_03.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_03_DF4D0B7A.wem</Path>
+						<File Id="113251597" Language="SFX">
+							<ShortName>Player_Death_Scream_V2_02.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_V2_02_10C4C929.wem</Path>
 						</File>
 						<File Id="250535607" Language="SFX">
 							<ShortName>Player_Death_Water_03.wav</ShortName>
@@ -922,17 +922,13 @@
 							<ShortName>Player_Death_Water_01.wav</ShortName>
 							<Path>SFX\Player_Death_Water_01_10C4C929.wem</Path>
 						</File>
-						<File Id="486592868" Language="SFX">
-							<ShortName>Player_Death_Scream_02.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_02_10C4C929.wem</Path>
+						<File Id="667353583" Language="SFX">
+							<ShortName>Player_Death_Scream_V2_05.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_V2_05_10C4C929.wem</Path>
 						</File>
-						<File Id="632580888" Language="SFX">
-							<ShortName>Player_Death_Scream_05.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_05_5B15786C.wem</Path>
-						</File>
-						<File Id="1024017596" Language="SFX">
-							<ShortName>Player_Death_Scream_04.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_04_77310C25.wem</Path>
+						<File Id="772496384" Language="SFX">
+							<ShortName>Player_Death_Scream_V2_03.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_V2_03_10C4C929.wem</Path>
 						</File>
 						<File Id="1047979362" Language="SFX">
 							<ShortName>Player_Death_Water_02.wav</ShortName>
