@@ -18,6 +18,11 @@ public class Shoot : MonoBehaviour
     private bool isThrowing = false;
     public float angularVelocity = 1f;
 
+    //Sound
+
+    public AK.Wwise.Event turnOnFlare;
+    public AK.Wwise.Event throwFlareEvent;
+
     void Start()
     {
         character = GetComponentInParent<CharacterController>();
@@ -32,6 +37,7 @@ public class Shoot : MonoBehaviour
             isThrowing = true;
             character.controlEnabled = false;
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            turnOnFlare.Post(gameObject);
         }
 
         if (Input.GetMouseButton(0) && isThrowing)
@@ -79,6 +85,7 @@ public class Shoot : MonoBehaviour
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
         newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
         Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
+        throwFlareEvent.Post(gameObject);
     }
 
     Vector2 Pointposition(float t)
