@@ -71,6 +71,12 @@ public class CharacterController : KinematicObject
         }
         UpdateJumpState();
         base.Update();
+
+        if(!IsGrounded)
+        {
+            JumpingAnimations();
+        }
+        
     }
 
 
@@ -90,12 +96,16 @@ public class CharacterController : KinematicObject
                 {
                     //  Schedule<PlayerJumped>().player = this;
                     jumpState = JumpState.InFlight;
+                    animator.SetBool("isfalling", false);
+                    animator.SetBool("isjumping", false);
                 }
                 break;
             case JumpState.InFlight:
                 if (IsGrounded)
                 {
                     // Schedule<PlayerLanded>().player = this;
+                    animator.SetBool("isfalling", false);
+                    animator.SetBool("isjumping", false);
                     jumpState = JumpState.Landed;
                 }
                 break;
@@ -173,6 +183,19 @@ public class CharacterController : KinematicObject
             jumpModifier = jumpModifier - turboJumpModifier;
             hasTurboJumped = false;
             }
+    }
+
+    void JumpingAnimations()
+    {
+        if(velocity.y > 0 && !animator.GetBool("isjumping"))
+        {
+            animator.SetBool("isjumping", true);
+        }
+        else if(velocity.y < 0 && !animator.GetBool("isfalling"))
+        {
+            animator.SetBool("isjumping", false);
+            animator.SetBool("isfalling", true);
+        }
     }
 
     public enum JumpState
