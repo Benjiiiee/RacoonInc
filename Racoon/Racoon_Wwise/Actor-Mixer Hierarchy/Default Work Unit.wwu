@@ -91,7 +91,7 @@
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-19</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1720,7 +1720,7 @@
 														<Property Name="OverrideOutput" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-18</Value>
+																<Value>-6</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -4083,6 +4083,9 @@
 																	</ModifierList>
 																</Property>
 																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>5</Value>
+																	</ValueList>
 																	<ModifierList>
 																		<ModifierInfo>
 																			<Modifier Name="" ID="{A1D89BF1-8DAE-463A-8B4E-E9DB396B5F26}"/>
@@ -4356,7 +4359,7 @@
 																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																		<Property Name="Volume" Type="Real64">
 																			<ValueList>
-																				<Value>7</Value>
+																				<Value>12</Value>
 																			</ValueList>
 																			<ModifierList>
 																				<ModifierInfo>
@@ -4593,6 +4596,11 @@
 																			</ModifierList>
 																		</Property>
 																		<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>9</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -5652,13 +5660,6 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="Interact" ID="{F89C0227-4A24-4DBF-A5E0-A701139A0012}" ShortID="794315456">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-5</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -5684,6 +5685,348 @@
 												</ActorMixer>
 											</ChildrenList>
 										</ActorMixer>
+										<BlendContainer Name="Player_Death" ID="{6962C646-196E-4267-8789-0A897442DA98}" ShortID="343353458">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="26"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B497C5AC-2D9E-4F10-8258-E95BE8EE4EC8}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="AUX_Death" ID="{E25E2017-34D7-4D6B-A5A2-2788A9C44856}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Player_Death_Water" ID="{60D56439-AA93-43E2-968B-C61304B36148}" ShortID="179849032">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{689E9D15-88F7-45FD-8CB8-AD06E46808E4}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-150"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Player" ID="{194625BD-8413-4FE5-B0A2-16E25C6512C7}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Player_Death_Water_01" ID="{9B99371A-91D2-4119-867A-19B8A13115D1}" ShortID="314404365">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Water_01" ID="{178F2E61-5F27-4615-BF66-DEB398A5D9D8}">
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Water_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="445395682"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Water_01" ID="{178F2E61-5F27-4615-BF66-DEB398A5D9D8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Water_02" ID="{D9CA3F02-7389-47A3-BDE2-F446E63915EF}" ShortID="527645138">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Water_02" ID="{F6F2BC38-09AC-448A-AFD6-6798F5BB9AAB}">
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Water_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1047979362"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Water_02" ID="{F6F2BC38-09AC-448A-AFD6-6798F5BB9AAB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Water_03" ID="{456FFACD-2F6F-42AA-8813-1C32E2C9E8BD}" ShortID="685678499">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Water_03" ID="{61656B31-4044-47B3-AF4E-E9ABB101736B}">
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Water_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="250535607"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Water_03" ID="{61656B31-4044-47B3-AF4E-E9ABB101736B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Player_Death_Scream" ID="{59A0BEC8-230E-42DB-BC03-88D82F5142C5}" ShortID="596085294">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{D56E5F46-B269-4C63-8901-B1A642615BD2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="0.3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{2D8B0ECC-5574-406D-B334-28960B128D8B}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="52"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{029DFDCE-A389-464F-B13B-842DECD1FF86}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Player" ID="{194625BD-8413-4FE5-B0A2-16E25C6512C7}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Player_Death_Scream_01" ID="{E8AC6F3E-7070-4D35-8E51-34B8CBA16F46}" ShortID="170710701">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Scream_01" ID="{A464D674-7120-427B-8269-7411877454B9}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0745727739726028"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Scream_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="227320358"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Scream_01" ID="{A464D674-7120-427B-8269-7411877454B9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Scream_02" ID="{735712D5-3049-4D74-ADB4-49C14E809C50}" ShortID="669704375">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Scream_02" ID="{0CC65A1D-0B83-4365-95B5-0EC369F3FADF}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Scream_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="486592868"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Scream_02" ID="{0CC65A1D-0B83-4365-95B5-0EC369F3FADF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Scream_03" ID="{03171742-5155-4505-99E6-296745DE6CD5}" ShortID="622777386">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Scream_03" ID="{1F5516AE-4CFD-46B2-AEFA-8E12C9A8AA52}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0390074200913242"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Scream_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="233820794"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Scream_03" ID="{1F5516AE-4CFD-46B2-AEFA-8E12C9A8AA52}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Scream_04" ID="{7F790795-7AFA-4C5B-973B-D6DE4E162682}" ShortID="395481945">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Scream_04" ID="{D49EE32E-C55F-46D4-8B9A-6B3ECDF21AB8}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0694092465753424"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Scream_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1024017596"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Scream_04" ID="{D49EE32E-C55F-46D4-8B9A-6B3ECDF21AB8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Player_Death_Scream_05" ID="{989D630E-FF9C-4685-9907-2EE6ED08B5A7}" ShortID="229247498">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Player_Death_Scream_05" ID="{2FC2E308-8B0A-448F-B4EC-2D6EEF575720}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0445521071156774"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Player_Death_Scream_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="632580888"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Player_Death_Scream_05" ID="{2FC2E308-8B0A-448F-B4EC-2D6EEF575720}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+										<Sound Name="Player_Respawn" ID="{89529BE9-9A75-44F8-A619-3CEA1F16C999}" ShortID="286201919">
+											<PropertyList>
+												<Property Name="Color" Type="int16" Value="25"/>
+												<Property Name="OverrideColor" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Player_Respawn" ID="{DDB8E5B0-8972-4D2D-A931-FFA591EE4A73}">
+													<Language>SFX</Language>
+													<AudioFile>Player_Respawn.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="108241486"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Player_Respawn" ID="{DDB8E5B0-8972-4D2D-A931-FFA591EE4A73}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

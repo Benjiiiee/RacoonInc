@@ -16,6 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
+				<AuxBus Id="1236188118" Name="AUX_Death" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death"/>
 				<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 			</IncludedAuxBusses>
 		</SoundBank>
@@ -156,10 +157,932 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3113720603" Name="Play_Foley" ObjectPath="\Events\Default Work Unit\Characters\Movements\Play_Foley" DurationType="OneShot" DurationMin="0.197348" DurationMax="0.712516">
+					<IncludedMemoryFiles>
+						<File Id="22217023" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_07.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_07_10C4C929.wem</Path>
+						</File>
+						<File Id="59915145" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_03.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_03_10C4C929.wem</Path>
+						</File>
+						<File Id="112815242" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_06.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_06_10C4C929.wem</Path>
+						</File>
+						<File Id="142358886" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_08.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_08_10C4C929.wem</Path>
+						</File>
+						<File Id="209877948" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_18.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_18_10C4C929.wem</Path>
+						</File>
+						<File Id="237677465" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_09.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_09_10C4C929.wem</Path>
+						</File>
+						<File Id="269575764" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_05.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_05_10C4C929.wem</Path>
+						</File>
+						<File Id="357301499" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_20.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_20_10C4C929.wem</Path>
+						</File>
+						<File Id="452284152" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_01.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_01_10C4C929.wem</Path>
+						</File>
+						<File Id="464706343" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_17.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_17_10C4C929.wem</Path>
+						</File>
+						<File Id="527735789" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_11.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_11_10C4C929.wem</Path>
+						</File>
+						<File Id="586535086" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_14.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_14_10C4C929.wem</Path>
+						</File>
+						<File Id="608143712" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_13.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_13_10C4C929.wem</Path>
+						</File>
+						<File Id="813117056" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_19.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_19_10C4C929.wem</Path>
+						</File>
+						<File Id="866984028" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_15.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_15_10C4C929.wem</Path>
+						</File>
+						<File Id="907570883" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_04.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_04_10C4C929.wem</Path>
+						</File>
+						<File Id="923316283" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_02.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_02_10C4C929.wem</Path>
+						</File>
+						<File Id="955466734" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_16.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_16_10C4C929.wem</Path>
+						</File>
+						<File Id="1057149279" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_10.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_10_10C4C929.wem</Path>
+						</File>
+						<File Id="1062933582" Language="SFX">
+							<ShortName>SFX_Foley_Cloth_12.wav</ShortName>
+							<Path>SFX\SFX_Foley_Cloth_12_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{6E266B90-6257-4191-AE32-D792656570D0}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{6E266B90-6257-4191-AE32-D792656570D0}">
+							<Media>
+								<File Id="22217023"/>
+								<File Id="142358886"/>
+								<File Id="866984028"/>
+								<File Id="586535086"/>
+								<File Id="209877948"/>
+								<File Id="464706343"/>
+								<File Id="923316283"/>
+								<File Id="527735789"/>
+								<File Id="813117056"/>
+								<File Id="452284152"/>
+								<File Id="1057149279"/>
+								<File Id="955466734"/>
+								<File Id="59915145"/>
+								<File Id="357301499"/>
+								<File Id="112815242"/>
+								<File Id="1062933582"/>
+								<File Id="237677465"/>
+								<File Id="269575764"/>
+								<File Id="608143712"/>
+								<File Id="907570883"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}">
+							<Media>
+								<File Id="452284152"/>
+								<File Id="923316283"/>
+								<File Id="59915145"/>
+								<File Id="907570883"/>
+								<File Id="269575764"/>
+								<File Id="112815242"/>
+								<File Id="22217023"/>
+								<File Id="142358886"/>
+								<File Id="237677465"/>
+								<File Id="1057149279"/>
+								<File Id="527735789"/>
+								<File Id="1062933582"/>
+								<File Id="608143712"/>
+								<File Id="586535086"/>
+								<File Id="866984028"/>
+								<File Id="955466734"/>
+								<File Id="464706343"/>
+								<File Id="209877948"/>
+								<File Id="813117056"/>
+								<File Id="357301499"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{201098D6-22A9-4773-8CFB-A7CA47909E07}">
+							<Media>
+								<File Id="22217023"/>
+								<File Id="142358886"/>
+								<File Id="866984028"/>
+								<File Id="586535086"/>
+								<File Id="209877948"/>
+								<File Id="464706343"/>
+								<File Id="923316283"/>
+								<File Id="527735789"/>
+								<File Id="813117056"/>
+								<File Id="452284152"/>
+								<File Id="1057149279"/>
+								<File Id="955466734"/>
+								<File Id="59915145"/>
+								<File Id="357301499"/>
+								<File Id="112815242"/>
+								<File Id="1062933582"/>
+								<File Id="237677465"/>
+								<File Id="269575764"/>
+								<File Id="608143712"/>
+								<File Id="907570883"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Characters\Movements\Play_Footsteps" DurationType="OneShot" DurationMin="0.511230" DurationMax="1.207238">
+					<IncludedMemoryFiles>
+						<File Id="5157210" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-011.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-011_10C4C929.wem</Path>
+						</File>
+						<File Id="9305438" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-001.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-001_10C4C929.wem</Path>
+						</File>
+						<File Id="38389955" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-018.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-018_10C4C929.wem</Path>
+						</File>
+						<File Id="119456674" Language="SFX">
+							<ShortName>Sweeteners_Stone-005.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-005_CE2A96BD.wem</Path>
+						</File>
+						<File Id="138562534" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-010.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-010_10C4C929.wem</Path>
+						</File>
+						<File Id="144702802" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-016.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-016_10C4C929.wem</Path>
+						</File>
+						<File Id="149102290" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-019.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-019_10C4C929.wem</Path>
+						</File>
+						<File Id="157507378" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-013.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-013_10C4C929.wem</Path>
+						</File>
+						<File Id="158115121" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-011.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-011_10C4C929.wem</Path>
+						</File>
+						<File Id="182506805" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-006.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-006_10C4C929.wem</Path>
+						</File>
+						<File Id="202300047" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-009.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-009_10C4C929.wem</Path>
+						</File>
+						<File Id="212230598" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-010.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-010_10C4C929.wem</Path>
+						</File>
+						<File Id="274742527" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-005.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-005_10C4C929.wem</Path>
+						</File>
+						<File Id="306914669" Language="SFX">
+							<ShortName>Sweeteners_Stone-010.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-010_AD43872B.wem</Path>
+						</File>
+						<File Id="310064282" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-007.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-007_10C4C929.wem</Path>
+						</File>
+						<File Id="314496071" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-005.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-005_10C4C929.wem</Path>
+						</File>
+						<File Id="315136122" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-009.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-009_10C4C929.wem</Path>
+						</File>
+						<File Id="315270480" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-013.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-013_10C4C929.wem</Path>
+						</File>
+						<File Id="319887600" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-017.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-017_10C4C929.wem</Path>
+						</File>
+						<File Id="325033335" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-003.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-003_10C4C929.wem</Path>
+						</File>
+						<File Id="335566913" Language="SFX">
+							<ShortName>Sweeteners_Stone-011.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-011_1940F789.wem</Path>
+						</File>
+						<File Id="341747581" Language="SFX">
+							<ShortName>Sweeteners_Stone-016.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-016_4FD582D2.wem</Path>
+						</File>
+						<File Id="355172072" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-008.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-008_10C4C929.wem</Path>
+						</File>
+						<File Id="357153520" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-017.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-017_10C4C929.wem</Path>
+						</File>
+						<File Id="358574180" Language="SFX">
+							<ShortName>Sweeteners_Stone-034.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-034_1B349F71.wem</Path>
+						</File>
+						<File Id="359587280" Language="SFX">
+							<ShortName>Sweeteners_Stone-003.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-003_9B17BC06.wem</Path>
+						</File>
+						<File Id="375347475" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-015.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-015_10C4C929.wem</Path>
+						</File>
+						<File Id="386687333" Language="SFX">
+							<ShortName>Sweeteners_Stone-029.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-029_10C4C929.wem</Path>
+						</File>
+						<File Id="387674614" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-007.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-007_10C4C929.wem</Path>
+						</File>
+						<File Id="393198544" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-013.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-013_10C4C929.wem</Path>
+						</File>
+						<File Id="395023637" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-008.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-008_10C4C929.wem</Path>
+						</File>
+						<File Id="406269880" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-012.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-012_10C4C929.wem</Path>
+						</File>
+						<File Id="409378470" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-016.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-016_10C4C929.wem</Path>
+						</File>
+						<File Id="410820408" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-014.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-014_10C4C929.wem</Path>
+						</File>
+						<File Id="417507289" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-029.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-029_10C4C929.wem</Path>
+						</File>
+						<File Id="420041282" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-030.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-030_10C4C929.wem</Path>
+						</File>
+						<File Id="444059732" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-014.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-014_10C4C929.wem</Path>
+						</File>
+						<File Id="453925951" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-004.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-004_10C4C929.wem</Path>
+						</File>
+						<File Id="504086367" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-012.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-012_10C4C929.wem</Path>
+						</File>
+						<File Id="531756372" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-006.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-006_10C4C929.wem</Path>
+						</File>
+						<File Id="544785137" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-001.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-001_10C4C929.wem</Path>
+						</File>
+						<File Id="571983546" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-001.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-001_10C4C929.wem</Path>
+						</File>
+						<File Id="581692021" Language="SFX">
+							<ShortName>Sweeteners_Stone-019.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-019_B53C6668.wem</Path>
+						</File>
+						<File Id="598326548" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-018.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-018_10C4C929.wem</Path>
+						</File>
+						<File Id="602845436" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-003.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-003_10C4C929.wem</Path>
+						</File>
+						<File Id="605296180" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-002.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-002_10C4C929.wem</Path>
+						</File>
+						<File Id="619066717" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-023.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-023_10C4C929.wem</Path>
+						</File>
+						<File Id="620040363" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-028.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-028_10C4C929.wem</Path>
+						</File>
+						<File Id="633607693" Language="SFX">
+							<ShortName>Sweeteners_Stone-015.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-015_F0D1A221.wem</Path>
+						</File>
+						<File Id="639965187" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-008.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-008_10C4C929.wem</Path>
+						</File>
+						<File Id="658121238" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-018.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-018_10C4C929.wem</Path>
+						</File>
+						<File Id="673417678" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-020.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-020_10C4C929.wem</Path>
+						</File>
+						<File Id="682232240" Language="SFX">
+							<ShortName>Sweeteners_Stone-004.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-004_FE3C1C02.wem</Path>
+						</File>
+						<File Id="683402430" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-020.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-020_10C4C929.wem</Path>
+						</File>
+						<File Id="694619862" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-005.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-005_10C4C929.wem</Path>
+						</File>
+						<File Id="726273235" Language="SFX">
+							<ShortName>Sweeteners_Stone-028.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-028_10C4C929.wem</Path>
+						</File>
+						<File Id="754584418" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-009.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-009_10C4C929.wem</Path>
+						</File>
+						<File Id="788395172" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-027.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-027_10C4C929.wem</Path>
+						</File>
+						<File Id="791859920" Language="SFX">
+							<ShortName>Sweeteners_Stone-002.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-002_B455304A.wem</Path>
+						</File>
+						<File Id="792108942" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-019.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-019_10C4C929.wem</Path>
+						</File>
+						<File Id="809889421" Language="SFX">
+							<ShortName>Sweeteners_Stone-012.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-012_2919076B.wem</Path>
+						</File>
+						<File Id="832253260" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-011.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-011_10C4C929.wem</Path>
+						</File>
+						<File Id="834382198" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-006.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-006_10C4C929.wem</Path>
+						</File>
+						<File Id="836868632" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-002.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-002_10C4C929.wem</Path>
+						</File>
+						<File Id="850610102" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-017.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-017_10C4C929.wem</Path>
+						</File>
+						<File Id="872152510" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-015.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-015_10C4C929.wem</Path>
+						</File>
+						<File Id="882260242" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-004.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-004_10C4C929.wem</Path>
+						</File>
+						<File Id="903338321" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-019.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-019_10C4C929.wem</Path>
+						</File>
+						<File Id="904798448" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-015.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-015_10C4C929.wem</Path>
+						</File>
+						<File Id="912171846" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-007.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-007_10C4C929.wem</Path>
+						</File>
+						<File Id="913948120" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-003.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-003_10C4C929.wem</Path>
+						</File>
+						<File Id="921787779" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-016.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-016_10C4C929.wem</Path>
+						</File>
+						<File Id="928762598" Language="SFX">
+							<ShortName>Sweeteners_Stone-018.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-018_C4121D1C.wem</Path>
+						</File>
+						<File Id="930457554" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-004.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-004_10C4C929.wem</Path>
+						</File>
+						<File Id="946563595" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-025.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-025_10C4C929.wem</Path>
+						</File>
+						<File Id="951387859" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-026.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-026_10C4C929.wem</Path>
+						</File>
+						<File Id="968217749" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-014.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-014_10C4C929.wem</Path>
+						</File>
+						<File Id="975501619" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-002.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-002_10C4C929.wem</Path>
+						</File>
+						<File Id="995845939" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-021.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-021_10C4C929.wem</Path>
+						</File>
+						<File Id="1000100583" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-024.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-024_10C4C929.wem</Path>
+						</File>
+						<File Id="1007902206" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-010.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-010_10C4C929.wem</Path>
+						</File>
+						<File Id="1030184397" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-021.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-021_10C4C929.wem</Path>
+						</File>
+						<File Id="1034800148" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-022.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Land_Boots_Mono_OneShot-022_10C4C929.wem</Path>
+						</File>
+						<File Id="1038143801" Language="SFX">
+							<ShortName>Sweeteners_Stone-014.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-014_69D1EE89.wem</Path>
+						</File>
+						<File Id="1055543393" Language="SFX">
+							<ShortName>SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-012.wav</ShortName>
+							<Path>SFX\SFX_Footsteps_Player_Movement_Jump_Boots_Mono_OneShot-012_10C4C929.wem</Path>
+						</File>
+						<File Id="1067283479" Language="SFX">
+							<ShortName>Sweeteners_Stone-001.wav</ShortName>
+							<Path>SFX\Sweeteners_Stone-001_ABEECE55.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}">
+							<DefaultSwitchValue>{6E266B90-6257-4191-AE32-D792656570D0}</DefaultSwitchValue>
+							<Media>
+								<File Id="1067283479"/>
+								<File Id="791859920"/>
+								<File Id="359587280"/>
+								<File Id="682232240"/>
+								<File Id="119456674"/>
+								<File Id="306914669"/>
+								<File Id="335566913"/>
+								<File Id="809889421"/>
+								<File Id="1038143801"/>
+								<File Id="633607693"/>
+								<File Id="341747581"/>
+								<File Id="928762598"/>
+								<File Id="581692021"/>
+								<File Id="726273235"/>
+								<File Id="386687333"/>
+								<File Id="358574180"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}">
+									<Media>
+										<File Id="9305438"/>
+										<File Id="975501619"/>
+										<File Id="913948120"/>
+										<File Id="882260242"/>
+										<File Id="274742527"/>
+										<File Id="834382198"/>
+										<File Id="310064282"/>
+										<File Id="395023637"/>
+										<File Id="202300047"/>
+										<File Id="138562534"/>
+										<File Id="832253260"/>
+										<File Id="1055543393"/>
+										<File Id="157507378"/>
+										<File Id="444059732"/>
+										<File Id="872152510"/>
+										<File Id="409378470"/>
+										<File Id="850610102"/>
+										<File Id="38389955"/>
+										<File Id="792108942"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{201098D6-22A9-4773-8CFB-A7CA47909E07}">
+									<Media>
+										<File Id="571983546"/>
+										<File Id="605296180"/>
+										<File Id="602845436"/>
+										<File Id="453925951"/>
+										<File Id="694619862"/>
+										<File Id="531756372"/>
+										<File Id="387674614"/>
+										<File Id="355172072"/>
+										<File Id="754584418"/>
+										<File Id="1007902206"/>
+										<File Id="158115121"/>
+										<File Id="406269880"/>
+										<File Id="315270480"/>
+										<File Id="968217749"/>
+										<File Id="904798448"/>
+										<File Id="921787779"/>
+										<File Id="357153520"/>
+										<File Id="658121238"/>
+										<File Id="149102290"/>
+										<File Id="683402430"/>
+										<File Id="1030184397"/>
+										<File Id="1034800148"/>
+										<File Id="619066717"/>
+										<File Id="1000100583"/>
+										<File Id="946563595"/>
+										<File Id="951387859"/>
+										<File Id="788395172"/>
+										<File Id="620040363"/>
+										<File Id="417507289"/>
+										<File Id="420041282"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{6E266B90-6257-4191-AE32-D792656570D0}">
+									<Media>
+										<File Id="544785137"/>
+										<File Id="836868632"/>
+										<File Id="325033335"/>
+										<File Id="930457554"/>
+										<File Id="314496071"/>
+										<File Id="182506805"/>
+										<File Id="912171846"/>
+										<File Id="639965187"/>
+										<File Id="315136122"/>
+										<File Id="212230598"/>
+										<File Id="5157210"/>
+										<File Id="504086367"/>
+										<File Id="393198544"/>
+										<File Id="410820408"/>
+										<File Id="375347475"/>
+										<File Id="144702802"/>
+										<File Id="319887600"/>
+										<File Id="598326548"/>
+										<File Id="903338321"/>
+										<File Id="673417678"/>
+										<File Id="995845939"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2389238889" Name="Play_Impact_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Impact_Flare" DurationType="OneShot" DurationMin="1.115177" DurationMax="2.314011">
+					<IncludedMemoryFiles>
+						<File Id="8579233" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_02.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_02_B153840C.wem</Path>
+						</File>
+						<File Id="86276617" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_04.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_04_F33C2FEE.wem</Path>
+						</File>
+						<File Id="92130021" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_01.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_01_C7D715BC.wem</Path>
+						</File>
+						<File Id="199156256" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_05.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_05_092D32A7.wem</Path>
+						</File>
+						<File Id="319140082" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_01.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_01_10C4C929.wem</Path>
+						</File>
+						<File Id="395765705" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_03.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_03_84595230.wem</Path>
+						</File>
+						<File Id="444425588" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_07.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_07_10C4C929.wem</Path>
+						</File>
+						<File Id="501864485" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_07.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_07_3CF526C6.wem</Path>
+						</File>
+						<File Id="551111740" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_04.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_04_10C4C929.wem</Path>
+						</File>
+						<File Id="721911965" Language="SFX">
+							<ShortName>SFX_Impact_Stone_Flare_06.wav</ShortName>
+							<Path>SFX\SFX_Impact_Stone_Flare_06_13D9DE25.wem</Path>
+						</File>
+						<File Id="757914140" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_02.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_02_1711002F.wem</Path>
+						</File>
+						<File Id="884732122" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_06.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_06_10C4C929.wem</Path>
+						</File>
+						<File Id="1032695841" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_05.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1046880395" Language="SFX">
+							<ShortName>SFX_Impact_Water_Flare_03.wav</ShortName>
+							<Path>SFX\SFX_Impact_Water_Flare_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}">
+							<Media>
+								<File Id="92130021"/>
+								<File Id="8579233"/>
+								<File Id="395765705"/>
+								<File Id="86276617"/>
+								<File Id="199156256"/>
+								<File Id="721911965"/>
+								<File Id="501864485"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{CFD30A4D-6E66-4282-9D69-E3C0EF60CF9C}">
+							<Media>
+								<File Id="319140082"/>
+								<File Id="757914140"/>
+								<File Id="1046880395"/>
+								<File Id="551111740"/>
+								<File Id="1032695841"/>
+								<File Id="884732122"/>
+								<File Id="444425588"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3621663528" Name="Play_Interact" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Interact" DurationType="OneShot" DurationMin="1.397667" DurationMax="1.397667">
+					<IncludedMemoryFiles>
+						<File Id="981763340" Language="SFX">
+							<ShortName>SFX_Interact.wav</ShortName>
+							<Path>SFX\SFX_Interact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3128913152" Name="Play_Pickup_Item" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Pickup_Item" DurationType="OneShot" DurationMin="1.384750" DurationMax="1.384750">
+					<IncludedMemoryFiles>
+						<File Id="537572273" Language="SFX">
+							<ShortName>SFX_Pickup_Item_01.wav</ShortName>
+							<Path>SFX\SFX_Pickup_Item_01_BFBD7D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death" DurationType="OneShot" DurationMin="2.081208" DurationMax="3.679805">
+					<IncludedMemoryFiles>
+						<File Id="227320358" Language="SFX">
+							<ShortName>Player_Death_Scream_01.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_01_008C80BD.wem</Path>
+						</File>
+						<File Id="233820794" Language="SFX">
+							<ShortName>Player_Death_Scream_03.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_03_2067828C.wem</Path>
+						</File>
+						<File Id="250535607" Language="SFX">
+							<ShortName>Player_Death_Water_03.wav</ShortName>
+							<Path>SFX\Player_Death_Water_03_10C4C929.wem</Path>
+						</File>
+						<File Id="445395682" Language="SFX">
+							<ShortName>Player_Death_Water_01.wav</ShortName>
+							<Path>SFX\Player_Death_Water_01_10C4C929.wem</Path>
+						</File>
+						<File Id="486592868" Language="SFX">
+							<ShortName>Player_Death_Scream_02.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_02_10C4C929.wem</Path>
+						</File>
+						<File Id="632580888" Language="SFX">
+							<ShortName>Player_Death_Scream_05.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_05_A6A573D7.wem</Path>
+						</File>
+						<File Id="1024017596" Language="SFX">
+							<ShortName>Player_Death_Scream_04.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_04_8EFE2C50.wem</Path>
+						</File>
+						<File Id="1047979362" Language="SFX">
+							<ShortName>Player_Death_Water_02.wav</ShortName>
+							<Path>SFX\Player_Death_Water_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="1236188118" Name="AUX_Death" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="4238880044" Name="Play_Player_Respawn" ObjectPath="\Events\Default Work Unit\Play_Player_Respawn" DurationType="OneShot" DurationMin="1.793146" DurationMax="1.793146">
+					<IncludedMemoryFiles>
+						<File Id="108241486" Language="SFX">
+							<ShortName>Player_Respawn.wav</ShortName>
+							<Path>SFX\Player_Respawn_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="838326419" Name="Play_Throw_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Throw_Flare" DurationType="OneShot" DurationMin="0.224322" DurationMax="0.492553">
+					<IncludedMemoryFiles>
+						<File Id="24992120" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_01.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_01_10C4C929.wem</Path>
+						</File>
+						<File Id="190461341" Language="SFX">
+							<ShortName>Throw_Foley_Flare_01.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_01_10C4C929.wem</Path>
+						</File>
+						<File Id="290250755" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_03.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_03_10C4C929.wem</Path>
+						</File>
+						<File Id="298553697" Language="SFX">
+							<ShortName>Throw_Foley_Flare_06.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_06_10C4C929.wem</Path>
+						</File>
+						<File Id="299482787" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_07.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_07_10C4C929.wem</Path>
+						</File>
+						<File Id="402932462" Language="SFX">
+							<ShortName>Throw_Foley_Flare_10.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_10_10C4C929.wem</Path>
+						</File>
+						<File Id="433856650" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_06.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_06_10C4C929.wem</Path>
+						</File>
+						<File Id="645169709" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_02.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_02_10C4C929.wem</Path>
+						</File>
+						<File Id="743101336" Language="SFX">
+							<ShortName>Throw_Foley_Flare_02.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_02_10C4C929.wem</Path>
+						</File>
+						<File Id="750498551" Language="SFX">
+							<ShortName>Throw_Foley_Flare_07.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_07_10C4C929.wem</Path>
+						</File>
+						<File Id="783665527" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_04.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_04_10C4C929.wem</Path>
+						</File>
+						<File Id="785498491" Language="SFX">
+							<ShortName>Throw_Foley_Flare_03.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_03_10C4C929.wem</Path>
+						</File>
+						<File Id="799311388" Language="SFX">
+							<ShortName>Throw_Whoosh_Flare_05.wav</ShortName>
+							<Path>SFX\Throw_Whoosh_Flare_05_10C4C929.wem</Path>
+						</File>
+						<File Id="976228408" Language="SFX">
+							<ShortName>Throw_Foley_Flare_05.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_05_10C4C929.wem</Path>
+						</File>
+						<File Id="989123537" Language="SFX">
+							<ShortName>Throw_Foley_Flare_08.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_08_10C4C929.wem</Path>
+						</File>
+						<File Id="1007307299" Language="SFX">
+							<ShortName>Throw_Foley_Flare_04.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_04_10C4C929.wem</Path>
+						</File>
+						<File Id="1035129270" Language="SFX">
+							<ShortName>Throw_Foley_Flare_09.wav</ShortName>
+							<Path>SFX\Throw_Foley_Flare_09_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3232459058" Name="Play_Turn_On_Burn_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="14017771" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_02.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_02_10C4C929.wem</Path>
+						</File>
+						<File Id="98305374" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_07.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_07_10C4C929.wem</Path>
+						</File>
+						<File Id="141378389" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_06.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_06_10C4C929.wem</Path>
+						</File>
+						<File Id="179045809" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_06.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_06_10C4C929.wem</Path>
+						</File>
+						<File Id="288594343" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_01.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_01_10C4C929.wem</Path>
+						</File>
+						<File Id="413060821" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_05.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_05_10C4C929.wem</Path>
+						</File>
+						<File Id="539650048" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_04.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_04_10C4C929.wem</Path>
+						</File>
+						<File Id="550181428" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_01.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_01_10C4C929.wem</Path>
+						</File>
+						<File Id="563138402" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_05.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_05_10C4C929.wem</Path>
+						</File>
+						<File Id="676711385" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_03.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_03_10C4C929.wem</Path>
+						</File>
+						<File Id="726851252" Language="SFX">
+							<ShortName>SFX_Burning_Flare_LP.wav</ShortName>
+							<Path>SFX\SFX_Burning_Flare_LP_D79FB2B7.wem</Path>
+						</File>
+						<File Id="730123396" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_07.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_07_10C4C929.wem</Path>
+						</File>
+						<File Id="827411416" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_04.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_04_10C4C929.wem</Path>
+						</File>
+						<File Id="868991751" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_08.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_08_E3E19EED.wem</Path>
+						</File>
+						<File Id="910009931" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Scratch_08.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Scratch_08_10C4C929.wem</Path>
+						</File>
+						<File Id="927405510" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_02.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_02_10C4C929.wem</Path>
+						</File>
+						<File Id="978942152" Language="SFX">
+							<ShortName>SFX_TurnOn_Flare_Ignition_03.wav</ShortName>
+							<Path>SFX\SFX_TurnOn_Flare_Ignition_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2763336528" Name="Stop_Burning_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3917897988" Name="Distance_to_Player" ObjectPath="\Game Parameters\Generic\Distance_to_Player"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1088160865" Name="Movement_Type" ObjectPath="\Switches\Default Work Unit\Movement_Type">
+					<Switches>
+						<Switch Id="3833651337" Name="Jump" ObjectPath="\Switches\Default Work Unit\Movement_Type\Jump"/>
+						<Switch Id="674522502" Name="Land" ObjectPath="\Switches\Default Work Unit\Movement_Type\Land"/>
+						<Switch Id="712161704" Name="Run" ObjectPath="\Switches\Default Work Unit\Movement_Type\Run"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1097155889" Name="Material_Type" ObjectPath="\Switches\Default Work Unit\Material_Type">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Material_Type\Stone"/>
+						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Material_Type\Water"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

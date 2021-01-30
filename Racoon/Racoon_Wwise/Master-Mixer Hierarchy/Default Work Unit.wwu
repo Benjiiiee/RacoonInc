@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E996EE36-F573-417B-A05D-8799929A22F5}" WorkUnitID="{CB85266D-8085-4FBB-9EB7-09BAF8C7E2B9}"/>
@@ -14,6 +21,11 @@
 							<ChildrenList>
 								<Bus Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="8"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
@@ -88,6 +100,36 @@
 														<Property Name="OverrideColor" Type="bool" Value="True"/>
 													</PropertyList>
 												</Bus>
+												<AuxBus Name="AUX_Death" ID="{E25E2017-34D7-4D6B-A5A2-2788A9C44856}">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64">
+															<ValueList>
+																<Value>-9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Effect0">
+															<Custom CreatedFrom="{B8CCC284-212D-4ADF-B8E4-BC724B40D8BD}">
+																<Effect Name="_1_Frame_Delay_(Custom)" ID="{4453EB32-C488-4657-9861-CCA9A77A78B0}" ShortID="768915834" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+																	<PropertyList>
+																		<Property Name="EnableCrossFeed" Type="bool" Value="True"/>
+																		<Property Name="EnableFeedback" Type="bool" Value="True"/>
+																		<Property Name="FilterFrequency" Type="Real32" Value="261"/>
+																		<Property Name="FilterGain" Type="Real32" Value="10.5"/>
+																		<Property Name="LeftCrossfeed" Type="Real32" Value="-11.8"/>
+																		<Property Name="LeftDelayTime" Type="Real32" Value="0.52"/>
+																		<Property Name="LeftFeedback" Type="Real32" Value="-16"/>
+																		<Property Name="RightCrossfeed" Type="Real32" Value="-6"/>
+																		<Property Name="RightDelayTime" Type="Real32" Value="0.03"/>
+																		<Property Name="RightFeedback" Type="Real32" Value="-16.9"/>
+																		<Property Name="WetLevel" Type="Real32" Value="-3"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+													</ReferenceList>
+												</AuxBus>
 											</ChildrenList>
 										</Bus>
 									</ChildrenList>

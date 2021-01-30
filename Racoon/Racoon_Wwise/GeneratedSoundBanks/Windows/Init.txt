@@ -1,17 +1,23 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	247557814	Foley			\Default Work Unit\Master Audio Bus\World\Characters\Player\Foley	
 	983310469	AUX			\Default Work Unit\Master Audio Bus\World\AUX	
 	1017660616	Ambiences			\Default Work Unit\Master Audio Bus\World\Ambiences	
 	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Characters\Player	
+	1540219311	Flare			\Default Work Unit\Master Audio Bus\World\Characters\Player\Flare	
 	1557941045	Characters			\Default Work Unit\Master Audio Bus\World\Characters	
+	2151963051	Items			\Default Work Unit\Master Audio Bus\World\Characters\Player\Items	
+	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\World\Characters\Player\Footsteps	
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1236188118	AUX_Death			\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death	
 	3352913298	Aux_RVB_Cavern			\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern	
 
 Effect plug-ins	ID	Name	Type				Notes
 	259871918	Echoes_Linear (Custom)	Wwise Delay			
 	375632289	Hall_Medium_Dark (Custom)	Wwise RoomVerb			
+	768915834	_1_Frame_Delay_(Custom)	Wwise Stereo Delay			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

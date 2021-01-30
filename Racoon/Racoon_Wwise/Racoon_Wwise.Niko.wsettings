@@ -3,11 +3,12 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{6A1B6E6F-5215-4C83-8960-04F0DFD2EF51}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\nicol\Desktop\Racoon\assets\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\nicol\Desktop\Racoon\reaper\assets\"/>
 				<Property Name="Event Action List\{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0C7AC49E-8AA6-41C9-82F2-4AEE4329D4BD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0D8E5537-0AC2-4590-8787-87C12218B95D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0FB20430-7295-4200-A41E-876631A04608}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3D48CCEE-61D2-4B10-A11B-0AE9F5E2A8E8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{51302DB1-6C86-4A64-8F75-1BF002E6B327}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{536870A7-E39C-4A45-B2ED-9DFC8361D407}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{5AEA34D8-C486-41B5-9E71-5F04971255B2}\x64_Expand States" Type="string" Value=""/>
@@ -23,6 +24,7 @@
 				<Property Name="Event Action List\{A3E659A8-2B0D-4262-8B1C-0626E6041876}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BBA6CCBD-0FB8-48BE-8387-3CE23DC82C10}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CE8B707A-3BFB-4478-9D8B-49A24FA71BC3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CF89B092-779A-487E-8A42-A7F803E8D01E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DDCEFD36-E667-464C-85CD-3E17D07B7B9C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E8180317-49B6-4920-B729-9E395240457D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EEB77D3F-8195-48E1-94C2-4A52A68AD967}\x64_Expand States" Type="string" Value=""/>

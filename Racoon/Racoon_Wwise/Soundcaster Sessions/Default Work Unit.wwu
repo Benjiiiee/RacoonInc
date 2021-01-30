@@ -26,6 +26,10 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Player_Death" ID="{3D48CCEE-61D2-4B10-A11B-0AE9F5E2A8E8}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -45,6 +49,10 @@
 							<ObjectRef Name="Play_Interact" ID="{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
 							<Position X="1" Y="4"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Player_Respawn" ID="{89529BE9-9A75-44F8-A619-3CEA1F16C999}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+							<Position X="1" Y="5"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -54,7 +62,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Land" ID="{201098D6-22A9-4773-8CFB-A7CA47909E07}"/>
+						<CurrentSwitchRef Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
 						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
