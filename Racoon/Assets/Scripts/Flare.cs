@@ -37,8 +37,8 @@ public class Flare : MonoBehaviour
             if (timeLeft < 0)
             {
                 eteint();
-                //stopFlareSound.Post(gameObject);
-                //Debug.Log("Stop flare sound");
+                stopFlareSound.Post(gameObject);
+                Debug.Log("Stop flare sound");
                 timeLeft2 -= Time.deltaTime;
                 if (timeLeft2 < 0)
                 {
