@@ -4,9 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{1B7AE200-E287-4069-8F55-0FB733CD866F}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="World" ID="{C551D083-A811-4673-9083-A2DDB7B54825}" ShortID="544848452">
-					<PropertyList>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
@@ -21,6 +18,7 @@
 								<Property Name="Color" Type="int16" Value="9"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -36,6 +34,9 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Aux_RVB_Cavern" ID="{DDE8E791-3263-46F5-87EA-E50A66970701}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<WorkUnit Name="Ambiences_Background" ID="{86857F70-B38C-428E-8A06-AD6C2765BEDE}" PersistMode="Reference"/>
@@ -47,6 +48,7 @@
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -54,6 +56,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Characters" ID="{BE464DBB-BC44-4A00-B856-DEDFDB1B188B}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Aux_RVB_Cavern" ID="{DDE8E791-3263-46F5-87EA-E50A66970701}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -5839,6 +5844,7 @@
 															</ModifierList>
 														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>

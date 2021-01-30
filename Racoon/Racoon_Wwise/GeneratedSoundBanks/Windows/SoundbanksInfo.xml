@@ -140,6 +140,9 @@
 							<Path>SFX\Ambience_Weird_Voices-012_B99FA760.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2972937805" Name="Play_Ambience_Water_Waterfall" ObjectPath="\Events\Default Work Unit\Ambiences\Play_Ambience_Water_Waterfall" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -156,6 +159,9 @@
 							<Path>SFX\Waterfall_High_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3113720603" Name="Play_Foley" ObjectPath="\Events\Default Work Unit\Characters\Movements\Play_Foley" DurationType="OneShot" DurationMin="0.197348" DurationMax="0.712516">
 					<IncludedMemoryFiles>
@@ -315,6 +321,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Characters\Movements\Play_Footsteps" DurationType="OneShot" DurationMin="0.511230" DurationMax="1.207238">
 					<IncludedMemoryFiles>
@@ -771,6 +780,9 @@
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2389238889" Name="Play_Impact_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Impact_Flare" DurationType="OneShot" DurationMin="1.115177" DurationMax="2.314011">
 					<IncludedMemoryFiles>
@@ -855,6 +867,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3621663528" Name="Play_Interact" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Interact" DurationType="OneShot" DurationMin="1.397667" DurationMax="1.397667">
 					<IncludedMemoryFiles>
@@ -863,6 +878,9 @@
 							<Path>SFX\SFX_Interact_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3128913152" Name="Play_Pickup_Item" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Pickup_Item" DurationType="OneShot" DurationMin="1.384750" DurationMax="1.384750">
 					<IncludedMemoryFiles>
@@ -871,6 +889,9 @@
 							<Path>SFX\SFX_Pickup_Item_01_BFBD7D0C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death" DurationType="OneShot" DurationMin="2.081208" DurationMax="3.679805">
 					<IncludedMemoryFiles>
@@ -898,10 +919,6 @@
 							<ShortName>Player_Death_Scream_05.wav</ShortName>
 							<Path>SFX\Player_Death_Scream_05_A6A573D7.wem</Path>
 						</File>
-						<File Id="1024017596" Language="SFX">
-							<ShortName>Player_Death_Scream_04.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_04_8EFE2C50.wem</Path>
-						</File>
 						<File Id="1047979362" Language="SFX">
 							<ShortName>Player_Death_Water_02.wav</ShortName>
 							<Path>SFX\Player_Death_Water_02_10C4C929.wem</Path>
@@ -909,6 +926,7 @@
 					</IncludedMemoryFiles>
 					<AuxBusSends>
 						<AuxBus Id="1236188118" Name="AUX_Death" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death"/>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
 				<Event Id="4238880044" Name="Play_Player_Respawn" ObjectPath="\Events\Default Work Unit\Play_Player_Respawn" DurationType="OneShot" DurationMin="1.793146" DurationMax="1.793146">
@@ -918,6 +936,9 @@
 							<Path>SFX\Player_Respawn_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="838326419" Name="Play_Throw_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Throw_Flare" DurationType="OneShot" DurationMin="0.224322" DurationMax="0.492553">
 					<IncludedMemoryFiles>
@@ -990,6 +1011,9 @@
 							<Path>SFX\Throw_Foley_Flare_09_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3232459058" Name="Play_Turn_On_Burn_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -1062,6 +1086,9 @@
 							<Path>SFX\SFX_TurnOn_Flare_Ignition_03_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2763336528" Name="Stop_Burning_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>

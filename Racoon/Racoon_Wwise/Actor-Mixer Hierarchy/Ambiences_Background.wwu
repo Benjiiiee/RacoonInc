@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<BlendContainer Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" ShortID="866960995">
 					<PropertyList>
+						<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>

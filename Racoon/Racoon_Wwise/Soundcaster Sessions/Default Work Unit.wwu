@@ -57,7 +57,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Distance_to_Player" ID="{3A5F230D-CAB7-486E-8974-F5E868AF19CB}"/>
-							<Value>10</Value>
+							<Value>8.4</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

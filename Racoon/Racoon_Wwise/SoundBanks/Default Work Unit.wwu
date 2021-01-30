@@ -5,8 +5,18 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{79B13784-6BD0-4EA9-B072-D3EB9F06DD35}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Background_Cavern" ID="{66836C0C-4074-4360-877C-A2D146B128CD}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Turn_On_Burn_Flare" ID="{CE8B707A-3BFB-4478-9D8B-49A24FA71BC3}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Foley" ID="{0D8E5537-0AC2-4590-8787-87C12218B95D}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Throw_Flare" ID="{FF5F6702-2C7A-4601-AEA4-21A97FBB011B}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Pickup_Item" ID="{DDCEFD36-E667-464C-85CD-3E17D07B7B9C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Interact" ID="{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Respawn" ID="{CF89B092-779A-487E-8A42-A7F803E8D01E}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Footsteps" ID="{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Player_Death" ID="{3D48CCEE-61D2-4B10-A11B-0AE9F5E2A8E8}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Impact_Flare" ID="{7FDFB297-2133-4C1A-94EB-0689F639A11C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

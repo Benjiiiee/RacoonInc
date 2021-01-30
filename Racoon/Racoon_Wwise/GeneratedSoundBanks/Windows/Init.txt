@@ -15,8 +15,8 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3352913298	Aux_RVB_Cavern			\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern	
 
 Effect plug-ins	ID	Name	Type				Notes
-	259871918	Echoes_Linear (Custom)	Wwise Delay			
-	375632289	Hall_Medium_Dark (Custom)	Wwise RoomVerb			
+	259871918	Echoes_Linear_(Custom)	Wwise Delay			
+	375632289	Hall_Medium_Dark_(Custom)	Wwise RoomVerb			
 	768915834	_1_Frame_Delay_(Custom)	Wwise Stereo Delay			
 
 Audio Devices	ID	Name	Type				Notes
