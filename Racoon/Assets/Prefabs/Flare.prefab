@@ -127,6 +127,11 @@ MonoBehaviour:
   light1: {fileID: 8031531498409241506}
   light2: {fileID: 5110398987375429172}
   light3: {fileID: 7808254314763522216}
+  stopFlareSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d7e87583ab561c49965054c76896eb5,
+      type: 2}
 --- !u!212 &8350322030364809035
 SpriteRenderer:
   m_ObjectHideFlags: 0

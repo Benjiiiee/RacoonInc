@@ -46,13 +46,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flare: {fileID: 268253847834479128, guid: 9cf489343214d2e4cb135d393dfc9930, type: 3}
-  character: {fileID: 4792972394050339238, guid: 7c54679c07ba63d45a5f1417dc1835df,
-    type: 3}
   launchForce: 10
+  launchMin: 0
+  launchMax: 15
   shotPoint: {fileID: 8751158954763303543}
   point: {fileID: 2209758178134386610, guid: 3d7ea6cc02290784c8c571b1fcc8960c, type: 3}
   numberOfPoints: 30
   spaceBetweenPoints: 0.05
+  firstPoint: {x: 0, y: 0}
+  secondPoint: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
+  angularVelocity: 1
+  turnOnFlare:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ae6ca76dbc9627946ba5be71bf445eb9,
+      type: 2}
+  throwFlareEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e2655f78548e9a64094120268ca3f863,
+      type: 2}
 --- !u!212 &8751158954938017350
 SpriteRenderer:
   m_ObjectHideFlags: 0

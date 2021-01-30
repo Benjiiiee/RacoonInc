@@ -16,10 +16,9 @@ public class Flare : MonoBehaviour
     float timeLeft = 5.0f;
     float timeLeft2 = 6.0f;
 
-    void Start()
-    {
-		//test
-    }
+    //Sound
+
+    public AK.Wwise.Event stopFlareSound;
 
     private void Awake()
     {
@@ -38,6 +37,8 @@ public class Flare : MonoBehaviour
             if (timeLeft < 0)
             {
                 eteint();
+                //stopFlareSound.Post(gameObject);
+                //Debug.Log("Stop flare sound");
                 timeLeft2 -= Time.deltaTime;
                 if (timeLeft2 < 0)
                 {
