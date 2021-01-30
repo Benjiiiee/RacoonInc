@@ -1249,7 +1249,7 @@ GameObject:
   - component: {fileID: 978241708}
   - component: {fileID: 978241707}
   m_Layer: 0
-  m_Name: Background Ambience
+  m_Name: Background_Ambience
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

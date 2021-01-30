@@ -897,11 +897,11 @@
 					<IncludedMemoryFiles>
 						<File Id="227320358" Language="SFX">
 							<ShortName>Player_Death_Scream_01.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_01_008C80BD.wem</Path>
+							<Path>SFX\Player_Death_Scream_01_5AEECFA0.wem</Path>
 						</File>
 						<File Id="233820794" Language="SFX">
 							<ShortName>Player_Death_Scream_03.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_03_2067828C.wem</Path>
+							<Path>SFX\Player_Death_Scream_03_DF4D0B7A.wem</Path>
 						</File>
 						<File Id="250535607" Language="SFX">
 							<ShortName>Player_Death_Water_03.wav</ShortName>
@@ -917,7 +917,11 @@
 						</File>
 						<File Id="632580888" Language="SFX">
 							<ShortName>Player_Death_Scream_05.wav</ShortName>
-							<Path>SFX\Player_Death_Scream_05_A6A573D7.wem</Path>
+							<Path>SFX\Player_Death_Scream_05_5B15786C.wem</Path>
+						</File>
+						<File Id="1024017596" Language="SFX">
+							<ShortName>Player_Death_Scream_04.wav</ShortName>
+							<Path>SFX\Player_Death_Scream_04_77310C25.wem</Path>
 						</File>
 						<File Id="1047979362" Language="SFX">
 							<ShortName>Player_Death_Water_02.wav</ShortName>
