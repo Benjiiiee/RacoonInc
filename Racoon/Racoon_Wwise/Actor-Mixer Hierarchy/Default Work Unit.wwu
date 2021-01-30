@@ -5844,6 +5844,7 @@
 															</ModifierList>
 														</Property>
 														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -5949,13 +5950,6 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="Player_Death_Scream_04" ID="{7F790795-7AFA-4C5B-973B-D6DE4E162682}" ShortID="395481945">
-															<PropertyList>
-																<Property Name="Inclusion" Type="bool">
-																	<ValueList>
-																		<Value>False</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
