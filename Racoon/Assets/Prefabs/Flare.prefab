@@ -128,6 +128,7 @@ MonoBehaviour:
   light1: {fileID: 8031531498409241506}
   light2: {fileID: 5110398987375429172}
   light3: {fileID: 7808254314763522216}
+  isYeeted: 0
   startFlareSound:
     idInternal: 0
     valueGuidInternal: 
