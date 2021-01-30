@@ -289,11 +289,7 @@ MonoBehaviour:
   colliderLeft: {fileID: 7820991006492170427}
   animator: {fileID: 0}
   lastCheckpoint: {x: 0, y: 0, z: 0}
-  throwFlareEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: e2655f78548e9a64094120268ca3f863,
-      type: 2}
+  turboJumpModifier: 0.8
 --- !u!212 &4792972394050339236
 SpriteRenderer:
   m_ObjectHideFlags: 0
