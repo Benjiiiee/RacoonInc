@@ -23,6 +23,9 @@ public class Flare : MonoBehaviour
     public AK.Wwise.Event startFlareSound;
     public AK.Wwise.Event stopFlareSoundFade;
     public AK.Wwise.Event stopFlareSoundImmediate;
+    public AK.Wwise.Event impactFlare;
+
+    public AK.Wwise.Switch flareSwitch;
 
     private void Awake()
     {
@@ -68,6 +71,11 @@ public class Flare : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         switchingOff = true;
+        if (!collision.collider.CompareTag("Player"))
+        {
+            flareSwitch.SetValue(gameObject);
+            impactFlare.Post(gameObject);
+        }
     }
 
     private void eteint() 
@@ -114,4 +122,5 @@ public class Flare : MonoBehaviour
     {
         stopFlareSoundImmediate.Post(gameObject);
     }
+
 }
