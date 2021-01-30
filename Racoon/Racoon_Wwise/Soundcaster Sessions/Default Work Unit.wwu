@@ -54,7 +54,7 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Burning_Flare_Immediate" ID="{2DEB810B-D672-4A1F-B038-B7B5183F7C2D}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
+							<ObjectRef Name="Stop_Burning_Flare_Immediate" ID="{2DEB810B-D672-4A1F-B038-B7B5183F7C2D}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>

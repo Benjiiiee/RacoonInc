@@ -163,6 +163,17 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1152301005" Name="Play_End_Level_Door" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_End_Level_Door" MaxAttenuation="35.000000" DurationType="OneShot" DurationMin="1.561563" DurationMax="1.561563">
+					<IncludedMemoryFiles>
+						<File Id="837172024" Language="SFX">
+							<ShortName>End_Level_Door.wav</ShortName>
+							<Path>SFX\End_Level_Door_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="3113720603" Name="Play_Foley" ObjectPath="\Events\Default Work Unit\Characters\Movements\Play_Foley" DurationType="OneShot" DurationMin="0.197348" DurationMax="0.712516">
 					<IncludedMemoryFiles>
 						<File Id="22217023" Language="SFX">
@@ -1063,7 +1074,7 @@
 						</File>
 						<File Id="726851252" Language="SFX">
 							<ShortName>SFX_Burning_Flare_LP.wav</ShortName>
-							<Path>SFX\SFX_Burning_Flare_LP_0B878370.wem</Path>
+							<Path>SFX\SFX_Burning_Flare_LP_2DB8D762.wem</Path>
 						</File>
 						<File Id="730123396" Language="SFX">
 							<ShortName>SFX_TurnOn_Flare_Ignition_07.wav</ShortName>
@@ -1095,7 +1106,7 @@
 					</AuxBusSends>
 				</Event>
 				<Event Id="3353542511" Name="Stop_Burning_Flare_FadeOut" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="917084758" Name="Stop_Burning_Flare_Immediate" ObjectPath="\Events\Default Work Unit\Stop_Burning_Flare_Immediate" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="917084758" Name="Stop_Burning_Flare_Immediate" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="1088160865" Name="Movement_Type" ObjectPath="\Switches\Default Work Unit\Movement_Type">

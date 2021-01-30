@@ -4107,6 +4107,9 @@
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
 																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}" WorkUnitID="{C00A4C47-405D-4BDB-A1CD-5B5FFDB4F08F}"/>
+																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
 																</Reference>
