@@ -26,6 +26,7 @@ public class CharacterController : KinematicObject
     public ColliderCheck colliderRight;
     public ColliderCheck colliderLeft;
     public Animator animator;
+    public Vector3 lastCheckpoint;
 
     public Bounds Bounds => collider2d.bounds;
 
@@ -36,6 +37,7 @@ public class CharacterController : KinematicObject
         colliderRight = colliderRight.GetComponent<ColliderCheck>();
         colliderLeft = colliderLeft.GetComponent<ColliderCheck>();
         animator = GetComponent<Animator>();
+        lastCheckpoint = transform.position;
     }
 
     protected override void Update()
@@ -145,6 +147,11 @@ public class CharacterController : KinematicObject
             targetVelocity = move * maxJumpSpeed;
         }
 
+    }
+
+    public void Respawn()
+    {
+        transform.position = lastCheckpoint;
     }
 
     public enum JumpState
