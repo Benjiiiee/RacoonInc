@@ -162,15 +162,17 @@ public class CharacterController : KinematicObject
         {
             jumpModifier = jumpModifier + turboJumpModifier;
             hasTurboJumped = true;
+            other.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
         }
     }
     void OnTriggerExit2D (Collider2D other)
     {
         if (other.gameObject.CompareTag("Trampoline") && hasTurboJumped == true)
         {
+            other.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.27f);
             jumpModifier = jumpModifier - turboJumpModifier;
             hasTurboJumped = false;
-        }
+            }
     }
 
     public enum JumpState
