@@ -23,9 +23,6 @@ Switch	ID	Name	Switch Group			Notes
 	1216965916	Stone	Material_Type			
 	2654748154	Water	Material_Type			
 
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	3917897988	Distance_to_Player			\Generic\Distance_to_Player	
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5157210	SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-011	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-011_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Stone\Run\SFX_Footsteps_Player_Movement_Run_Boots_Mono_OneShot-011		45430
 	8579233	SFX_Impact_Stone_Flare_02	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Impact_Stone_Flare_02_B153840C.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Impact_Flare\Stone\SFX_Impact_Stone_Flare_02		222210
@@ -147,7 +144,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	706053266	Ambience_Weird_Voices-008	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Ambience_Weird_Voices-008_B1ECC6B8.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Ambience_Weird_Voices\Ambience_Weird_Voices-008		661140
 	721911965	SFX_Impact_Stone_Flare_06	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Impact_Stone_Flare_06_13D9DE25.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Impact_Flare\Stone\SFX_Impact_Stone_Flare_06		140196
 	726273235	Sweeteners_Stone-028	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Sweeteners_Stone-028_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Movement\Footsteps_Surface\Footsteps_Stone\Sweeteners_Stone\Sweeteners_Stone-028		37626
-	726851252	Burning_Flare	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Burning_Flare_LP_CCE1231E.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Burning_Flare		1262310
+	726851252	Burning_Flare	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_Burning_Flare_LP_0B878370.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Burning_Flare		2771310
 	730123396	SFX_TurnOn_Flare_Ignition_07	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\SFX_TurnOn_Flare_Ignition_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Characters\Player\Actions\Flare\Turn_On_Burn_Flare\Turn_On_Flare\Turn_On_Flare_Ignition\SFX_TurnOn_Flare_Ignition_07		87364
 	733736522	Ambience_Weird_Voices-013	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Ambience_Weird_Voices-013_C267A033.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Ambience_Weird_Voices\Ambience_Weird_Voices-013		698256
 	740608524	Weird_Far_Animals_02	C:\Users\nicol\Documents\GitHub\RacoonInc\Racoon\Racoon_Wwise\.cache\Windows\SFX\Weird_Far_Animals_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\World\Ambiences\Ambiences_Background\Ambience_Background_Cavern\Weird_Far_Animals\Weird_Far_Animals_02		194504
