@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 7231512194335964297}
   - component: {fileID: 8350322030364809035}
   - component: {fileID: 6072920242600977523}
-  - component: {fileID: 2714427514692723011}
+  - component: {fileID: 6993607124460497716}
   m_Layer: 10
   m_Name: Flare
   m_TagString: Untagged
@@ -166,7 +166,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ea33d444d9cb2540bb816cba1b7c0dd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7309aa1d724002e468641cb5ae33b1ae, type: 3}
   m_Color: {r: 0.514151, g: 0.9454019, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,8 +198,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &2714427514692723011
-PolygonCollider2D:
+--- !u!61 &6993607124460497716
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -215,18 +215,15 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.9375, y: 0.21875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0, y: 0.5}
-      - {x: -0.5, y: -0.000000021855694}
-      - {x: 0.00000004371139, y: -0.5}
-      - {x: 0.5, y: 0.0000000059624403}
+  serializedVersion: 2
+  m_Size: {x: 0.9375, y: 0.21875}
+  m_EdgeRadius: 0
 --- !u!1 &1332599963759279881
 GameObject:
   m_ObjectHideFlags: 0
