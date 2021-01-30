@@ -24,7 +24,8 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_RESPAWN = 4238880044U;
         static const AkUniqueID PLAY_THROW_FLARE = 838326419U;
         static const AkUniqueID PLAY_TURN_ON_BURN_FLARE = 3232459058U;
-        static const AkUniqueID STOP_BURNING_FLARE = 2763336528U;
+        static const AkUniqueID STOP_BURNING_FLARE_FADEOUT = 3353542511U;
+        static const AkUniqueID STOP_BURNING_FLARE_IMMEDIATE = 917084758U;
     } // namespace EVENTS
 
     namespace SWITCHES
