@@ -24,11 +24,11 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="7"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+									<ObjectRef Name="Turn_On_Burn_Flare" ID="{2AE7A77D-B0A0-4A48-BEF0-9A1C0AE89697}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

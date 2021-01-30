@@ -1019,7 +1019,7 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="3232459058" Name="Play_Turn_On_Burn_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare" DurationType="Infinite">
+				<Event Id="3232459058" Name="Play_Turn_On_Burn_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare" DurationType="OneShot" DurationMin="14.373732" DurationMax="14.373732">
 					<IncludedMemoryFiles>
 						<File Id="14017771" Language="SFX">
 							<ShortName>SFX_TurnOn_Flare_Scratch_02.wav</ShortName>
@@ -1063,7 +1063,7 @@
 						</File>
 						<File Id="726851252" Language="SFX">
 							<ShortName>SFX_Burning_Flare_LP.wav</ShortName>
-							<Path>SFX\SFX_Burning_Flare_LP_D79FB2B7.wem</Path>
+							<Path>SFX\SFX_Burning_Flare_LP_CCE1231E.wem</Path>
 						</File>
 						<File Id="730123396" Language="SFX">
 							<ShortName>SFX_TurnOn_Flare_Ignition_07.wav</ShortName>

@@ -5078,6 +5078,8 @@
 																<Sound Name="Burning_Flare" ID="{C21675A9-8CE9-4B6A-9ACE-EFC784D10C6F}" ShortID="330469531">
 																	<PropertyList>
 																		<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																		<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+																		<Property Name="LoopCount" Type="int32" Value="1"/>
 																		<Property Name="Pitch" Type="int32">
 																			<ValueList>
 																				<Value>-130</Value>
@@ -5100,6 +5102,11 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="SFX_Burning_Flare_LP" ID="{F563A4B3-896A-40AF-AAD3-A6DEE2AAD181}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="1.61471477834855"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="13.1483917665525"/>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>SFX_Burning_Flare_LP.wav</AudioFile>
 																			<MediaIDList>
