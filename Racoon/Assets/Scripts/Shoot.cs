@@ -16,6 +16,7 @@ public class Shoot : MonoBehaviour
     public Vector2 firstPoint, secondPoint, direction;
     private CharacterController character;
     private bool isThrowing = false;
+    public float angularVelocity = 1f;
 
     void Start()
     {
@@ -76,6 +77,7 @@ public class Shoot : MonoBehaviour
     {
         GameObject newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation);
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
+        newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
         Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
     }
 

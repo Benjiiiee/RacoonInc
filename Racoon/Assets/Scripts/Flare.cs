@@ -30,7 +30,7 @@ public class Flare : MonoBehaviour
     void Update()
     {
         float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+       // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         if (switchingOff == true)
         {
