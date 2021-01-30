@@ -18,6 +18,7 @@ public class Shoot : MonoBehaviour
     private bool isThrowing = false;
     public float angularVelocity = 1f;
     Flare newFlare;
+    public int flareCount = 3;
 
     //Sound
 
@@ -32,7 +33,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded)
+        if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded && flareCount > 0)
         {
             newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation).GetComponent<Flare>();
             throwFlareEvent.Post(gameObject);
@@ -87,6 +88,7 @@ public class Shoot : MonoBehaviour
 
     void Shootit()
     {
+        flareCount -= 1;
         newFlare.Yeet();
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
         newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
