@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMBIENCE_BACKGROUND_CAVERN = 1970585623U;
         static const AkUniqueID PLAY_AMBIENCE_WATER_WATERFALL = 2972937805U;
+        static const AkUniqueID PLAY_END_LEVEL_DOOR = 1152301005U;
         static const AkUniqueID PLAY_FOLEY = 3113720603U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_IMPACT_FLARE = 2389238889U;
