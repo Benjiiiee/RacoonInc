@@ -415,6 +415,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0cfcc442c3218a4db87a147f2d95a40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementTypeJump:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8a093947721b93340835b4163584691d,
+      type: 2}
+  MovementTypeRun:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2a7e9662cf31fdf46b70a568242bbc27,
+      type: 2}
+  MovementTypeLand:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f26562272ed25b647bdb9ef48f5b6174,
+      type: 2}
 --- !u!1 &6172068136008030174
 GameObject:
   m_ObjectHideFlags: 0
