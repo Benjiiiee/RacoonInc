@@ -38,7 +38,7 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<ObjectRef Name="Stop_Burning_Flare_FadeOut" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
@@ -52,6 +52,18 @@
 						<Module>
 							<ObjectRef Name="Player_Respawn" ID="{89529BE9-9A75-44F8-A619-3CEA1F16C999}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
 							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Burning_Flare_Immediate" ID="{2DEB810B-D672-4A1F-B038-B7B5183F7C2D}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Brasero" ID="{0E285ADD-9BC5-4B28-98D7-B7D44337F905}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Trampoline" ID="{FB4B1047-D6BD-4ECC-A423-98EAE2A25E5C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}"/>
+							<Position X="2" Y="5"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>

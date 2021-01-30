@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{79B13784-6BD0-4EA9-B072-D3EB9F06DD35}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Burning_Flare_FadeOut" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Background_Cavern" ID="{66836C0C-4074-4360-877C-A2D146B128CD}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Turn_On_Burn_Flare" ID="{CE8B707A-3BFB-4478-9D8B-49A24FA71BC3}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Foley" ID="{0D8E5537-0AC2-4590-8787-87C12218B95D}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}" Origin="Manual" Filter="7"/>

@@ -18,7 +18,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Burning_Flare" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}">
+				<Event Name="Stop_Burning_Flare_FadeOut" ID="{5AEA34D8-C486-41B5-9E71-5F04971255B2}">
 					<ChildrenList>
 						<Action Name="" ID="{C984F073-845F-445F-95FF-ACD9C5E083BC}" ShortID="759892742">
 							<PropertyList>
@@ -81,6 +81,36 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Interact" ID="{F89C0227-4A24-4DBF-A5E0-A701139A0012}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Trampoline" ID="{FB4B1047-D6BD-4ECC-A423-98EAE2A25E5C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{7FAB01CE-4F0B-48C4-BCCB-D2503C41EB45}" ShortID="544547585">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Trampoline" ID="{35A26C98-8D25-43D1-B4D7-DA9F365B61A0}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Brasero" ID="{0E285ADD-9BC5-4B28-98D7-B7D44337F905}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{06BCBE8A-2D29-4F78-A1E9-9FF437EB8D3D}" ShortID="126909211">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Brasero" ID="{D5953421-9075-447B-882A-6C37CC381AFA}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

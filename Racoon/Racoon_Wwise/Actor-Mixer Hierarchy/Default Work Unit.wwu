@@ -5702,6 +5702,126 @@
 																<ActiveSource Name="SFX_Interact" ID="{4EA8F574-DDF8-40E8-AB96-7D10C69CE3D5}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
+														<Sound Name="Trampoline" ID="{35A26C98-8D25-43D1-B4D7-DA9F365B61A0}" ShortID="1020377364">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>2</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Turbo_Jump" ID="{732694C6-1A60-4315-9BBB-3897C301CA3D}">
+																	<Language>SFX</Language>
+																	<AudioFile>Turbo_Jump.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="444923958"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Turbo_Jump" ID="{732694C6-1A60-4315-9BBB-3897C301CA3D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<BlendContainer Name="Brasero" ID="{D5953421-9075-447B-882A-6C37CC381AFA}" ShortID="537680602">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-10</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Ignition_Brasero" ID="{9554E8E4-58DB-4F59-9181-E2696636BF42}" ShortID="348576413">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>8</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Ignition_Brasero" ID="{2B5A7680-14A7-4E1A-8D5F-761586F891F0}">
+																			<PropertyList>
+																				<Property Name="VolumeOffset" Type="Real64">
+																					<ValueList>
+																						<Value>3.9</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Ignition_Brasero.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="915240284"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Ignition_Brasero" ID="{2B5A7680-14A7-4E1A-8D5F-761586F891F0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Loop_Brasero" ID="{40F9BEEA-0632-4E73-8BF1-EE685F1110AB}" ShortID="652824579">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>1</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Loop_Brasero" ID="{AFD642F9-A745-4437-909A-D934024678F0}">
+																			<PropertyList>
+																				<Property Name="VolumeOffset" Type="Real64">
+																					<ValueList>
+																						<Value>4.6</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<Language>SFX</Language>
+																			<AudioFile>Loop_Brasero.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="393187334"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Loop_Brasero" ID="{AFD642F9-A745-4437-909A-D934024678F0}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</BlendContainer>
 													</ChildrenList>
 												</ActorMixer>
 											</ChildrenList>
