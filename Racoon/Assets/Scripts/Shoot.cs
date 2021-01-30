@@ -55,6 +55,14 @@ public class Shoot : MonoBehaviour
             isThrowing = false;
         }
 
+        //Cancel throw
+        if(Input.GetMouseButtonDown(1))
+        {
+            isThrowing = false;
+            character.controlEnabled = true;
+            ResetPoints();
+        }
+
     }
 
     void Aim()
