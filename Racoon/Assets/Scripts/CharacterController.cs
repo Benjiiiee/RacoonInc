@@ -25,6 +25,7 @@ public class CharacterController : KinematicObject
 
     public ColliderCheck colliderRight;
     public ColliderCheck colliderLeft;
+    public Animator animator;
 
     public Bounds Bounds => collider2d.bounds;
 
@@ -34,6 +35,7 @@ public class CharacterController : KinematicObject
         spriteRenderer = GetComponent<SpriteRenderer>();
         colliderRight = colliderRight.GetComponent<ColliderCheck>();
         colliderLeft = colliderLeft.GetComponent<ColliderCheck>();
+        animator = GetComponent<Animator>();
     }
 
     protected override void Update()
@@ -48,6 +50,15 @@ public class CharacterController : KinematicObject
                 stopJump = true;
                 //Schedule<PlayerStopJump>().player = this;
             }
+
+            if (Input.GetAxis("Horizontal") != 0f && IsGrounded)
+            {
+                animator.SetBool("isrunning", true);
+            }
+            else
+            {
+                animator.SetBool("isrunning", false);
+            }
         }
         else
         {
@@ -59,7 +70,7 @@ public class CharacterController : KinematicObject
 
 
 
-        void UpdateJumpState()
+    void UpdateJumpState()
     {
         jump = false;
         switch (jumpState)
@@ -72,14 +83,14 @@ public class CharacterController : KinematicObject
             case JumpState.Jumping:
                 if (!IsGrounded)
                 {
-                  //  Schedule<PlayerJumped>().player = this;
+                    //  Schedule<PlayerJumped>().player = this;
                     jumpState = JumpState.InFlight;
                 }
                 break;
             case JumpState.InFlight:
                 if (IsGrounded)
                 {
-                   // Schedule<PlayerLanded>().player = this;
+                    // Schedule<PlayerLanded>().player = this;
                     jumpState = JumpState.Landed;
                 }
                 break;
@@ -90,7 +101,7 @@ public class CharacterController : KinematicObject
     }
 
     protected override void ComputeVelocity()
-    { 
+    {
         if (jump && IsGrounded)
         {
             velocity.y = jumpTakeOffSpeed * jumpModifier;
@@ -106,7 +117,10 @@ public class CharacterController : KinematicObject
         }
 
         if (move.x > 0.01f)
+        {
             spriteRenderer.flipX = false;
+            
+        }
         else if (move.x < -0.01f)
             spriteRenderer.flipX = true;
 
@@ -130,7 +144,7 @@ public class CharacterController : KinematicObject
         {
             targetVelocity = move * maxJumpSpeed;
         }
-        
+
     }
 
     public enum JumpState
