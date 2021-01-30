@@ -18,6 +18,7 @@ public class Shoot : MonoBehaviour
     private bool isThrowing = false;
     public float angularVelocity = 1f;
     Flare newFlare;
+    public int flareCount = 3;
 
     //Sound
 
@@ -32,7 +33,7 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded)
+        if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded && flareCount > 0)
         {
             newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation).GetComponent<Flare>();
             throwFlareEvent.Post(gameObject);
@@ -61,11 +62,7 @@ public class Shoot : MonoBehaviour
         //Cancel throw
         if(Input.GetMouseButtonDown(1))
         {
-            newFlare.StopFlareSoundImmediate();
-            Destroy(newFlare.gameObject);
-            isThrowing = false;
-            character.controlEnabled = true;
-            ResetPoints();
+            CancelFlare();
         }
     }
 
@@ -91,12 +88,11 @@ public class Shoot : MonoBehaviour
 
     void Shootit()
     {
-        //GameObject newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation);
+        flareCount -= 1;
         newFlare.Yeet();
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
         newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
         Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
-        //throwFlareEvent.Post(gameObject);
     }
 
     Vector2 Pointposition(float t)
@@ -120,6 +116,18 @@ public class Shoot : MonoBehaviour
         {
             points[i].transform.position = new Vector2(-1000f, -1000f);
 
+        }
+    }
+
+    void CancelFlare()
+    {
+        if(!newFlare.isYeeted)
+        {
+            newFlare.StopFlareSoundImmediate();
+            Destroy(newFlare.gameObject);
+            isThrowing = false;
+            character.controlEnabled = true;
+            ResetPoints();
         }
     }
 }

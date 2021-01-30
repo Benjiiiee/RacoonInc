@@ -1105,6 +1105,30 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="1386224142" Name="Play_UI_Back" ObjectPath="\Events\Default Work Unit\Play_UI_Back" DurationType="OneShot" DurationMin="0.630375" DurationMax="0.630375">
+					<IncludedMemoryFiles>
+						<File Id="118202403" Language="SFX">
+							<ShortName>UI_Back.wav</ShortName>
+							<Path>SFX\UI_Back_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3300168493" Name="Play_UI_Over" ObjectPath="\Events\Default Work Unit\Play_UI_Over" DurationType="OneShot" DurationMin="0.773021" DurationMax="0.773021">
+					<IncludedMemoryFiles>
+						<File Id="733908782" Language="SFX">
+							<ShortName>UI_Over.wav</ShortName>
+							<Path>SFX\UI_Over_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\Default Work Unit\Play_UI_Select" DurationType="OneShot" DurationMin="1.139729" DurationMax="1.139729">
+					<IncludedMemoryFiles>
+						<File Id="901379734" Language="SFX">
+							<ShortName>UI_Select.wav</ShortName>
+							<Path>SFX\UI_Select_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3353542511" Name="Stop_Burning_Flare_FadeOut" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="917084758" Name="Stop_Burning_Flare_Immediate" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
