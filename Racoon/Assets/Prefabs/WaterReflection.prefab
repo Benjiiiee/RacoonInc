@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7004086698675694979}
   - component: {fileID: 472279058642918597}
+  - component: {fileID: 3995140743962351963}
   m_Layer: 0
   m_Name: watersurface1
   m_TagString: Untagged
@@ -231,6 +232,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3995140743962351963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2494090343603464624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff41457673d319d46a7622da097cbe30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollX: 0.05
+  ScrollY: 0
 --- !u!1 &2911768538901084334
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7018675375760826174}
   - component: {fileID: 3051706889714301777}
+  - component: {fileID: 5711447441049114328}
   m_Layer: 0
   m_Name: watersurface1 (2)
   m_TagString: Untagged
@@ -393,6 +409,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5711447441049114328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4672377304483039895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff41457673d319d46a7622da097cbe30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollX: 0.05
+  ScrollY: 0
 --- !u!1 &5194629082619350356
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,6 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3598189735691585036}
   - component: {fileID: 6233174713477595849}
+  - component: {fileID: 3748228130342231459}
   m_Layer: 0
   m_Name: watersurface1 (1)
   m_TagString: Untagged
@@ -474,3 +505,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3748228130342231459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5194629082619350356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff41457673d319d46a7622da097cbe30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScrollX: 0.05
+  ScrollY: 0
