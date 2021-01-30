@@ -17,6 +17,7 @@ public class Shoot : MonoBehaviour
     private CharacterController character;
     private bool isThrowing = false;
     public float angularVelocity = 1f;
+    Flare newFlare;
 
     //Sound
 
@@ -33,6 +34,8 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && character.jumpState == CharacterController.JumpState.Grounded)
         {
+            newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation).GetComponent<Flare>();
+            throwFlareEvent.Post(gameObject);
             isThrowing = true;
             character.controlEnabled = false;
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -58,11 +61,12 @@ public class Shoot : MonoBehaviour
         //Cancel throw
         if(Input.GetMouseButtonDown(1))
         {
+            newFlare.StopFlareSoundImmediate();
+            Destroy(newFlare.gameObject);
             isThrowing = false;
             character.controlEnabled = true;
             ResetPoints();
         }
-
     }
 
     void Aim()
@@ -87,11 +91,12 @@ public class Shoot : MonoBehaviour
 
     void Shootit()
     {
-        GameObject newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation);
+        //GameObject newFlare = Instantiate(flare, shotPoint.position, shotPoint.rotation);
+        newFlare.Yeet();
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
         newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
         Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
-        throwFlareEvent.Post(gameObject);
+        //throwFlareEvent.Post(gameObject);
     }
 
     Vector2 Pointposition(float t)

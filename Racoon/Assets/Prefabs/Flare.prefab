@@ -133,10 +133,15 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ae6ca76dbc9627946ba5be71bf445eb9,
       type: 2}
-  stopFlareSound:
+  stopFlareSoundFade:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 5d7e87583ab561c49965054c76896eb5,
+      type: 2}
+  stopFlareSoundImmediate:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cc7c867fc08d1cd42ae6e9106e6422b0,
       type: 2}
 --- !u!212 &8350322030364809035
 SpriteRenderer:
