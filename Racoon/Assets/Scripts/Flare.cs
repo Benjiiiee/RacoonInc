@@ -15,47 +15,52 @@ public class Flare : MonoBehaviour
     private bool switchingOff = false;
     float timeLeft = 5.0f;
     float timeLeft2 = 6.0f;
+    private bool isYeeted = false;
 
     //Sound
 
     bool stopSound = false;
     public AK.Wwise.Event startFlareSound;
-    public AK.Wwise.Event stopFlareSound;
+    public AK.Wwise.Event stopFlareSoundFade;
+    public AK.Wwise.Event stopFlareSoundImmediate;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-
-
     }
 
     private void Start()
     {
+        rb.isKinematic = true;
+        LightRadiusStart();
         startFlareSound.Post(gameObject);
     }
 
     void Update()
     {
-        float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
-       // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-
-        if (switchingOff == true)
+        if(isYeeted)
         {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft < 0)
+            float angle = Mathf.Atan2(rb.velocity.y, rb.velocity.x) * Mathf.Rad2Deg;
+            // transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+            if (switchingOff == true)
             {
-                eteint();
-                timeLeft2 -= Time.deltaTime;
-                if(timeLeft2 < 2.5f && !stopSound)
+                timeLeft -= Time.deltaTime;
+                if (timeLeft < 0)
                 {
-                    stopSound = true;
-                    stopFlareSound.Post(gameObject);
+                    eteint();
+                    timeLeft2 -= Time.deltaTime;
+                    if (timeLeft2 < 2.5f && !stopSound)
+                    {
+                        stopSound = true;
+                        stopFlareSoundFade.Post(gameObject);
+                    }
+                    if (timeLeft2 < 0)
+                    {
+                        Destroy(this.gameObject);
+                    }
                 }
-                if (timeLeft2 < 0)
-                {
-                    Destroy(this.gameObject);
-                }
-                }
+            }
         }
     }
 
@@ -74,5 +79,39 @@ public class Flare : MonoBehaviour
         light1.pointLightOuterRadius -= light1.pointLightOuterRadius * 0.002f;
         light2.pointLightOuterRadius -= light2.pointLightOuterRadius * 0.002f;
         light3.pointLightOuterRadius -= light3.pointLightOuterRadius * 0.002f;
+    }
+
+    public void Yeet()
+    {
+        rb.isKinematic = false;
+        isYeeted = true;
+        LightRadiusYeet();
+    }
+
+    void LightRadiusStart()
+    {
+        light1.pointLightInnerRadius /= 5f;
+        light2.pointLightInnerRadius /= 5f;
+        light3.pointLightInnerRadius /= 5f;
+                                      
+        light1.pointLightOuterRadius /= 5f;
+        light2.pointLightOuterRadius /= 5f;
+        light3.pointLightOuterRadius /= 5f;
+    }                                  
+                                       
+    void LightRadiusYeet()             
+    {                                  
+        light1.pointLightInnerRadius *= 5f;
+        light2.pointLightInnerRadius *= 5f;
+        light3.pointLightInnerRadius *= 5f;
+                                    
+        light1.pointLightOuterRadius *= 5f;
+        light2.pointLightOuterRadius *= 5f;
+        light3.pointLightOuterRadius *= 5f;
+    }
+
+    public void StopFlareSoundImmediate()
+    {
+        stopFlareSoundImmediate.Post(gameObject);
     }
 }
