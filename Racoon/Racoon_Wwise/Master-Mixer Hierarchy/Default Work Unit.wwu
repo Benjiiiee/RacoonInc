@@ -36,12 +36,16 @@
 											<ReferenceList>
 												<Reference Name="Effect0">
 													<Custom CreatedFrom="{D20F3717-EBA2-4E3A-84F8-C8BD431563FB}">
-														<Effect Name="Echoes_Linear (Custom)" ID="{FDC10B9D-99B3-4C44-9162-0304C439E05B}" ShortID="259871918" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
+														<Effect Name="Echoes_Linear_(Custom)" ID="{FDC10B9D-99B3-4C44-9162-0304C439E05B}" ShortID="259871918" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+															<PropertyList>
+																<Property Name="Feedback" Type="Real32" Value="11.5"/>
+															</PropertyList>
+														</Effect>
 													</Custom>
 												</Reference>
 												<Reference Name="Effect1">
 													<Custom CreatedFrom="{626B6E38-739B-4689-819F-F81AD3788BDE}">
-														<Effect Name="Hall_Medium_Dark (Custom)" ID="{1B49CC69-DF0A-44D8-A023-158A41A6FAFD}" ShortID="375632289" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<Effect Name="Hall_Medium_Dark_(Custom)" ID="{1B49CC69-DF0A-44D8-A023-158A41A6FAFD}" ShortID="375632289" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 															<PropertyList>
 																<Property Name="DecayTime" Type="Real32" Value="3.8"/>
 																<Property Name="Density" Type="Real32" Value="70"/>
