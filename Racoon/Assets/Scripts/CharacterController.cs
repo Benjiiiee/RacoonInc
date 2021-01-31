@@ -32,9 +32,13 @@ public class CharacterController : KinematicObject
 
     public float turboJumpModifier;
     private bool hasTurboJumped = false;
+    private Shoot shoot;
+
+    public AK.Wwise.Event playerRespawn;
 
     void Awake()
     {
+        shoot = GetComponentInChildren<Shoot>();
         collider2d = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         colliderRight = colliderRight.GetComponent<ColliderCheck>();
@@ -83,8 +87,6 @@ public class CharacterController : KinematicObject
         }
         
     }
-
-
 
     void UpdateJumpState()
     {
@@ -170,6 +172,8 @@ public class CharacterController : KinematicObject
     public void Respawn()
     {
         transform.position = lastCheckpoint;
+        playerRespawn.Post(gameObject);
+        shoot.flareCount = 3;
     }
     void OnTriggerEnter2D(Collider2D other)
     {
