@@ -18,7 +18,7 @@ public class Shoot : MonoBehaviour
     private bool isThrowing = false;
     public float angularVelocity = 1f;
     Flare newFlare;
-    public int flareCount = 3;
+    public int flareCount = 5;
     public Transform yeetHandLeft;
     public Transform yeetHandRight;
 
@@ -142,4 +142,10 @@ public class Shoot : MonoBehaviour
             ResetPoints();
         }
     }
+
+    public void RefuelFlare()
+    {
+        flareCount = 5;
+    }
+
 }

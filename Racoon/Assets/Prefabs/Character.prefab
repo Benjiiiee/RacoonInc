@@ -223,6 +223,10 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 94cfd10a2ce68154ca1c070a18d6c3b6,
       type: 2}
+  playerSuperJump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!212 &4792972394050339236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -656,6 +660,11 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 4792972394050339238}
+    - target: {fileID: 8751158954938017351, guid: 6de89b67d6f0234468fca8d41c0543fa,
+        type: 3}
+      propertyPath: flareCount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8751158954938017351, guid: 6de89b67d6f0234468fca8d41c0543fa,
         type: 3}
       propertyPath: yeetHandLeft
