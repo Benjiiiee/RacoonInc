@@ -13,7 +13,7 @@ public class LightUpIngredient : MonoBehaviour
     private bool isOn = false;
     public GameObject myTrampoline;
     public bool isJumpBrazier;
-
+    public GameObject feedback;
     public AK.Wwise.Event brazierLightUp;
 
     // Start is called before the first frame update
@@ -40,6 +40,7 @@ public class LightUpIngredient : MonoBehaviour
         if (other.gameObject.CompareTag("Flare") && isJumpBrazier == true)
         {
             myTrampoline.SetActive(true);
+            Instantiate(feedback);
         }
     }
 
