@@ -10,6 +10,14 @@ public class MainMenu : MonoBehaviour
     public AK.Wwise.Event uiBack;
     public AK.Wwise.Event uiHover;
     public AK.Wwise.Event uiSelect;
+    public AK.Wwise.Event playMusic;
+    public AK.Wwise.Switch switchMenu;
+
+    public void Start()
+    {
+        playMusic.Post(gameObject);
+        switchMenu.SetValue(gameObject);
+    }
 
     public void PlayGame()
     {
