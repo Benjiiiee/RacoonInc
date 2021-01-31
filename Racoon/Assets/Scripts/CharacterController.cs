@@ -35,6 +35,7 @@ public class CharacterController : KinematicObject
     private Shoot shoot;
 
     public AK.Wwise.Event playerRespawn;
+    public AK.Wwise.Event playerSuperJump;
 
     void Awake()
     {
@@ -96,7 +97,9 @@ public class CharacterController : KinematicObject
             case JumpState.PrepareToJump:
                 jumpState = JumpState.Jumping;
                 jump = true;
-                stopJump = false;
+                stopJump = false; 
+                if(hasTurboJumped)
+                    playerSuperJump.Post(gameObject);
                 break;
             case JumpState.Jumping:
                 if (!IsGrounded)

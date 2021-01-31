@@ -109,7 +109,7 @@ public class Shoot : MonoBehaviour
 
     Vector2 Pointposition(float t)
     {
-        Vector2 position = (Vector2)shotPoint.position + (direction.normalized * launchForce * t) + 0.5f * Physics2D.gravity * (t * t);
+        Vector2 position = (Vector2)newFlare.transform.position + (direction.normalized * launchForce * t) + 0.5f * Physics2D.gravity * (t * t);
         return position;
     }
 
