@@ -16,4 +16,9 @@ public class Door : MonoBehaviour
             SceneManager.LoadScene(index);
         }
     }
+
+    public void MainMenuEnd() 
+    {
+        SceneManager.LoadScene(0);
+    }
 }
