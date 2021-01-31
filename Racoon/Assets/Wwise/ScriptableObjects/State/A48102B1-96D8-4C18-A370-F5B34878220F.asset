@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6018317bc888054096ea8ffdb7a1a89, type: 3}
+  m_Name: A48102B1-96D8-4C18-A370-F5B34878220F
+  m_EditorClassIdentifier: 
+  objectName: Music_On_2Layers
+  id: 103655667
+  guid: A48102B1-96D8-4C18-A370-F5B34878220F
+  WwiseStateGroupReference: {fileID: 11400000, guid: 44ef41456c342ac42863e74ea6f54fc9,
+    type: 2}
