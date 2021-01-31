@@ -40,6 +40,7 @@ public class Shoot : MonoBehaviour
             isThrowing = true;
             character.controlEnabled = false;
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            character.animator.SetBool("isrunning", false);
             character.animator.SetBool("isyeeting", true);
         }
 
@@ -66,6 +67,11 @@ public class Shoot : MonoBehaviour
         {
             character.animator.SetBool("isyeeting", false);
             CancelFlare();
+        }
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            flareCount += 10;
         }
     }
 

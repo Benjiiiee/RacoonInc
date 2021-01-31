@@ -88,8 +88,6 @@ public class CharacterController : KinematicObject
         
     }
 
-
-
     void UpdateJumpState()
     {
         jump = false;
