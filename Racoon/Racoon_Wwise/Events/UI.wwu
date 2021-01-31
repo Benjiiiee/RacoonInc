@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}" SchemaVersion="97" RootDocumentID="{754439F7-B605-4314-9861-5F1AB939A45C}">
+	<Events>
+		<WorkUnit Name="UI" ID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}" OwnerID="{754439F7-B605-4314-9861-5F1AB939A45C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_UI_Back" ID="{B69CF0CE-457B-4941-A518-42A21E10DE5E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{E1513E4B-B070-4491-AEF3-2871F4DB0061}" ShortID="599972851">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Back" ID="{909845FA-A4C4-4FBB-9C54-1D446C42A152}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Over" ID="{377E700E-E344-4D4B-BBFD-CD9A3AC49DD9}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{99B9662C-4390-4A85-A332-770BA9D3501E}" ShortID="132076406">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Over" ID="{A0530A70-2627-4067-B792-DED7C920B945}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Select" ID="{9978A743-771E-420F-A922-7C5F00B47553}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{F0E16B35-514F-4AB4-9030-E542A33F34C6}" ShortID="630926380">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Select" ID="{F51175A6-28F6-45AA-8822-A50A97334945}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

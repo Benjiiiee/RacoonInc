@@ -5,96 +5,6 @@
 			<ChildrenList>
 				<WorkUnit Name="Ambiences" ID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" PersistMode="Reference"/>
 				<WorkUnit Name="Characters" ID="{8F16817C-14D5-4008-A829-CEAA329F59B8}" PersistMode="Reference"/>
-				<Event Name="Play_Player_Death" ID="{3D48CCEE-61D2-4B10-A11B-0AE9F5E2A8E8}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="26"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{4F78A85C-75C3-4DA3-A11A-1BE5804BF13B}" ShortID="90461161">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Death" ID="{6962C646-196E-4267-8789-0A897442DA98}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Player_Respawn" ID="{CF89B092-779A-487E-8A42-A7F803E8D01E}">
-					<ChildrenList>
-						<Action Name="" ID="{15A46993-A1B3-4CF6-8872-E972A9E999E1}" ShortID="1007011703">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Player_Respawn" ID="{89529BE9-9A75-44F8-A619-3CEA1F16C999}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_UI_Back" ID="{B69CF0CE-457B-4941-A518-42A21E10DE5E}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{E1513E4B-B070-4491-AEF3-2871F4DB0061}" ShortID="599972851">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_Back" ID="{909845FA-A4C4-4FBB-9C54-1D446C42A152}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_UI_Over" ID="{377E700E-E344-4D4B-BBFD-CD9A3AC49DD9}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{99B9662C-4390-4A85-A332-770BA9D3501E}" ShortID="132076406">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_Over" ID="{A0530A70-2627-4067-B792-DED7C920B945}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_UI_Select" ID="{9978A743-771E-420F-A922-7C5F00B47553}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="19"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{F0E16B35-514F-4AB4-9030-E542A33F34C6}" ShortID="630926380">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_Select" ID="{F51175A6-28F6-45AA-8822-A50A97334945}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Brasero" ID="{9171F761-6BAC-4C1D-9E86-161636EDED61}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="12"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{883913AE-F2CE-4FEE-ACE5-391FAA6822F8}" ShortID="1025075251">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Brasero" ID="{D5953421-9075-447B-882A-6C37CC381AFA}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_MUSIC" ID="{01CFFAA2-09E2-4D3F-BE43-4B982BD42B55}">
 					<ChildrenList>
 						<Action Name="" ID="{D5003010-A9ED-4FFA-AEAC-06721E5EAAA7}" ShortID="830608463">
@@ -106,25 +16,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Stop_Ambience_Background_Cavern" ID="{A8971832-DAE1-477B-96FD-18FDBD393E4C}">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="8"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ChildrenList>
-						<Action Name="" ID="{7F6FB28E-6186-42FB-AF93-DF3A13550A99}" ShortID="834205895">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ambience_Background_Cavern" ID="{39C71059-3101-471F-A5AD-21A8E17D2462}" WorkUnitID="{86857F70-B38C-428E-8A06-AD6C2765BEDE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<WorkUnit Name="UI" ID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

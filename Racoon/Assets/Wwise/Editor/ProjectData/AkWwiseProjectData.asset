@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585895262571972314
+    m_lastTime: -8585894855109936429
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -262,7 +262,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585895217490572794
+    m_lastTime: -8585894891036973500
     List:
     - name: Main
       guid: 8437b179d06ba94eb072d3eb9f06dd35
@@ -285,7 +285,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters\Actions
     guid: 15e5f9b75a72cc438144f6bd1ab036a2
     GuidInternal: 
-    m_lastTime: -8585895593648137109
+    m_lastTime: -8585894891045404090
     List:
     - name: Play_Brasero
       guid: dd5a280ec59b284b98d7b7d44337f905
@@ -456,7 +456,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Ambiences
     guid: e61fd8c4adc2424bb0cfb4f12b263675
     GuidInternal: 
-    m_lastTime: -8585896709216193236
+    m_lastTime: -8585894891045394116
     List:
     - name: Play_Ambience_Background_Cavern
       guid: 0c6c836674406043877ca2d146b128cd
@@ -495,7 +495,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters
     guid: 7c81168fd5140840a829ceaa329f59b8
     GuidInternal: 
-    m_lastTime: -8585896657664814970
+    m_lastTime: -8585894891045384056
     List: []
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -504,7 +504,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585895369792807274
+    m_lastTime: -8585894891045374108
     List:
     - name: Play_MUSIC
       guid: a2facf01e2093f4dbe434b982bd42b55
@@ -578,6 +578,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Ambience_Background_Cavern
+      guid: 321897a8e1da7b4796fd18fdbd393e4c
+      id: 366309757
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Ambience_Background_Cavern
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Ambience_Background_Cavern
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Brasero
       guid: 61f77191ac6b1d4c9e86161636eded61
       id: 1873728636
@@ -643,7 +655,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 47d508ddce73114da232f08a6a9ca2ef
     GuidInternal: 
-    m_lastTime: -8585897467970720851
+    m_lastTime: -8585894855109882513
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -803,6 +815,5 @@ MonoBehaviour:
   - /Racoon_Wwise
   - /Racoon_Wwise/Events
   - /Racoon_Wwise/Events/Default Work Unit
-  - /Racoon_Wwise/Events/Default Work Unit/Characters
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
