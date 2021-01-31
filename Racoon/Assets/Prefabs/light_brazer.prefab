@@ -105,6 +105,10 @@ MonoBehaviour:
   Flames: {fileID: 6038535224829999044}
   myTrampoline: {fileID: 0}
   isJumpBrazier: 0
+  brazierLightUp:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!61 &4846583129606573046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -341,7 +345,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 2.14
+  m_PointLightOuterRadius: 4
   m_PointLightDistance: 3
   m_PointLightQuality: 1
   m_ShapeLightParametricSides: 5
