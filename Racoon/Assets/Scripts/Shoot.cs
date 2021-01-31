@@ -79,7 +79,7 @@ public class Shoot : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.F))
         {
-            flareCount += 10;
+            RefuelFlare();
         }
     }
 
@@ -107,6 +107,8 @@ public class Shoot : MonoBehaviour
 
     void Shootit()
     {
+        if (flareCount > 5)
+            flareCount = 5;
         flareCount -= 1;
         newFlare.Yeet();
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
@@ -178,6 +180,9 @@ public class Shoot : MonoBehaviour
                 canvasScript.Has4Flare();
                 break;
             case 5:
+                canvasScript.Has5Flare();
+                break;
+            default:
                 canvasScript.Has5Flare();
                 break;
         }
