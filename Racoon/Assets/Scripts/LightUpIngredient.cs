@@ -45,6 +45,7 @@ public class LightUpIngredient : MonoBehaviour
 
     void TurnOn()
     {
+        brazierLightUp.Post(gameObject);
         if (isJumpBrazier == true)
         {
             myTrampoline.SetActive(true);
