@@ -33,6 +33,8 @@ public class CharacterController : KinematicObject
     public float turboJumpModifier;
     private bool hasTurboJumped = false;
 
+    public AK.Wwise.Event playerRespawn;
+
     void Awake()
     {
         collider2d = GetComponent<Collider2D>();
@@ -170,6 +172,7 @@ public class CharacterController : KinematicObject
     public void Respawn()
     {
         transform.position = lastCheckpoint;
+        playerRespawn.Post(gameObject);
     }
     void OnTriggerEnter2D(Collider2D other)
     {
