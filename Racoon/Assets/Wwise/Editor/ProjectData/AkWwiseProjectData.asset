@@ -20,7 +20,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: eb1750ee9f127d4fbf752812f0e73c39
     GuidInternal: 
-    m_lastTime: -8585898009415788276
+    m_lastTime: -8585898000455391818
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -262,7 +262,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585894891036973500
+    m_lastTime: -8585894828919158809
     List:
     - name: Main
       guid: 8437b179d06ba94eb072d3eb9f06dd35
@@ -285,7 +285,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters\Actions
     guid: 15e5f9b75a72cc438144f6bd1ab036a2
     GuidInternal: 
-    m_lastTime: -8585894891045404090
+    m_lastTime: -8585894837849908577
     List:
     - name: Play_Brasero
       guid: dd5a280ec59b284b98d7b7d44337f905
@@ -300,9 +300,9 @@ MonoBehaviour:
       - ElementName: Play_Brasero
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Brasero
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 73.96935
+      minDuration: 73.96935
     - name: Play_End_Level_Door
       guid: 175fcfc4d2186d4bae9684758c8e98ce
       id: 1152301005
@@ -316,9 +316,9 @@ MonoBehaviour:
       - ElementName: Play_End_Level_Door
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_End_Level_Door
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 1.561563
+      minDuration: 1.561563
     - name: Play_Impact_Flare
       guid: 97b2df7f33211a4c94eb0689f639a11c
       id: 2389238889
@@ -332,9 +332,9 @@ MonoBehaviour:
       - ElementName: Play_Impact_Flare
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Impact_Flare
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 2.314011
+      minDuration: 1.115177
     - name: Play_Interact
       guid: 6d0f2303eb7552469dbae81eddf7d26b
       id: 3621663528
@@ -348,9 +348,9 @@ MonoBehaviour:
       - ElementName: Play_Interact
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Interact
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 1.397667
+      minDuration: 1.397667
     - name: Play_Pickup_Item
       guid: 36fdcedd67e64c4685cd3e17d07b7b9c
       id: 3128913152
@@ -364,9 +364,9 @@ MonoBehaviour:
       - ElementName: Play_Pickup_Item
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Pickup_Item
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 1.38475
+      minDuration: 1.38475
     - name: Play_Throw_Flare
       guid: 02675fff7a2c0146aea421a97fbb011b
       id: 838326419
@@ -380,9 +380,9 @@ MonoBehaviour:
       - ElementName: Play_Throw_Flare
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Throw_Flare
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 0.492553
+      minDuration: 0.224322
     - name: Play_Trampoline
       guid: 47104bfbbdd6cc4ea42398eae2a25e5c
       id: 3799408143
@@ -396,9 +396,9 @@ MonoBehaviour:
       - ElementName: Play_Trampoline
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Trampoline
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 80
+      maxDuration: 0.849833
+      minDuration: 0.849833
     - name: Play_Turn_On_Burn_Flare
       guid: 7a708bcefb3b78449d8b49a24fa71bc3
       id: 3232459058
@@ -412,9 +412,25 @@ MonoBehaviour:
       - ElementName: Play_Turn_On_Burn_Flare
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare
+      maxAttenuation: 80
+      maxDuration: 31.31827
+      minDuration: 31.31827
+    - name: Stop_Brasero
+      guid: 61f77191ac6b1d4c9e86161636eded61
+      id: 1873728636
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Stop_Brasero
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Stop_Brasero
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Burning_Flare_FadeOut
       guid: d834ea5a86c4b5419e715f04971255b2
       id: 3353542511
@@ -429,8 +445,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Burning_Flare_Immediate
       guid: 0b81eb2d72d61f4ab038b7b5183f7c2d
       id: 917084758
@@ -445,8 +461,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Ambiences.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -456,7 +472,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Ambiences
     guid: e61fd8c4adc2424bb0cfb4f12b263675
     GuidInternal: 
-    m_lastTime: -8585894891045394116
+    m_lastTime: -8585894828920099664
     List:
     - name: Play_Ambience_Background_Cavern
       guid: 0c6c836674406043877ca2d146b128cd
@@ -483,9 +499,37 @@ MonoBehaviour:
       - ElementName: Play_Ambience_Water_Waterfall
         ObjectType: 3
       Path: Default Work Unit\Ambiences\Play_Ambience_Water_Waterfall
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Ambience_Background_Cavern
+      guid: 321897a8e1da7b4796fd18fdbd393e4c
+      id: 366309757
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 12
+      - ElementName: Stop_Ambience_Background_Cavern
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Stop_Ambience_Background_Cavern
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Ambience_Water_Waterfall
+      guid: a69da69065a3994a94803524ba5489a4
+      id: 3894217275
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambiences
+        ObjectType: 12
+      - ElementName: Stop_Ambience_Water_Waterfall
+        ObjectType: 3
+      Path: Default Work Unit\Ambiences\Stop_Ambience_Water_Waterfall
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Characters.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -495,8 +539,36 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters
     guid: 7c81168fd5140840a829ceaa329f59b8
     GuidInternal: 
-    m_lastTime: -8585894891045384056
-    List: []
+    m_lastTime: -8585894837849818497
+    List:
+    - name: Play_Player_Death
+      guid: eecc483dd261104ba11b0ae9f5e2a8e8
+      id: 1835085974
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Play_Player_Death
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Play_Player_Death
+      maxAttenuation: 0
+      maxDuration: 3.679805
+      minDuration: 2.081208
+    - name: Play_Player_Respawn
+      guid: 92b089cf9a777e488a42a7f803e8d01e
+      id: 4238880044
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Play_Player_Respawn
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Play_Player_Respawn
+      maxAttenuation: 0
+      maxDuration: 1.793146
+      minDuration: 1.793146
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Default Work Unit
@@ -504,7 +576,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585894891045374108
+    m_lastTime: -8585894837849778453
     List:
     - name: Play_MUSIC
       guid: a2facf01e2093f4dbe434b982bd42b55
@@ -515,90 +587,6 @@ MonoBehaviour:
       - ElementName: Play_MUSIC
         ObjectType: 3
       Path: Default Work Unit\Play_MUSIC
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Player_Death
-      guid: eecc483dd261104ba11b0ae9f5e2a8e8
-      id: 1835085974
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Player_Death
-        ObjectType: 3
-      Path: Default Work Unit\Play_Player_Death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Player_Respawn
-      guid: 92b089cf9a777e488a42a7f803e8d01e
-      id: 4238880044
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Player_Respawn
-        ObjectType: 3
-      Path: Default Work Unit\Play_Player_Respawn
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_UI_Back
-      guid: cef09cb67b454149a51842a21e10de5e
-      id: 1386224142
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_UI_Back
-        ObjectType: 3
-      Path: Default Work Unit\Play_UI_Back
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_UI_Over
-      guid: 0e707e3744e34b4dbbfdcd9a3ac49dd9
-      id: 3300168493
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_UI_Over
-        ObjectType: 3
-      Path: Default Work Unit\Play_UI_Over
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_UI_Select
-      guid: 43a778991e770f42a9227c5f00b47553
-      id: 3308548503
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_UI_Select
-        ObjectType: 3
-      Path: Default Work Unit\Play_UI_Select
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_Ambience_Background_Cavern
-      guid: 321897a8e1da7b4796fd18fdbd393e4c
-      id: 366309757
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_Ambience_Background_Cavern
-        ObjectType: 3
-      Path: Default Work Unit\Stop_Ambience_Background_Cavern
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Stop_Brasero
-      guid: 61f77191ac6b1d4c9e86161636eded61
-      id: 1873728636
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_Brasero
-        ObjectType: 3
-      Path: Default Work Unit\Stop_Brasero
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -613,7 +601,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters\Movements
     guid: 68fc415e2502fe4b9e23935542803514
     GuidInternal: 
-    m_lastTime: -8585896657664755128
+    m_lastTime: -8585896589138242940
     List:
     - name: Play_Foley
       guid: 37558e0dc20a9045878787c12218b95d
@@ -629,8 +617,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Characters\Movements\Play_Foley
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.712516
+      minDuration: 0.197348
     - name: Play_Footsteps
       guid: a7af376135a1e248a67dae7936f7d7cf
       id: 3854155799
@@ -645,8 +633,61 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\Characters\Movements\Play_Footsteps
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.207238
+      minDuration: 0.51123
+  - PhysicalPath: Events\UI.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    - ElementName: UI
+      ObjectType: 12
+    ParentPath: Default Work Unit\UI
+    guid: 818e8d3c828d894381703fd5c1892454
+    GuidInternal: 
+    m_lastTime: -8585894837849728407
+    List:
+    - name: Play_UI_Back
+      guid: cef09cb67b454149a51842a21e10de5e
+      id: 1386224142
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Back
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Back
+      maxAttenuation: 0
+      maxDuration: 0.630375
+      minDuration: 0.630375
+    - name: Play_UI_Over
+      guid: 0e707e3744e34b4dbbfdcd9a3ac49dd9
+      id: 3300168493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Over
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Over
+      maxAttenuation: 0
+      maxDuration: 0.773021
+      minDuration: 0.773021
+    - name: Play_UI_Select
+      guid: 43a778991e770f42a9227c5f00b47553
+      id: 3308548503
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 12
+      - ElementName: Play_UI_Select
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_UI_Select
+      maxAttenuation: 0
+      maxDuration: 1.139729
+      minDuration: 1.139729
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -665,7 +706,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ff90e8867d710943932ae5572581ff1b
     GuidInternal: 
-    m_lastTime: -8585895369792897005
+    m_lastTime: -8585895002917352703
     List:
     - name: Level_Music
       guid: a043ca363eac694dac61c06bb87a3042
@@ -712,7 +753,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 474c0ac05d40db4ba1cd5b5ffdb4f08f
     GuidInternal: 
-    m_lastTime: -8585895369792857386
+    m_lastTime: -8585895002917312668
     List:
     - name: Material_Type
       guid: 5a9ac988745f934db67625620f3724f3
@@ -809,11 +850,13 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e8d8c75bc897704088f38665a29b3ae0
     GuidInternal: 
-    m_lastTime: -8585898009416154371
+    m_lastTime: -8585898000455391818
     List: []
   ExpandedItems:
   - /Racoon_Wwise
   - /Racoon_Wwise/Events
   - /Racoon_Wwise/Events/Default Work Unit
+  - /Racoon_Wwise/Events/Default Work Unit/Characters
+  - /Racoon_Wwise/Events/Default Work Unit/Characters/Actions
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -157,12 +157,19 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 						</Bus>
 						<Bus Name="MUSIC" ID="{5FC669D3-6AC7-4E56-86D3-09BA4E823067}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="ScreenTitle_Theme" ID="{D34DFD62-91B7-48DE-9840-B596BF7AA13D}"/>
 								<Bus Name="Levels_Theme" ID="{F12059BE-302A-44E1-B400-DFFA0B7ED0FD}">

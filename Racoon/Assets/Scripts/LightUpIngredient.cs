@@ -40,7 +40,7 @@ public class LightUpIngredient : MonoBehaviour
         if (other.gameObject.CompareTag("Flare") && isJumpBrazier == true)
         {
             myTrampoline.SetActive(true);
-            Instantiate(feedback);
+            Instantiate(feedback, myTrampoline.transform);
         }
     }
 
@@ -50,10 +50,11 @@ public class LightUpIngredient : MonoBehaviour
         if (isJumpBrazier == true)
         {
             myTrampoline.SetActive(true);
+            Instantiate(feedback, myTrampoline.transform);
         }
-        light1.GetComponent<Light2D>().enabled = true;
+        /*light1.GetComponent<Light2D>().enabled = true;
         light2.GetComponent<Light2D>().enabled = true;
-        light3.GetComponent<Light2D>().enabled = true;
+        light3.GetComponent<Light2D>().enabled = true;*/
     }
 
 }
