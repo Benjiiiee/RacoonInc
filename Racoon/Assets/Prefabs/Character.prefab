@@ -332,6 +332,8 @@ Transform:
   - {fileID: 7397278158083536788}
   - {fileID: 780189858769062529}
   - {fileID: 2431197146922227061}
+  - {fileID: 7170544285432547218}
+  - {fileID: 6779837385627867369}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -732,6 +734,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colliding: 0
+--- !u!1 &6375540697390951495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7170544285432547218}
+  m_Layer: 9
+  m_Name: YeetHandLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7170544285432547218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6375540697390951495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.406, y: 0.412, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4792972394050339226}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6401915365500180947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6779837385627867369}
+  m_Layer: 9
+  m_Name: YeetHandRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6779837385627867369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401915365500180947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.397, y: 0.412, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4792972394050339226}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6478919052251266015
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +948,16 @@ PrefabInstance:
       propertyPath: character
       value: 
       objectReference: {fileID: 4792972394050339238}
+    - target: {fileID: 8751158954938017351, guid: 6de89b67d6f0234468fca8d41c0543fa,
+        type: 3}
+      propertyPath: yeetHandLeft
+      value: 
+      objectReference: {fileID: 7170544285432547218}
+    - target: {fileID: 8751158954938017351, guid: 6de89b67d6f0234468fca8d41c0543fa,
+        type: 3}
+      propertyPath: yeetHandRight
+      value: 
+      objectReference: {fileID: 6779837385627867369}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6de89b67d6f0234468fca8d41c0543fa, type: 3}
 --- !u!4 &1300558943438015092 stripped

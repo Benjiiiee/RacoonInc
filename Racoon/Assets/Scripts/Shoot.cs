@@ -19,6 +19,8 @@ public class Shoot : MonoBehaviour
     public float angularVelocity = 1f;
     Flare newFlare;
     public int flareCount = 3;
+    public Transform yeetHandLeft;
+    public Transform yeetHandRight;
 
     //Sound
 
@@ -29,7 +31,6 @@ public class Shoot : MonoBehaviour
         character = GetComponentInParent<CharacterController>();
         SpawnPoints();
     }
-
 
     void Update()
     {
@@ -86,10 +87,12 @@ public class Shoot : MonoBehaviour
                 if(points[i].transform.position.x < character.transform.position.x)
                 {
                     character.spriteRenderer.flipX = true;
+                    newFlare.transform.position = yeetHandRight.position;
                 }
                 else
                 {
                     character.spriteRenderer.flipX = false;
+                    newFlare.transform.position = yeetHandLeft.position;
                 }
             }
         }
