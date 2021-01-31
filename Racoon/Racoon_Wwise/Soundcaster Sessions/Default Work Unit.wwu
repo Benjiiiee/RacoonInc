@@ -81,6 +81,10 @@
 							<ObjectRef Name="Play_UI_Select" ID="{9978A743-771E-420F-A922-7C5F00B47553}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
 							<Position X="2" Y="6"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Brasero" ID="{9171F761-6BAC-4C1D-9E86-161636EDED61}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
+							<Position X="3" Y="4"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true"/>

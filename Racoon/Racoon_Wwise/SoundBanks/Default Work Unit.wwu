@@ -21,6 +21,7 @@
 						<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_End_Level_Door" ID="{C4CF5F17-18D2-4B6D-AE96-84758C8E98CE}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Impact_Flare" ID="{7FDFB297-2133-4C1A-94EB-0689F639A11C}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Brasero" ID="{9171F761-6BAC-4C1D-9E86-161636EDED61}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UI_Over" ID="{377E700E-E344-4D4B-BBFD-CD9A3AC49DD9}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
