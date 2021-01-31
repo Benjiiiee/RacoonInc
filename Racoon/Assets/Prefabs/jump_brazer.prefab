@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 11
   m_Sprite: {fileID: -7116555785862315221, guid: c2979b66a6f39eb40b47f74f101f37a2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inRadiusRange: 0
-  outRadiusRange: 1.1
+  outRadiusRange: 0
 --- !u!1 &6508939731861601571
 GameObject:
   m_ObjectHideFlags: 0
