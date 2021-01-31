@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     public AK.Wwise.Event uiSelect;
     public AK.Wwise.Event playMusic;
     public AK.Wwise.Switch switchMenu;
+    public AK.Wwise.Event stopMusic;
 
     public void Start()
     {
@@ -40,6 +41,11 @@ public class MainMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void StopMusic()
+    {
+        stopMusic.Post(gameObject);
     }
 
 }
