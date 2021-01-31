@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1873728636	Stop_Brasero			\Default Work Unit\Characters\Actions\Stop_Brasero	
 	1970585623	Play_Ambience_Background_Cavern			\Default Work Unit\Ambiences\Play_Ambience_Background_Cavern	
 	2389238889	Play_Impact_Flare			\Default Work Unit\Characters\Actions\Play_Impact_Flare	
+	2837384057	Stop_Music			\Default Work Unit\Stop_Music	
 	2932040671	Play_MUSIC			\Default Work Unit\Play_MUSIC	
 	2972937805	Play_Ambience_Water_Waterfall			\Default Work Unit\Ambiences\Play_Ambience_Water_Waterfall	
 	3113720603	Play_Foley			\Default Work Unit\Characters\Movements\Play_Foley	

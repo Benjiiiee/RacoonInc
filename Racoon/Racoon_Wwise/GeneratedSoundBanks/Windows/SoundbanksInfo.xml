@@ -1228,6 +1228,7 @@
 				<Event Id="1873728636" Name="Stop_Brasero" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Brasero" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3353542511" Name="Stop_Burning_Flare_FadeOut" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="917084758" Name="Stop_Burning_Flare_Immediate" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Stop_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="1088160865" Name="Movement_Type" ObjectPath="\Switches\Default Work Unit\Movement_Type">

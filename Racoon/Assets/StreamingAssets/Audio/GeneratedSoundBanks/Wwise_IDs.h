@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID STOP_BRASERO = 1873728636U;
         static const AkUniqueID STOP_BURNING_FLARE_FADEOUT = 3353542511U;
         static const AkUniqueID STOP_BURNING_FLARE_IMMEDIATE = 917084758U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
     } // namespace EVENTS
 
     namespace STATES

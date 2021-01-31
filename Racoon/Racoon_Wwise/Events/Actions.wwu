@@ -107,6 +107,16 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ChildrenList>
+						<Action Name="" ID="{C6ACA133-9252-4178-91FD-189AF6B78056}" ShortID="165723213">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Brasero" ID="{D5953421-9075-447B-882A-6C37CC381AFA}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{06BCBE8A-2D29-4F78-A1E9-9FF437EB8D3D}" ShortID="126909211">
 							<ReferenceList>
 								<Reference Name="Target">

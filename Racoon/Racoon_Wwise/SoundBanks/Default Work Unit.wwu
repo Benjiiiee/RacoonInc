@@ -18,6 +18,7 @@
 						<ObjectRef Name="Play_Footsteps" ID="{6137AFA7-A135-48E2-A67D-AE7936F7D7CF}" WorkUnitID="{5E41FC68-0225-4BFE-9E23-935542803514}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UI_Back" ID="{B69CF0CE-457B-4941-A518-42A21E10DE5E}" WorkUnitID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Burning_Flare_Immediate" ID="{2DEB810B-D672-4A1F-B038-B7B5183F7C2D}" WorkUnitID="{B7F9E515-725A-43CC-8144-F6BD1AB036A2}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Music" ID="{05F611CA-3FC6-4A96-B61B-25EE8F165F91}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Ambience_Water_Waterfall" ID="{90A69DA6-A365-4A99-9480-3524BA5489A4}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Player_Death" ID="{3D48CCEE-61D2-4B10-A11B-0AE9F5E2A8E8}" WorkUnitID="{8F16817C-14D5-4008-A829-CEAA329F59B8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}" WorkUnitID="{C4D81FE6-C2AD-4B42-B0CF-B4F12B263675}" Origin="Manual" Filter="7"/>
