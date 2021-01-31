@@ -37,4 +37,9 @@ public class MainMenu : MonoBehaviour
         uiBack.Post(gameObject);
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
