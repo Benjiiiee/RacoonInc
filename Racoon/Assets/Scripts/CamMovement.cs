@@ -8,10 +8,10 @@ public class CamMovement : MonoBehaviour
     public GameObject character;
     public GameObject firstCamPositionTemplate;
     public GameObject nextCamPositionTemplate;
-    private bool isFirst = true;
-    private bool isSecond = false;
-    private bool wentFirst = false;
-    private bool wentSecond = false;
+    public bool isFirst = true;
+    public bool isSecond = false;
+    public bool wentFirst = false;
+    public bool wentSecond = false;
     private bool inTrigger;
   
     
@@ -21,8 +21,6 @@ public class CamMovement : MonoBehaviour
         inTrigger = false;
         
     }
-
-    
     void Update()
     {
         
@@ -71,5 +69,11 @@ public class CamMovement : MonoBehaviour
         {
             inTrigger = true;
         }
+    }
+    public void Reset()
+    {
+        isFirst = true;
+        wentFirst = false;
+        wentSecond = false;
     }
 }
