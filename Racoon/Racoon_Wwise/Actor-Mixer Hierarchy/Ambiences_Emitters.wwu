@@ -9,7 +9,7 @@
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-19</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -104,6 +104,7 @@
 								</Sound>
 								<Sound Name="Waterfall_High" ID="{18036594-6F5F-437D-8190-D87DF52D4B2B}" ShortID="88227830">
 									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -136,7 +137,6 @@
 					</ChildrenList>
 					<BlendTrackList>
 						<BlendTrack Name="Waterfall_Distance" ID="{EF3FF4CC-BE29-4B3B-8258-489437DBBCD3}" ShortID="728938314">
-							<ReferenceList/>
 							<BlendTrackAssocList>
 								<BlendTrackAssoc>
 									<ItemRef Name="Waterfall_Close" ID="{0D12C911-E324-46D6-9A23-C50238A2BED6}"/>
