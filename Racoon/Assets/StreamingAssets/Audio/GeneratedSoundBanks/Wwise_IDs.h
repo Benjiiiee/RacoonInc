@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID PLAY_UI_BACK = 1386224142U;
         static const AkUniqueID PLAY_UI_OVER = 3300168493U;
         static const AkUniqueID PLAY_UI_SELECT = 3308548503U;
+        static const AkUniqueID STOP_BRASERO = 1873728636U;
         static const AkUniqueID STOP_BURNING_FLARE_FADEOUT = 3353542511U;
         static const AkUniqueID STOP_BURNING_FLARE_IMMEDIATE = 917084758U;
     } // namespace EVENTS
