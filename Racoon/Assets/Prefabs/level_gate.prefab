@@ -124,7 +124,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958a219e49832c7488bf7c322da3f0c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 2
+  doorSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d5463eb77df308141bb5dee8f1ffc375,
+      type: 2}
 --- !u!114 &2216581800904393330
 MonoBehaviour:
   m_ObjectHideFlags: 0
