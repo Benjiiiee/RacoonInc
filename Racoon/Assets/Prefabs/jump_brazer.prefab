@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 331835272502618771}
   - component: {fileID: 7987102987071354129}
   - component: {fileID: 4270322759088811045}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: fx_brazer_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 3989523589003474126}
   - component: {fileID: 1519569117713106972}
   - component: {fileID: 5899384178774250801}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: jump_brazer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
