@@ -6,7 +6,7 @@
 				<ActorMixer Name="World" ID="{C551D083-A811-4673-9083-A2DDB7B54825}" ShortID="544848452">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="World" ID="{9DED6FBB-A510-44F6-AA12-EA8912A64967}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
@@ -4878,6 +4878,9 @@
 																				<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 																				<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>6</Value>
+																					</ValueList>
 																					<ModifierList>
 																						<ModifierInfo>
 																							<Modifier Name="" ID="{AE9D16BE-2130-4E72-BC1F-AFC6898F78AC}">
@@ -5718,7 +5721,7 @@
 															<PropertyList>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-3</Value>
+																		<Value>-6</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5747,7 +5750,7 @@
 															<PropertyList>
 																<Property Name="Volume" Type="Real64">
 																	<ValueList>
-																		<Value>-9</Value>
+																		<Value>-14</Value>
 																	</ValueList>
 																</Property>
 															</PropertyList>
@@ -5881,7 +5884,7 @@
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-17</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6350,7 +6353,7 @@
 												<Property Name="OverrideColor" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-14</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -6384,7 +6387,7 @@
 				<ActorMixer Name="Non_World" ID="{2F4490FB-807B-4DE6-A592-937F844AF886}" ShortID="990078465">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1639E8DC-5529-4CF8-A0B1-3B78CF5F49CE}"/>
+							<ObjectRef Name="Vorbis Auto Detect High" ID="{6F6A99BE-4FD1-49D3-89AF-54BE30CA1588}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Non_World" ID="{E39A2D05-A201-4F3D-A2E1-44250CFFACC5}" WorkUnitID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}"/>
