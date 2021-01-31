@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a81f4c5a8d8d047bbda195981a0a4d8
     GuidInternal: 
-    m_lastTime: -8585895642380666757
+    m_lastTime: -8585895262571972314
     List:
     - name: Ambiences
       guid: b64969a97226ab468050abb4169f33cb
@@ -171,6 +171,19 @@ MonoBehaviour:
       - ElementName: Items
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus\World\Characters\Player\Items
+    - name: Levels_Theme
+      guid: be5920f12a30e144b400dffa0b7ed0fd
+      id: 1651733522
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: MUSIC
+        ObjectType: 2
+      - ElementName: Levels_Theme
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\MUSIC\Levels_Theme
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -180,6 +193,28 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: MUSIC
+      guid: d369c65fc76a564e86d309ba4e823067
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: MUSIC
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\MUSIC
+    - name: Non_World
+      guid: 052d9ae301a23d4fa2e144250cffacc5
+      id: 3869140995
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Non_World
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\Non_World
     - name: Player
       guid: bd2546191384e54fb0a216e25c6512c7
       id: 1069431850
@@ -195,6 +230,19 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus\World\Characters\Player
+    - name: ScreenTitle_Theme
+      guid: 62fd4dd3b791de489840b596bf7aa13d
+      id: 1631542459
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: MUSIC
+        ObjectType: 2
+      - ElementName: ScreenTitle_Theme
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus\MUSIC\ScreenTitle_Theme
     - name: World
       guid: bb6fed9d10a5f644aa12ea8912a64967
       id: 2609808943
@@ -214,7 +262,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 051f4c900d396e4aa1e20f70efef8313
     GuidInternal: 
-    m_lastTime: -8585895642380297738
+    m_lastTime: -8585895217490572794
     List:
     - name: Main
       guid: 8437b179d06ba94eb072d3eb9f06dd35
@@ -237,7 +285,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit\Characters\Actions
     guid: 15e5f9b75a72cc438144f6bd1ab036a2
     GuidInternal: 
-    m_lastTime: -8585895642380387510
+    m_lastTime: -8585895593648137109
     List:
     - name: Play_Brasero
       guid: dd5a280ec59b284b98d7b7d44337f905
@@ -252,6 +300,22 @@ MonoBehaviour:
       - ElementName: Play_Brasero
         ObjectType: 3
       Path: Default Work Unit\Characters\Actions\Play_Brasero
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_End_Level_Door
+      guid: 175fcfc4d2186d4bae9684758c8e98ce
+      id: 1152301005
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Characters
+        ObjectType: 12
+      - ElementName: Actions
+        ObjectType: 12
+      - ElementName: Play_End_Level_Door
+        ObjectType: 3
+      Path: Default Work Unit\Characters\Actions\Play_End_Level_Door
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -440,8 +504,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: f739447505b6144398615f1ab939a45c
     GuidInternal: 
-    m_lastTime: -8585895642380357362
+    m_lastTime: -8585895369792807274
     List:
+    - name: Play_MUSIC
+      guid: a2facf01e2093f4dbe434b982bd42b55
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_MUSIC
+        ObjectType: 3
+      Path: Default Work Unit\Play_MUSIC
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Player_Death
       guid: eecc483dd261104ba11b0ae9f5e2a8e8
       id: 1835085974
@@ -463,6 +539,54 @@ MonoBehaviour:
       - ElementName: Play_Player_Respawn
         ObjectType: 3
       Path: Default Work Unit\Play_Player_Respawn
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Back
+      guid: cef09cb67b454149a51842a21e10de5e
+      id: 1386224142
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI_Back
+        ObjectType: 3
+      Path: Default Work Unit\Play_UI_Back
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Over
+      guid: 0e707e3744e34b4dbbfdcd9a3ac49dd9
+      id: 3300168493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI_Over
+        ObjectType: 3
+      Path: Default Work Unit\Play_UI_Over
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Select
+      guid: 43a778991e770f42a9227c5f00b47553
+      id: 3308548503
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_UI_Select
+        ObjectType: 3
+      Path: Default Work Unit\Play_UI_Select
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Brasero
+      guid: 61f77191ac6b1d4c9e86161636eded61
+      id: 1873728636
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Brasero
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Brasero
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -529,8 +653,45 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: ff90e8867d710943932ae5572581ff1b
     GuidInternal: 
-    m_lastTime: -8585898009415705936
-    List: []
+    m_lastTime: -8585895369792897005
+    List:
+    - name: Level_Music
+      guid: a043ca363eac694dac61c06bb87a3042
+      id: 1244594577
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Music
+        ObjectType: 9
+      Path: Default Work Unit\Level_Music
+      values:
+      - name: Music_On_1Layer
+        guid: d1f889af27d7e74ba7d9b609f5302844
+        id: 1275403157
+        PathAndIcons:
+        - ElementName: Music_On_1Layer
+          ObjectType: 8
+      - name: Music_On_2Layers
+        guid: b10281a4d896184ca370f5b34878220f
+        id: 103655667
+        PathAndIcons:
+        - ElementName: Music_On_2Layers
+          ObjectType: 8
+      - name: None
+        guid: 4b3a9407611e1349bddea74212485eb2
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Silence
+        guid: 4a92d3c2f6c2d246ade870cf61a8a5f2
+        id: 3041563226
+        PathAndIcons:
+        - ElementName: Silence
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -539,7 +700,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 474c0ac05d40db4ba1cd5b5ffdb4f08f
     GuidInternal: 
-    m_lastTime: -8585896709216352814
+    m_lastTime: -8585895369792857386
     List:
     - name: Material_Type
       guid: 5a9ac988745f934db67625620f3724f3
@@ -597,6 +758,37 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Music
+      guid: a2b71a75975d974caa6fe5a6904f424e
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 11
+      Path: Default Work Unit\Music
+      values:
+      - name: End
+        guid: da9aff25b0ce77429c4224035e2d3913
+        id: 529726532
+        PathAndIcons:
+        - ElementName: End
+          ObjectType: 10
+      - name: Intro
+        guid: 8982929cf427a84bbfc4ec73c3cce41b
+        id: 1125500713
+        PathAndIcons:
+        - ElementName: Intro
+          ObjectType: 10
+      - name: Levels
+        guid: 16f30251ad52a043a64f79cc8fdc4614
+        id: 2678230316
+        PathAndIcons:
+        - ElementName: Levels
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -612,6 +804,5 @@ MonoBehaviour:
   - /Racoon_Wwise/Events
   - /Racoon_Wwise/Events/Default Work Unit
   - /Racoon_Wwise/Events/Default Work Unit/Characters
-  - /Racoon_Wwise/Events/Default Work Unit/Characters/Actions
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
