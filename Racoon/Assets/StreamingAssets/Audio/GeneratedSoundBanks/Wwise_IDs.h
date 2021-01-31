@@ -15,18 +15,15 @@ namespace AK
     {
         static const AkUniqueID PLAY_AMBIENCE_BACKGROUND_CAVERN = 1970585623U;
         static const AkUniqueID PLAY_AMBIENCE_WATER_WATERFALL = 2972937805U;
-        static const AkUniqueID PLAY_BRASERO = 3518263358U;
         static const AkUniqueID PLAY_END_LEVEL_DOOR = 1152301005U;
         static const AkUniqueID PLAY_FOLEY = 3113720603U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_IMPACT_FLARE = 2389238889U;
         static const AkUniqueID PLAY_INTERACT = 3621663528U;
-        static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_PICKUP_ITEM = 3128913152U;
         static const AkUniqueID PLAY_PLAYER_DEATH = 1835085974U;
         static const AkUniqueID PLAY_PLAYER_RESPAWN = 4238880044U;
         static const AkUniqueID PLAY_THROW_FLARE = 838326419U;
-        static const AkUniqueID PLAY_TRAMPOLINE = 3799408143U;
         static const AkUniqueID PLAY_TURN_ON_BURN_FLARE = 3232459058U;
         static const AkUniqueID PLAY_UI_BACK = 1386224142U;
         static const AkUniqueID PLAY_UI_OVER = 3300168493U;
@@ -34,7 +31,6 @@ namespace AK
         static const AkUniqueID STOP_BRASERO = 1873728636U;
         static const AkUniqueID STOP_BURNING_FLARE_FADEOUT = 3353542511U;
         static const AkUniqueID STOP_BURNING_FLARE_IMMEDIATE = 917084758U;
-        static const AkUniqueID STOP_PLAY_AMBIENCE_BACKGROUND_CAVERN = 389206912U;
     } // namespace EVENTS
 
     namespace STATES

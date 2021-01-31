@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1244594577	Level_Music			\Default Work Unit\Level_Music	
+
+State	ID	Name	State Group			Notes
+	103655667	Music_On_2Layers	Level_Music			
+	748895195	None	Level_Music			
+	1275403157	Music_On_1Layer	Level_Music			
+	3041563226	Silence	Level_Music			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	247557814	Foley			\Default Work Unit\Master Audio Bus\World\Characters\Player\Foley	
 	983310469	AUX			\Default Work Unit\Master Audio Bus\World\AUX	
@@ -5,11 +14,14 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1069431850	Player			\Default Work Unit\Master Audio Bus\World\Characters\Player	
 	1540219311	Flare			\Default Work Unit\Master Audio Bus\World\Characters\Player\Flare	
 	1557941045	Characters			\Default Work Unit\Master Audio Bus\World\Characters	
+	1631542459	ScreenTitle_Theme			\Default Work Unit\Master Audio Bus\MUSIC\ScreenTitle_Theme	
+	1651733522	Levels_Theme			\Default Work Unit\Master Audio Bus\MUSIC\Levels_Theme	
 	2151963051	Items			\Default Work Unit\Master Audio Bus\World\Characters\Player\Items	
 	2385628198	Footsteps			\Default Work Unit\Master Audio Bus\World\Characters\Player\Footsteps	
 	2609808943	World			\Default Work Unit\Master Audio Bus\World	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3869140995	Non_World			\Default Work Unit\Master Audio Bus\Non_World	
+	3991942870	MUSIC			\Default Work Unit\Master Audio Bus\MUSIC	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1236188118	AUX_Death			\Default Work Unit\Master Audio Bus\World\Characters\Player\AUX_Death	
