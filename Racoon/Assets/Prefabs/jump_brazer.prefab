@@ -101,6 +101,8 @@ MonoBehaviour:
   light1: {fileID: 0}
   light2: {fileID: 0}
   light3: {fileID: 0}
+  myTrampoline: {fileID: 0}
+  isJumpBrazier: 0
 --- !u!61 &2550490516368937305
 BoxCollider2D:
   m_ObjectHideFlags: 0

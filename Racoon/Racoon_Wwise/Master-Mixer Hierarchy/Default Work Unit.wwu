@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-4</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -23,7 +23,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>-96</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="8"/>
@@ -84,7 +84,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-9</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="10"/>
@@ -95,7 +95,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>-11</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="4"/>
@@ -106,7 +106,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-3</Value>
+																<Value>-14</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="19"/>

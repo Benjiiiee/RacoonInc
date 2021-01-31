@@ -10,9 +10,12 @@ public class LightUpIngredient : MonoBehaviour
     public Light2D light2;
     public Light2D light3;
     private bool isOn = false;
+    public GameObject myTrampoline;
+    public bool isJumpBrazier;
     // Start is called before the first frame update
     void Start()
     {
+        myTrampoline.SetActive(false);
         
     }
 
@@ -28,10 +31,18 @@ public class LightUpIngredient : MonoBehaviour
             isOn = true;
             TurnOn();
         }
+        if (other.gameObject.CompareTag("Flare") && isJumpBrazier == true)
+        {
+            myTrampoline.SetActive(true);
+        }
     }
 
     void TurnOn()
     {
+        if (isJumpBrazier == true)
+        {
+            myTrampoline.SetActive(true);
+        }
         light1.GetComponent<Light2D>().enabled = true;
         light2.GetComponent<Light2D>().enabled = true;
         light3.GetComponent<Light2D>().enabled = true;
