@@ -6,11 +6,14 @@ public class FlareRefuel : MonoBehaviour
 {
     public Collider2D collider;
     public SpriteRenderer renderer;
+    public CharacterController character;
 
     private void Start()
     {
         collider = GetComponent<Collider2D>();
         renderer = GetComponent<SpriteRenderer>();
+        character = GameObject.FindWithTag("Player").GetComponent<CharacterController>();
+        character.resetCollectibles.AddListener(Init);
     }
 
     public void Init()
