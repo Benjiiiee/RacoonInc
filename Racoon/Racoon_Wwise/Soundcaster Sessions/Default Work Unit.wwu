@@ -104,11 +104,11 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Music_On_2Layers" ID="{A48102B1-96D8-4C18-A370-F5B34878220F}"/>
+						<CurrentStateRef Name="Silence" ID="{C2D3924A-C2F6-46D2-ADE8-70CF61A8A5F2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
-						<CurrentSwitchRef Name="End" ID="{25FF9ADA-CEB0-4277-9C42-24035E2D3913}"/>
+						<CurrentSwitchRef Name="Levels" ID="{5102F316-52AD-43A0-A64F-79CC8FDC4614}"/>
 						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
