@@ -85,11 +85,18 @@
 							<ObjectRef Name="Stop_Brasero" ID="{9171F761-6BAC-4C1D-9E86-161636EDED61}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
 							<Position X="3" Y="4"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_MUSIC" ID="{01CFFAA2-09E2-4D3F-BE43-4B982BD42B55}" WorkUnitID="{754439F7-B605-4314-9861-5F1AB939A45C}"/>
+							<Position X="3" Y="5"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Music_On_2Layers" ID="{A48102B1-96D8-4C18-A370-F5B34878220F}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
+						<CurrentSwitchRef Name="Intro" ID="{9C928289-27F4-4BA8-BFC4-EC73C3CCE41B}"/>
 						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

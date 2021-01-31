@@ -6,12 +6,10 @@
 				<BlendContainer Name="Ambience_Water_Waterfall" ID="{2833FAD2-202E-4529-9231-F5D2ABA361F5}" ShortID="894751238">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="OverridePositioning" Type="bool" Value="True"/>
-						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>4</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

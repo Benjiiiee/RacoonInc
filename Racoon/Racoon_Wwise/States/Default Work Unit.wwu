@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{86E890FF-717D-4309-932A-E5572581FF1B}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{86E890FF-717D-4309-932A-E5572581FF1B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{86E890FF-717D-4309-932A-E5572581FF1B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Level_Music" ID="{36CA43A0-AC3E-4D69-AC61-C06BB87A3042}">
+					<ChildrenList>
+						<State Name="None" ID="{07943A4B-1E61-4913-BDDE-A74212485EB2}"/>
+						<State Name="Silence" ID="{C2D3924A-C2F6-46D2-ADE8-70CF61A8A5F2}"/>
+						<State Name="Music_On_1Layer" ID="{AF89F8D1-D727-4BE7-A7D9-B609F5302844}"/>
+						<State Name="Music_On_2Layers" ID="{A48102B1-96D8-4C18-A370-F5B34878220F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

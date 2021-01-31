@@ -16,6 +16,13 @@
 						<Switch Name="Water" ID="{CFD30A4D-6E66-4282-9D69-E3C0EF60CF9C}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Music" ID="{751AB7A2-5D97-4C97-AA6F-E5A6904F424E}">
+					<ChildrenList>
+						<Switch Name="Intro" ID="{9C928289-27F4-4BA8-BFC4-EC73C3CCE41B}"/>
+						<Switch Name="Levels" ID="{5102F316-52AD-43A0-A64F-79CC8FDC4614}"/>
+						<Switch Name="End" ID="{25FF9ADA-CEB0-4277-9C42-24035E2D3913}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

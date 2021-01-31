@@ -95,6 +95,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MUSIC" ID="{01CFFAA2-09E2-4D3F-BE43-4B982BD42B55}">
+					<ChildrenList>
+						<Action Name="" ID="{D5003010-A9ED-4FFA-AEAC-06721E5EAAA7}" ShortID="830608463">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUSIC" ID="{BD9BCD6C-9039-4DAB-9B22-10F70021102F}" WorkUnitID="{6823B80D-0339-49B1-9C81-21B60BCE8CCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
