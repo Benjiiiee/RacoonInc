@@ -21,6 +21,11 @@
 							<ChildrenList>
 								<Bus Name="Ambiences" ID="{A96949B6-2672-46AB-8050-ABB4169F33CB}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="8"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
@@ -79,7 +84,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>2</Value>
+																<Value>-8</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="10"/>

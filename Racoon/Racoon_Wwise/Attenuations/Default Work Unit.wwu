@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<Attenuation Name="Distance_To_Player" ID="{B39E0702-E7F7-4139-A175-553CF1DCED4A}" ShortID="482833475">
 					<PropertyList>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="35"/>
 					</PropertyList>
 					<CurveUsageInfoList>
