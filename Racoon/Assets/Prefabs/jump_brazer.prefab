@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inRadiusRange: 0
-  outRadiusRange: 0
+  outRadiusRange: 0.4
 --- !u!1 &6508939731861601571
 GameObject:
   m_ObjectHideFlags: 0

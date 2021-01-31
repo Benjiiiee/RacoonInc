@@ -105,6 +105,7 @@ MonoBehaviour:
   Flames: {fileID: 6038535224829999044}
   myTrampoline: {fileID: 0}
   isJumpBrazier: 0
+  feedback: {fileID: 0}
   brazierLightUp:
     idInternal: 0
     valueGuidInternal: 
@@ -371,4 +372,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inRadiusRange: 0
-  outRadiusRange: 0
+  outRadiusRange: 0.4
