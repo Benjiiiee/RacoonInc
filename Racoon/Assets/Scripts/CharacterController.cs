@@ -102,7 +102,9 @@ public class CharacterController : KinematicObject
                 jump = true;
                 stopJump = false; 
                 if(hasTurboJumped)
+                {
                     playerSuperJump.Post(gameObject);
+                }
                 break;
             case JumpState.Jumping:
                 if (!IsGrounded)
