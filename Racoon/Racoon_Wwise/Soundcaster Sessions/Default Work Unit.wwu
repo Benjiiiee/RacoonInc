@@ -96,7 +96,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Jump" ID="{FFA6099C-F435-46C4-BF5B-637234DF2AD6}"/>
-						<CurrentSwitchRef Name="Intro" ID="{9C928289-27F4-4BA8-BFC4-EC73C3CCE41B}"/>
+						<CurrentSwitchRef Name="Levels" ID="{5102F316-52AD-43A0-A64F-79CC8FDC4614}"/>
 						<CurrentSwitchRef Name="Stone" ID="{29D83F5C-2EBF-48D5-8FCD-8CBCB48E2205}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

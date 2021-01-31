@@ -1123,6 +1123,46 @@
 										</SourceFadeOut>
 									</TransitionInfo>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{FAD61399-3423-4C0D-ADD1-99BFF989E601}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+										<Property Name="PlayDestinationPreEntry" Type="bool" Value="False"/>
+										<Property Name="PlaySourcePostExit" Type="bool" Value="False"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="Levels_Theme" ID="{D29001CC-ED6A-44F4-B879-0DDFF439E6FD}" WorkUnitID="{6823B80D-0339-49B1-9C81-21B60BCE8CCC}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="End_Theme" ID="{A8FE364F-2381-4E8D-BDD6-DBCDD443082B}" WorkUnitID="{6823B80D-0339-49B1-9C81-21B60BCE8CCC}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{9DD4278B-5507-49C2-A791-6BD140092321}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="2"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1.9"/>
+													<Property Name="FadeTime" Type="Real64" Value="5.6"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{8D9C17EE-DDBB-4DB0-9D3C-6CFF3A057A36}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="2"/>
+													<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+													<Property Name="FadeTime" Type="Real64" Value="4.4"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
