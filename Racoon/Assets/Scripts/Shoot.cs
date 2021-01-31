@@ -22,6 +22,8 @@ public class Shoot : MonoBehaviour
     public Transform yeetHandLeft;
     public Transform yeetHandRight;
 
+    public GameObject canvas;
+    public In_Game_Ui canvasScript;
     //Sound
 
     public AK.Wwise.Event throwFlareEvent;
@@ -30,6 +32,9 @@ public class Shoot : MonoBehaviour
     {
         character = GetComponentInParent<CharacterController>();
         SpawnPoints();
+        canvas = GameObject.Find("Canvas");
+        canvasScript = canvas.GetComponent<In_Game_Ui>();
+        UpdateUI(flareCount);
     }
 
     void Update()
@@ -43,6 +48,8 @@ public class Shoot : MonoBehaviour
             firstPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             character.animator.SetBool("isrunning", false);
             character.animator.SetBool("isyeeting", true);
+
+
         }
 
         if (Input.GetMouseButton(0) && isThrowing)
@@ -105,6 +112,7 @@ public class Shoot : MonoBehaviour
         newFlare.GetComponent<Rigidbody2D>().velocity = transform.right * launchForce;
         newFlare.GetComponent<Rigidbody2D>().angularVelocity = character.spriteRenderer.flipX ? launchForce * 50 : -launchForce * 50;
         Physics2D.IgnoreCollision(newFlare.GetComponent<Collider2D>(), character.GetComponent<Collider2D>(), true);
+        UpdateUI(flareCount);
     }
 
     Vector2 Pointposition(float t)
@@ -146,6 +154,32 @@ public class Shoot : MonoBehaviour
     public void RefuelFlare()
     {
         flareCount = 5;
+        UpdateUI(flareCount);
     }
 
+    public void UpdateUI(int actualFlareCount) 
+    {
+    switch (actualFlareCount)
+        {
+
+            case 0:
+                canvasScript.Has0Flare();
+                break;
+            case 1:
+                canvasScript.Has1Flare();
+                break;
+            case 2:
+                canvasScript.Has2Flare();
+                break;
+            case 3:
+                canvasScript.Has3Flare();
+                break;
+            case 4:
+                canvasScript.Has4Flare();
+                break;
+            case 5:
+                canvasScript.Has5Flare();
+                break;
+        }
+    }
 }
