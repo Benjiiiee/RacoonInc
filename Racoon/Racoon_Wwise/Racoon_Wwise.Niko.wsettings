@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\nicol\Desktop\Racoon\Music\"/>
 				<Property Name="Event Action List\{01CFFAA2-09E2-4D3F-BE43-4B982BD42B55}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{03230F6D-75EB-4652-9DBA-E81EDDF7D26B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{05F611CA-3FC6-4A96-B61B-25EE8F165F91}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0C7AC49E-8AA6-41C9-82F2-4AEE4329D4BD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0D8E5537-0AC2-4590-8787-87C12218B95D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0E285ADD-9BC5-4B28-98D7-B7D44337F905}\x64_Expand States" Type="string" Value=""/>

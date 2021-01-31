@@ -17,6 +17,21 @@
 					</ChildrenList>
 				</Event>
 				<WorkUnit Name="UI" ID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}" PersistMode="Reference"/>
+				<Event Name="Stop_Music" ID="{05F611CA-3FC6-4A96-B61B-25EE8F165F91}">
+					<ChildrenList>
+						<Action Name="" ID="{06E60579-B375-4613-BC4E-D3C1EE37FE2F}" ShortID="299664809">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MUSIC" ID="{BD9BCD6C-9039-4DAB-9B22-10F70021102F}" WorkUnitID="{6823B80D-0339-49B1-9C81-21B60BCE8CCC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

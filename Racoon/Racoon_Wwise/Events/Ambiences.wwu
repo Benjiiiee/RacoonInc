@@ -30,6 +30,16 @@
 				</Event>
 				<Event Name="Play_Ambience_Water_Waterfall" ID="{5C1EF5F0-7D38-4B1A-BE8D-D60383FFE1C1}">
 					<ChildrenList>
+						<Action Name="" ID="{0D76484D-D525-461C-A850-EF6A275E6444}" ShortID="122414550">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Water_Waterfall" ID="{2833FAD2-202E-4529-9231-F5D2ABA361F5}" WorkUnitID="{32EBF652-CE39-48CD-8410-2D0DC010DD12}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{47D641DA-E403-43EA-A513-0A33F4BC2D13}" ShortID="379275339">
 							<ReferenceList>
 								<Reference Name="Target">
