@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CharacterController : KinematicObject
 {
@@ -36,6 +37,8 @@ public class CharacterController : KinematicObject
 
     public AK.Wwise.Event playerRespawn;
     public AK.Wwise.Event playerSuperJump;
+
+    public UnityEvent resetCollectibles = new UnityEvent();
 
     void Awake()
     {
@@ -176,7 +179,8 @@ public class CharacterController : KinematicObject
     {
         transform.position = lastCheckpoint;
         playerRespawn.Post(gameObject);
-        shoot.flareCount = 3;
+        shoot.RefuelFlare();
+        resetCollectibles.Invoke();
     }
     void OnTriggerEnter2D(Collider2D other)
     {
