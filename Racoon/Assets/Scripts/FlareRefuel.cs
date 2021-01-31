@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FlareRefuel : MonoBehaviour
 {
-    public Collider2D collider;
-    public SpriteRenderer renderer;
-    public CharacterController character;
+    private Collider2D collider;
+    private SpriteRenderer renderer;
+    private CharacterController character;
+
+    public AK.Wwise.Event pickupSound;
 
     private void Start()
     {
@@ -24,6 +26,7 @@ public class FlareRefuel : MonoBehaviour
 
     public void TurnOff()
     {
+        pickupSound.Post(gameObject);
         collider.enabled = false;
         renderer.enabled = false;
     }
