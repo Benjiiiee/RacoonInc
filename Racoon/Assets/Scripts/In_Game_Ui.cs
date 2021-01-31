@@ -22,8 +22,15 @@ public class In_Game_Ui : MonoBehaviour
         
     }
 
-    
 
+    public void Has0Flare()
+    {
+        filled1.SetActive(false);
+        filled2.SetActive(false);
+        filled3.SetActive(false);
+        filled4.SetActive(false);
+        filled5.SetActive(false);
+    }
     public void Has1Flare() 
     {
         filled1.SetActive(true);
