@@ -4,13 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{C5F4813A-D8A8-47D0-BBDA-195981A0A4D8}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
-					<PropertyList>
-						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-4</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E996EE36-F573-417B-A05D-8799929A22F5}" WorkUnitID="{CB85266D-8085-4FBB-9EB7-09BAF8C7E2B9}"/>
@@ -23,7 +16,7 @@
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Color" Type="int16" Value="8"/>
@@ -84,7 +77,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-7</Value>
+																<Value>-8</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="10"/>
@@ -95,7 +88,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-10</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="4"/>
@@ -106,7 +99,7 @@
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64">
 															<ValueList>
-																<Value>-4</Value>
+																<Value>-8</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Color" Type="int16" Value="19"/>
@@ -164,7 +157,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
