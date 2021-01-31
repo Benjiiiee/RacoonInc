@@ -264,6 +264,8 @@ MonoBehaviour:
   Flames: {fileID: 5796517255795298719}
   myTrampoline: {fileID: 0}
   isJumpBrazier: 1
+  feedback: {fileID: 6330122147847655778, guid: 67b8782d4a265974799440064ac140c6,
+    type: 3}
   brazierLightUp:
     idInternal: 0
     valueGuidInternal: 

@@ -30,7 +30,7 @@
 							<Position X="0" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_UI_Back" ID="{B69CF0CE-457B-4941-A518-42A21E10DE5E}" WorkUnitID="{28A6DDA1-9299-4BB9-AF3B-835D95DCEE86}"/>
+							<ObjectRef Name="Play_UI_Back" ID="{B69CF0CE-457B-4941-A518-42A21E10DE5E}" WorkUnitID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}"/>
 							<Position X="0" Y="6"/>
 						</Module>
 						<Module>
@@ -58,7 +58,7 @@
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_UI_Over" ID="{377E700E-E344-4D4B-BBFD-CD9A3AC49DD9}" WorkUnitID="{28A6DDA1-9299-4BB9-AF3B-835D95DCEE86}"/>
+							<ObjectRef Name="Play_UI_Over" ID="{377E700E-E344-4D4B-BBFD-CD9A3AC49DD9}" WorkUnitID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}"/>
 							<Position X="1" Y="6"/>
 						</Module>
 						<Module>
@@ -82,7 +82,7 @@
 							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_UI_Select" ID="{9978A743-771E-420F-A922-7C5F00B47553}" WorkUnitID="{28A6DDA1-9299-4BB9-AF3B-835D95DCEE86}"/>
+							<ObjectRef Name="Play_UI_Select" ID="{9978A743-771E-420F-A922-7C5F00B47553}" WorkUnitID="{3C8D8E81-8D82-4389-8170-3FD5C1892454}"/>
 							<Position X="2" Y="6"/>
 						</Module>
 						<Module>

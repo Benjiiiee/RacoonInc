@@ -149,6 +149,25 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Brasero" ID="{9171F761-6BAC-4C1D-9E86-161636EDED61}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="12"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{883913AE-F2CE-4FEE-ACE5-391FAA6822F8}" ShortID="1025075251">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Brasero" ID="{D5953421-9075-447B-882A-6C37CC381AFA}" WorkUnitID="{1B7AE200-E287-4069-8F55-0FB733CD866F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
