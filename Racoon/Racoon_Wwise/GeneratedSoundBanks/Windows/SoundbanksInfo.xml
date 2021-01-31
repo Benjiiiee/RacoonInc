@@ -163,6 +163,21 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="3518263358" Name="Play_Brasero" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Brasero" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="73.969353" DurationMax="73.969353">
+					<IncludedMemoryFiles>
+						<File Id="393187334" Language="SFX">
+							<ShortName>Loop_Brasero.wav</ShortName>
+							<Path>SFX\Loop_Brasero_C1F52A07.wem</Path>
+						</File>
+						<File Id="915240284" Language="SFX">
+							<ShortName>Ignition_Brasero.wav</ShortName>
+							<Path>SFX\Ignition_Brasero_C1F52A07.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="1152301005" Name="Play_End_Level_Door" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_End_Level_Door" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.561563" DurationMax="1.561563">
 					<IncludedMemoryFiles>
 						<File Id="837172024" Language="SFX">
@@ -893,6 +908,78 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="2932040671" Name="Play_MUSIC" ObjectPath="\Events\Default Work Unit\Play_MUSIC" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="69353581" Language="SFX">
+							<ShortName>Screen_Title_Intro_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Intro_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="117495256" Language="SFX">
+							<ShortName>Screen_Title_Transition_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Transition_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="176214316" Language="SFX">
+							<ShortName>Levels_Theme_Layer1.wav</ShortName>
+							<Path>SFX\Levels_Theme_Layer1_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="239945422" Language="SFX">
+							<ShortName>Screen_Title_End_105.wav</ShortName>
+							<Path>SFX\Screen_Title_End_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="328851011" Language="SFX">
+							<ShortName>Screen_Title_Outro_Delay_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Outro_Delay_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="338709465" Language="SFX">
+							<ShortName>End_Theme_Outro.wav</ShortName>
+							<Path>SFX\End_Theme_Outro_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="409567027" Language="SFX">
+							<ShortName>Screen_Title_Part1A_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Part1A_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="546507222" Language="SFX">
+							<ShortName>Levels_Theme_Layer2.wav</ShortName>
+							<Path>SFX\Levels_Theme_Layer2_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="714312938" Language="SFX">
+							<ShortName>Screen_Title_Part2_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Part2_105_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="920498695" Language="SFX">
+							<ShortName>End_Theme.wav</ShortName>
+							<Path>SFX\End_Theme_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="963157005" Language="SFX">
+							<ShortName>Screen_Title_Part1B_105.wav</ShortName>
+							<Path>SFX\Screen_Title_Part1B_105_3D1D1BA5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{9C928289-27F4-4BA8-BFC4-EC73C3CCE41B}">
+							<Media>
+								<File Id="239945422"/>
+								<File Id="69353581"/>
+								<File Id="409567027"/>
+								<File Id="963157005"/>
+								<File Id="714312938"/>
+								<File Id="117495256"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{5102F316-52AD-43A0-A64F-79CC8FDC4614}">
+							<Media>
+								<File Id="176214316"/>
+								<File Id="546507222"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{25FF9ADA-CEB0-4277-9C42-24035E2D3913}">
+							<Media>
+								<File Id="920498695"/>
+								<File Id="338709465"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3128913152" Name="Play_Pickup_Item" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Pickup_Item" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="1.384750" DurationMax="1.384750">
 					<IncludedMemoryFiles>
 						<File Id="537572273" Language="SFX">
@@ -904,7 +991,7 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Play_Player_Death" DurationType="OneShot" DurationMin="2.081208" DurationMax="3.679805">
+				<Event Id="1835085974" Name="Play_Player_Death" ObjectPath="\Events\Default Work Unit\Characters\Play_Player_Death" DurationType="OneShot" DurationMin="2.081208" DurationMax="3.679805">
 					<IncludedMemoryFiles>
 						<File Id="36692190" Language="SFX">
 							<ShortName>Player_Death_Scream_V2_04.wav</ShortName>
@@ -940,7 +1027,7 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="4238880044" Name="Play_Player_Respawn" ObjectPath="\Events\Default Work Unit\Play_Player_Respawn" DurationType="OneShot" DurationMin="1.793146" DurationMax="1.793146">
+				<Event Id="4238880044" Name="Play_Player_Respawn" ObjectPath="\Events\Default Work Unit\Characters\Play_Player_Respawn" DurationType="OneShot" DurationMin="1.793146" DurationMax="1.793146">
 					<IncludedMemoryFiles>
 						<File Id="108241486" Language="SFX">
 							<ShortName>Player_Respawn.wav</ShortName>
@@ -1026,6 +1113,17 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
+				<Event Id="3799408143" Name="Play_Trampoline" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Trampoline" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.849833" DurationMax="0.849833">
+					<IncludedMemoryFiles>
+						<File Id="444923958" Language="SFX">
+							<ShortName>Turbo_Jump.wav</ShortName>
+							<Path>SFX\Turbo_Jump_C1F52A07.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="3232459058" Name="Play_Turn_On_Burn_Flare" ObjectPath="\Events\Default Work Unit\Characters\Actions\Play_Turn_On_Burn_Flare" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="31.318270" DurationMax="31.318270">
 					<IncludedMemoryFiles>
 						<File Id="14017771" Language="SFX">
@@ -1101,7 +1199,7 @@
 						<AuxBus Id="3352913298" Name="Aux_RVB_Cavern" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\World\AUX\Aux_RVB_Cavern"/>
 					</AuxBusSends>
 				</Event>
-				<Event Id="1386224142" Name="Play_UI_Back" ObjectPath="\Events\Default Work Unit\Play_UI_Back" DurationType="OneShot" DurationMin="0.630375" DurationMax="0.630375">
+				<Event Id="1386224142" Name="Play_UI_Back" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Back" DurationType="OneShot" DurationMin="0.630375" DurationMax="0.630375">
 					<IncludedMemoryFiles>
 						<File Id="118202403" Language="SFX">
 							<ShortName>UI_Back.wav</ShortName>
@@ -1109,7 +1207,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3300168493" Name="Play_UI_Over" ObjectPath="\Events\Default Work Unit\Play_UI_Over" DurationType="OneShot" DurationMin="0.773021" DurationMax="0.773021">
+				<Event Id="3300168493" Name="Play_UI_Over" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Over" DurationType="OneShot" DurationMin="0.773021" DurationMax="0.773021">
 					<IncludedMemoryFiles>
 						<File Id="733908782" Language="SFX">
 							<ShortName>UI_Over.wav</ShortName>
@@ -1117,7 +1215,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\Default Work Unit\Play_UI_Select" DurationType="OneShot" DurationMin="1.139729" DurationMax="1.139729">
+				<Event Id="3308548503" Name="Play_UI_Select" ObjectPath="\Events\Default Work Unit\UI\Play_UI_Select" DurationType="OneShot" DurationMin="1.139729" DurationMax="1.139729">
 					<IncludedMemoryFiles>
 						<File Id="901379734" Language="SFX">
 							<ShortName>UI_Select.wav</ShortName>
@@ -1125,7 +1223,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1873728636" Name="Stop_Brasero" ObjectPath="\Events\Default Work Unit\Stop_Brasero" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="366309757" Name="Stop_Ambience_Background_Cavern" ObjectPath="\Events\Default Work Unit\Ambiences\Stop_Ambience_Background_Cavern" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1873728636" Name="Stop_Brasero" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Brasero" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3353542511" Name="Stop_Burning_Flare_FadeOut" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_FadeOut" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="917084758" Name="Stop_Burning_Flare_Immediate" ObjectPath="\Events\Default Work Unit\Characters\Actions\Stop_Burning_Flare_Immediate" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
@@ -1141,6 +1240,13 @@
 					<Switches>
 						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Material_Type\Stone"/>
 						<Switch Id="2654748154" Name="Water" ObjectPath="\Switches\Default Work Unit\Material_Type\Water"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3991942870" Name="Music" ObjectPath="\Switches\Default Work Unit\Music">
+					<Switches>
+						<Switch Id="1125500713" Name="Intro" ObjectPath="\Switches\Default Work Unit\Music\Intro"/>
+						<Switch Id="2678230316" Name="Levels" ObjectPath="\Switches\Default Work Unit\Music\Levels"/>
+						<Switch Id="529726532" Name="End" ObjectPath="\Switches\Default Work Unit\Music\End"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
