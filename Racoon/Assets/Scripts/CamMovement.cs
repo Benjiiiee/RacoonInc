@@ -73,6 +73,7 @@ public class CamMovement : MonoBehaviour
     public void Reset()
     {
         isFirst = true;
+        isSecond = false;
         wentFirst = false;
         wentSecond = false;
     }
