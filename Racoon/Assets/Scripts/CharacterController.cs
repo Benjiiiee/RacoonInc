@@ -37,6 +37,8 @@ public class CharacterController : KinematicObject
 
     public AK.Wwise.Event playerRespawn;
     public AK.Wwise.Event playerSuperJump;
+    public AK.Wwise.Switch playerLand;
+    public AK.Wwise.Switch playerRun;
 
     public UnityEvent resetCollectibles = new UnityEvent();
 
@@ -80,7 +82,7 @@ public class CharacterController : KinematicObject
         UpdateJumpState();
         base.Update();
 
-        if(!IsGrounded)
+        if (!IsGrounded)
         {
             JumpingAnimations();
         }
@@ -89,7 +91,7 @@ public class CharacterController : KinematicObject
             animator.SetBool("isjumping", false);
             animator.SetBool("isfalling", false);
         }
-        
+
     }
 
     void UpdateJumpState()
@@ -100,8 +102,8 @@ public class CharacterController : KinematicObject
             case JumpState.PrepareToJump:
                 jumpState = JumpState.Jumping;
                 jump = true;
-                stopJump = false; 
-                if(hasTurboJumped)
+                stopJump = false;
+                if (hasTurboJumped)
                 {
                     playerSuperJump.Post(gameObject);
                 }
@@ -109,23 +111,19 @@ public class CharacterController : KinematicObject
             case JumpState.Jumping:
                 if (!IsGrounded)
                 {
-                    //  Schedule<PlayerJumped>().player = this;
                     jumpState = JumpState.InFlight;
                 }
                 break;
             case JumpState.InFlight:
                 if (IsGrounded)
                 {
-                    // Schedule<PlayerLanded>().player = this;
-                    //animator.SetBool("isfalling", false);
-                    //animator.SetBool("isjumping", false);
+                    playerLand.SetValue(gameObject);
                     jumpState = JumpState.Landed;
                 }
                 break;
             case JumpState.Landed:
+                playerRun.SetValue(gameObject);
                 jumpState = JumpState.Grounded;
-                //animator.SetBool("isfalling", false);
-                //animator.SetBool("isjumping", false);
                 break;
         }
     }
@@ -149,7 +147,7 @@ public class CharacterController : KinematicObject
         if (move.x > 0.01f)
         {
             spriteRenderer.flipX = false;
-            
+
         }
         else if (move.x < -0.01f)
             spriteRenderer.flipX = true;
@@ -193,23 +191,23 @@ public class CharacterController : KinematicObject
             other.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
         }
     }
-    void OnTriggerExit2D (Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Trampoline") && hasTurboJumped == true)
         {
             other.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.27f);
             jumpModifier = jumpModifier - turboJumpModifier;
             hasTurboJumped = false;
-            }
+        }
     }
 
     void JumpingAnimations()
     {
-        if(velocity.y > 0 && !animator.GetBool("isjumping"))
+        if (velocity.y > 0 && !animator.GetBool("isjumping"))
         {
             animator.SetBool("isjumping", true);
         }
-        else if(velocity.y < 0 && !animator.GetBool("isfalling"))
+        else if (velocity.y < 0 && !animator.GetBool("isfalling"))
         {
             animator.SetBool("isjumping", false);
             animator.SetBool("isfalling", true);
